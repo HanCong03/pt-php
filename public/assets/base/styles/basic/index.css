@@ -1,0 +1,214 @@
+@charset "UTF-8";
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-width: 1170px;
+  font-family: '\5FAE\8F6F\96C5\9ED1','Microsoft Yahei',STHeiti,Simhei,Arial,sans-serif; }
+
+.header, .body, .footer {
+  width: 100%; }
+
+.header {
+  height: 69px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e5e5e5;
+  padding-top: 27px; }
+  .header .inner-header {
+    width: 1170px;
+    height: 24px;
+    color: #595656;
+    font-size: 16px;
+    margin: 0 auto;
+    display: table; }
+    .header .inner-header > .logo {
+      display: table-cell;
+      width: 338px;
+      height: 24px;
+      padding-right: 40px;
+      background-image: url(images/logo.png);
+      background-position: left top;
+      background-size: 338px 24px;
+      background-repeat: no-repeat; }
+      @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
+        .header .inner-header > .logo {
+          background-image: url(images/logo@2.png); } }
+      .header .inner-header > .logo > h1 {
+        display: none; }
+    .header .inner-header > .header-links {
+      display: table-cell;
+      vertical-align: bottom;
+      /* header登录 */ }
+      .header .inner-header > .header-links > .nav {
+        display: inline-block;
+        margin-top: 4px; }
+        .header .inner-header > .header-links > .nav > ul {
+          margin: 0;
+          padding: 0; }
+          .header .inner-header > .header-links > .nav > ul > li {
+            text-align: center;
+            display: inline-block;
+            margin: 0 20px; }
+            .header .inner-header > .header-links > .nav > ul > li.active > a::after {
+              content: '';
+              height: 4px;
+              background: #f39902;
+              position: absolute;
+              left: -10px;
+              right: -10px;
+              bottom: -17px; }
+            .header .inner-header > .header-links > .nav > ul > li:HOVER > a {
+              color: #f39902; }
+            .header .inner-header > .header-links > .nav > ul > li > a {
+              position: relative;
+              top: 0;
+              left: 0;
+              cursor: pointer;
+              color: #595656;
+              text-decoration: none; }
+      .header .inner-header > .header-links > .header-login-box {
+        float: right;
+        list-style: none;
+        margin: 0;
+        margin-top: 8px;
+        padding: 0; }
+        .header .inner-header > .header-links > .header-login-box > li {
+          padding: 0 15px;
+          display: inline; }
+          .header .inner-header > .header-links > .header-login-box > li:first-child {
+            border-right: 2px solid #ececec; }
+          .header .inner-header > .header-links > .header-login-box > li > a {
+            color: #595656;
+            text-decoration: none; }
+            .header .inner-header > .header-links > .header-login-box > li > a:HOVER {
+              color: #f39902; }
+      .header .inner-header > .header-links > .user-box {
+        font-size: 16px;
+        color: #595656;
+        height: 16px;
+        float: right;
+        display: inline-block;
+        margin-top: 8px;
+        position: relative;
+        top: 0;
+        left: 0; }
+        .header .inner-header > .header-links > .user-box.open > ul {
+          display: block; }
+        .header .inner-header > .header-links > .user-box > label {
+          padding-right: 20px;
+          line-height: 16px;
+          display: block;
+          position: relative;
+          top: 0;
+          left: 0;
+          cursor: pointer; }
+          .header .inner-header > .header-links > .user-box > label:after {
+            content: '';
+            position: absolute;
+            top: 6px;
+            right: 0;
+            border: 5px solid #595656;
+            border-color: #595656 transparent transparent transparent; }
+        .header .inner-header > .header-links > .user-box > ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          position: absolute;
+          top: 33px;
+          left: 0;
+          right: 0;
+          background: #fff;
+          border: 1px solid #e5e5e5;
+          box-sizing: border-box;
+          line-height: 50px;
+          text-align: center;
+          display: none; }
+          .header .inner-header > .header-links > .user-box > ul > li:HOVER {
+            background: #f9bc55; }
+            .header .inner-header > .header-links > .user-box > ul > li:HOVER > a {
+              color: #fff; }
+          .header .inner-header > .header-links > .user-box > ul > li > a {
+            display: block;
+            text-decoration: none;
+            color: #595656;
+            font-size: 14px; }
+
+.footer {
+  height: 365px;
+  background: #494949;
+  text-align: center; }
+
+input[type=text], .std-input {
+  box-sizing: border-box;
+  border: 1px solid #e5e5e5;
+  width: 320px;
+  height: 50px;
+  padding-left: 5px;
+  padding-right: 5px;
+  outline: none; }
+  input[type=text]:FOCUS, .std-input:FOCUS {
+    border-color: #f39800; }
+  input[type=text][disabled], .std-input[disabled] {
+    border: 1px solid #e5e5e5 !important; }
+
+.std-submit-btn {
+  outline: none;
+  width: 320px;
+  height: 60px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+  background: #f9bc55;
+  border: 0;
+  border-bottom: 5px solid #f39800; }
+  .std-submit-btn:HOVER {
+    background: #f8b440; }
+  .std-submit-btn:ACTIVE {
+    background: #fba512; }
+
+.form-row {
+  margin-bottom: 15px; }
+
+input::-ms-clear {
+  display: none; }
+
+input::-ms-reveal {
+  display: none; }
+
+.std-btn {
+  font-size: 16px;
+  color: #1f1f1f;
+  background: #fff;
+  border: 1px solid #c7c7c7;
+  box-sizing: border-box;
+  padding: 8px 32px;
+  border-radius: 2px;
+  line-height: 1;
+  outline: none;
+  cursor: pointer; }
+  .std-btn:HOVER {
+    color: #fff;
+    background: #3996fd;
+    border-color: #3996fd; }
+
+.hint-btn {
+  font-size: 16px;
+  color: #1f1f1f;
+  background: #fff;
+  border: 1px solid #c7c7c7;
+  box-sizing: border-box;
+  padding: 8px 32px;
+  border-radius: 2px;
+  line-height: 1;
+  outline: none;
+  cursor: pointer; }
+  .hint-btn:HOVER {
+    color: #fff;
+    background: #f9bc55;
+    border-color: #f9bc55; }
+
+.hint-link {
+  color: #f39800;
+  text-decoration: none; }
+  .hint-link:HOVER {
+    text-decoration: underline; }

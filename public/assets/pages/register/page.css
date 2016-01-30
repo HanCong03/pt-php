@@ -1,0 +1,78 @@
+.register-box {
+  width: 1170px;
+  height: 1000px;
+  margin: 0 auto; }
+  .register-box > h1 {
+    color: #333333;
+    font-size: 16px;
+    margin: 40px 0 0 0;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid #e5e5e5; }
+  .register-box .form-table {
+    font-size: 14px;
+    width: 440px;
+    margin: 150px auto; }
+    .register-box .form-table input, .register-box .form-table button {
+      border-radius: 1px;
+      outline: none; }
+    .register-box .form-table input {
+      color: #333;
+      width: 100%;
+      height: 48px;
+      vertical-align: top;
+      padding-left: 20px;
+      padding-right: 20px;
+      border: 1px solid #e5e5e5;
+      box-sizing: border-box; }
+      .register-box .form-table input:FOCUS {
+        border-color: #f39800; }
+    .register-box .form-table .form-row {
+      width: 100%;
+      min-height: 48px;
+      font-size: 0;
+      margin-bottom: 15px; }
+      .register-box .form-table .form-row.error > i {
+        line-height: 30px;
+        font-size: 14px;
+        font-style: normal;
+        color: #e64e4e; }
+      .register-box .form-table .form-row.error input {
+        border-color: #e64e4e; }
+    .register-box .form-table .verify-code-input {
+      width: 266px;
+      margin-right: 15px; }
+    .register-box .form-table .phone-input {
+      width: 100%; }
+    .register-box .form-table .refresh-btn {
+      width: 159px;
+      height: 48px;
+      color: #fff;
+      background: #f9bc55;
+      font-size: 18px;
+      border: none;
+      cursor: pointer; }
+      .register-box .form-table .refresh-btn[disabled] {
+        color: #c7c7c7;
+        background: #ececec;
+        cursor: not-allowed; }
+    .register-box .form-table .submit-row {
+      width: 100%;
+      margin: 50px 0 15px 0; }
+      .register-box .form-table .submit-row .submit-btn {
+        width: 100%;
+        height: 60px;
+        cursor: pointer;
+        font-size: 18px;
+        color: #fff;
+        background: #f9bc55;
+        border: 0;
+        border-bottom: 5px solid #f39800; }
+        .register-box .form-table .submit-row .submit-btn:HOVER {
+          background: #f8b440; }
+        .register-box .form-table .submit-row .submit-btn:ACTIVE {
+          background: #fba512; }
+    .register-box .form-table .faq-link {
+      color: #f39800;
+      text-decoration: none; }
+      .register-box .form-table .faq-link:HOVER {
+        text-decoration: underline; }

@@ -1,0 +1,51 @@
+.reset-success-box {
+  width: 1170px;
+  height: 1000px;
+  margin: 0 auto;
+  color: #333; }
+  .reset-success-box > h1 {
+    font-size: 16px;
+    margin: 40px 0 0 0;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid #e5e5e5; }
+  .reset-success-box .reset-tip {
+    width: 320px;
+    text-align: center;
+    margin: 110px auto 40px auto; }
+    .reset-success-box .reset-tip:before {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 60px;
+      margin: 0 auto;
+      background-size: 60px 60px;
+      background-image: url(images/success.png); }
+      @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
+        .reset-success-box .reset-tip:before {
+          background-image: url(images/success@2.png); } }
+    .reset-success-box .reset-tip > h2 {
+      font-size: 24px;
+      margin: 0;
+      padding: 20px 0 25px 0; }
+    .reset-success-box .reset-tip > h3 {
+      color: #9a9a9a;
+      font-size: 14px;
+      margin: 0; }
+  .reset-success-box .login-link {
+    display: block;
+    width: 320px;
+    height: 60px;
+    cursor: pointer;
+    margin: 40px auto;
+    text-align: center;
+    text-decoration: none;
+    line-height: 60px;
+    font-size: 18px;
+    color: #fff;
+    background: #f9bc55;
+    border: 0;
+    border-bottom: 5px solid #f39800; }
+    .reset-success-box .login-link:HOVER {
+      background: #f8b440; }
+    .reset-success-box .login-link:ACTIVE {
+      background: #fba512; }

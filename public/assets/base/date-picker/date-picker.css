@@ -1,0 +1,28 @@
+.global-datepicker-wrap {
+  border: 1px solid #cfcfcf;
+  display: inline-block;
+  padding: 5px;
+  position: fixed;
+  top: -1000000px;
+  left: -1000000px;
+  z-index: 99999;
+  background: #fff; }
+  .global-datepicker-wrap .xdsoft_datetimepicker {
+    border: none;
+    padding: 0; }
+  .global-datepicker-wrap .xdsoft_datepicker {
+    margin: 0 !important; }
+  .global-datepicker-wrap .datepicker-btns {
+    margin-top: 5px; }
+  .global-datepicker-wrap .datepicker-btn {
+    border: 1px solid #cfcfcf;
+    background: #fff;
+    outline: none;
+    padding: 2px 10px;
+    cursor: pointer; }
+  .global-datepicker-wrap .datepicker-btn:HOVER {
+    background: #ff8000;
+    border-color: #ff7709;
+    color: #fff; }
+  .global-datepicker-wrap .datepicker-btn-ok {
+    float: right; }

@@ -1,0 +1,84 @@
+.login-box {
+  height: 1065px;
+  background: url(images/grain.png) repeat;
+  background-size: 4px 4px;
+  overflow: hidden; }
+  .login-box .login-inner-box {
+    width: 320px;
+    margin: 280px auto;
+    font-size: 14px;
+    color: #333333; }
+    .login-box .login-inner-box .form-row > i {
+      font-style: normal;
+      color: #e64e4e;
+      display: none;
+      line-height: 20px; }
+    .login-box .login-inner-box .form-row.error > i {
+      display: inline; }
+    .login-box .login-inner-box .form-row.error > input {
+      border-color: #e64e4e !important; }
+    .login-box .login-inner-box .username-input, .login-box .login-inner-box .password-input {
+      padding-left: 40px;
+      background-size: 15px 15px;
+      background-repeat: no-repeat;
+      background-position: 10px center; }
+    .login-box .login-inner-box .username-input {
+      background-image: url(images/username-icon.png); }
+      @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
+        .login-box .login-inner-box .username-input {
+          background-image: url(images/username-icon@2.png); } }
+    .login-box .login-inner-box .password-input {
+      background-image: url(images/password-icon.png); }
+      @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
+        .login-box .login-inner-box .password-input {
+          background-image: url(images/password-icon@2.png); } }
+    .login-box .login-inner-box .forget-link, .login-box .login-inner-box .register-link {
+      float: right; }
+    .login-box .login-inner-box .register-link-row:after {
+      content: '';
+      clear: both;
+      display: block; }
+    .login-box .login-inner-box .third-login-box {
+      color: #333333;
+      margin-top: 40px; }
+      .login-box .login-inner-box .third-login-box > h3 {
+        font-size: 14px;
+        text-align: center; }
+        .login-box .login-inner-box .third-login-box > h3 > span {
+          padding: 0 20px; }
+        .login-box .login-inner-box .third-login-box > h3::after, .login-box .login-inner-box .third-login-box > h3::before {
+          content: '';
+          display: inline-block;
+          width: 100px;
+          height: 1px;
+          background: #e5e5e5;
+          vertical-align: middle; }
+      .login-box .login-inner-box .third-login-box .link-box {
+        font-size: 0;
+        text-align: center; }
+        .login-box .login-inner-box .third-login-box .link-box > a {
+          display: inline-block;
+          width: 64px;
+          height: 64px;
+          margin: 15px;
+          background-size: 64px 128px;
+          background-repeat: no-repeat; }
+          .login-box .login-inner-box .third-login-box .link-box > a.qq {
+            background-image: url(images/qq-icon.png); }
+            @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
+              .login-box .login-inner-box .third-login-box .link-box > a.qq {
+                background-image: url(images/qq-icon@2.png); } }
+          .login-box .login-inner-box .third-login-box .link-box > a.weixin {
+            background-image: url(images/weixin-icon.png); }
+            @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
+              .login-box .login-inner-box .third-login-box .link-box > a.weixin {
+                background-image: url(images/weixin-icon@2.png); } }
+          .login-box .login-inner-box .third-login-box .link-box > a.sina {
+            background-image: url(images/sina-icon.png); }
+            @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
+              .login-box .login-inner-box .third-login-box .link-box > a.sina {
+                background-image: url(images/sina-icon@2.png); } }
+          .login-box .login-inner-box .third-login-box .link-box > a:HOVER {
+            background-position-y: -64px; }
+          .login-box .login-inner-box .third-login-box .link-box > a > span {
+            display: none; }

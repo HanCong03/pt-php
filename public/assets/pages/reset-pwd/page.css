@@ -1,0 +1,56 @@
+.reset-pwd-box {
+  width: 1170px;
+  height: 1000px;
+  margin: 0 auto; }
+  .reset-pwd-box > h1 {
+    color: #333;
+    font-size: 16px;
+    margin: 40px 0 0 0;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid #e5e5e5; }
+  .reset-pwd-box .form-table {
+    font-size: 14px;
+    width: 440px;
+    margin: 150px auto; }
+    .reset-pwd-box .form-table input, .reset-pwd-box .form-table button {
+      border-radius: 1px;
+      outline: none; }
+    .reset-pwd-box .form-table input {
+      color: #333;
+      width: 100%;
+      height: 48px;
+      vertical-align: top;
+      padding-left: 20px;
+      padding-right: 20px;
+      border: 1px solid #e5e5e5;
+      box-sizing: border-box; }
+      .reset-pwd-box .form-table input:FOCUS {
+        border-color: #f39800; }
+    .reset-pwd-box .form-table .form-row {
+      width: 100%;
+      height: 48px;
+      font-size: 0;
+      margin: 30px 0; }
+      .reset-pwd-box .form-table .form-row.error > i {
+        line-height: 30px;
+        font-size: 14px;
+        font-style: normal;
+        color: #e64e4e; }
+      .reset-pwd-box .form-table .form-row.error input {
+        border-color: #e64e4e; }
+    .reset-pwd-box .form-table .submit-row {
+      width: 100%;
+      margin: 50px 0; }
+      .reset-pwd-box .form-table .submit-row .submit-btn {
+        width: 100%;
+        height: 60px;
+        cursor: pointer;
+        font-size: 18px;
+        color: #fff;
+        background: #f9bc55;
+        border: 0;
+        border-bottom: 5px solid #f39800; }
+        .reset-pwd-box .form-table .submit-row .submit-btn:HOVER {
+          background: #f8b440; }
+        .reset-pwd-box .form-table .submit-row .submit-btn:ACTIVE {
+          background: #fba512; }

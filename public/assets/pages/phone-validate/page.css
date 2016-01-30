@@ -1,0 +1,80 @@
+.phone-validate-box {
+  width: 1170px;
+  height: 1000px;
+  margin: 0 auto; }
+  .phone-validate-box > h1 {
+    color: #333333;
+    font-size: 16px;
+    margin: 40px 0 0 0;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid #e5e5e5; }
+  .phone-validate-box .form-table {
+    font-size: 14px;
+    width: 440px;
+    margin: 150px auto; }
+    .phone-validate-box .form-table input, .phone-validate-box .form-table button {
+      border-radius: 1px; }
+    .phone-validate-box .form-table input {
+      color: #333;
+      outline: none;
+      height: 48px;
+      vertical-align: top;
+      padding-left: 20px;
+      padding-right: 20px;
+      border: 1px solid #e5e5e5;
+      box-sizing: border-box; }
+      .phone-validate-box .form-table input[disabled] {
+        background: #e5e5e5; }
+      .phone-validate-box .form-table input:FOCUS {
+        border-color: #f39800; }
+    .phone-validate-box .form-table button {
+      outline: none; }
+    .phone-validate-box .form-table .label-row {
+      width: 100%;
+      height: 48px;
+      line-height: 48px; }
+    .phone-validate-box .form-table .form-row {
+      width: 100%;
+      height: 48px;
+      font-size: 0;
+      margin-bottom: 15px; }
+      .phone-validate-box .form-table .form-row.error > i {
+        line-height: 30px;
+        font-size: 14px;
+        font-style: normal;
+        color: #e64e4e; }
+      .phone-validate-box .form-table .form-row.error input {
+        border-color: #e64e4e; }
+    .phone-validate-box .form-table .verify-code-input {
+      width: 266px;
+      margin-right: 15px; }
+    .phone-validate-box .form-table .phone-input {
+      width: 100%; }
+    .phone-validate-box .form-table .refresh-btn {
+      width: 159px;
+      height: 48px;
+      color: #fff;
+      background: #f9bc55;
+      font-size: 18px;
+      border: none;
+      cursor: pointer; }
+      .phone-validate-box .form-table .refresh-btn[disabled] {
+        color: #c7c7c7;
+        background: #ececec;
+        cursor: not-allowed; }
+    .phone-validate-box .form-table .submit-row {
+      width: 100%;
+      margin: 50px 0; }
+      .phone-validate-box .form-table .submit-row .submit-btn {
+        width: 100%;
+        height: 60px;
+        cursor: pointer;
+        font-size: 18px;
+        color: #fff;
+        background: #f9bc55;
+        border: 0;
+        border-bottom: 5px solid #f39800; }
+        .phone-validate-box .form-table .submit-row .submit-btn:HOVER {
+          background: #f8b440; }
+        .phone-validate-box .form-table .submit-row .submit-btn:ACTIVE {
+          background: #fba512; }

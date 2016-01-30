@@ -1,0 +1,14 @@
+.agreement-box {
+  width: 1170px;
+  margin: 0 auto;
+  color: #333; }
+  .agreement-box > h1 {
+    font-size: 16px;
+    margin: 40px 0 0 0;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid #e5e5e5; }
+  .agreement-box > .agreement-content {
+    width: 1090px;
+    margin: 55px auto;
+    font-size: 16px;
+    line-height: 1.5; }
