@@ -24,12 +24,12 @@
     <div class="right-box">
         <div class="right-head-box not-set">
             <img src="<?php echo e(asset('assets/default-user-head.jpg')); ?>" width="80px" height="80px">
-            <a href="/dev/modify-avatar.html" class="hint-link">添加头像</a>
+            <a href="<?php echo e(route('avatar')); ?>" class="hint-link">添加头像</a>
         </div>
 
         <div class="right-head-box setted">
             <img src="<?php echo e(asset('assets/user-head.png')); ?>" width="80px" height="80px">
-            <a href="/dev/modify-avatar.html" class="hint-link">修改头像</a>
+            <a href="<?php echo e(route('avatar')); ?>" class="hint-link">修改头像</a>
         </div>
     </div>
 

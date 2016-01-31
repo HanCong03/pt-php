@@ -54,23 +54,23 @@
 
 	/**
 	 * Author: hancong05@meituan.com
-	 * Date: 16/1/17
+	 * Date: 16/2/1
 	 */
 
 	'use strict';
 
 	jQuery(function ($) {
-	    var $serviceContents = $('.service-content > ul');
-	    var $serveceLabels = $('.service-list>li');
+	    $('.sub-menu>label').on('click', function () {
+	        var $mainItem = $(this.parentNode);
+	        var $ul = $('>ul', $mainItem);
 
-	    $serveceLabels.on('mouseover', function (e) {
-	        var index = $serveceLabels.index(this);
+	        if ($mainItem.hasClass('opened')) {
+	            $ul.slideUp(300);
+	        } else {
+	            $ul.slideDown(300);
+	        }
 
-	        $serveceLabels.removeClass('active');
-	        $(this).addClass('active');
-
-	        $serviceContents.removeClass('show');
-	        $($serviceContents[index]).addClass('show');
+	        $mainItem.toggleClass('opened');
 	    });
 	});
 

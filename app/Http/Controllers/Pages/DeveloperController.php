@@ -39,6 +39,12 @@ class DeveloperController extends Controller {
         ]);
     }
 
+    public function avatar() {
+        return view('developer/certification/avatar', [
+            'activeLabel' => '基本资料'
+        ]);
+    }
+
     public function certification() {
         $type = request()->input('type', 1);
 
@@ -51,6 +57,18 @@ class DeveloperController extends Controller {
         // 审核中
         } else if ($type == 2) {
             return view('developer/certification/review', [
+                'activeLabel' => '开发者认证'
+            ]);
+
+        // 认证成功
+        } else if ($type == 3) {
+            return view('developer/certification/success', [
+                'activeLabel' => '开发者认证'
+            ]);
+
+        // 认证失败
+        } else if ($type == 4) {
+            return view('developer/certification/failure', [
                 'activeLabel' => '开发者认证'
             ]);
         }

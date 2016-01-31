@@ -1,0 +1,174 @@
+[
+  {
+    "name": "基础支持类API",
+    "children": [
+      {
+        "name": "用户接口",
+        "classify": "user",
+        "children": []
+      },
+      {
+        "name": "安全性接口",
+        "classify": "security",
+        "children": [
+          {
+            "name": "用户基本信息",
+            "children": [
+              {
+                "name": "v3/user/get_info1",
+                "type": "读取接口",
+                "detail": {
+                  "desc": "获取指定行业用户详情（用户名等）列表",
+                  "url": "https://api.gintong.com/2/users/show.json",
+                  "data-type": "JSON",
+                  "http-method": "GET",
+                  "login": "TRUE",
+                  "ip-limit": "TRUE",
+                  "params": [
+                    {
+                      "name": "xxx",
+                      "required": "是",
+                      "type": "int",
+                      "desc": "1.邮箱注册,2.手机注册"
+                    }
+                  ],
+                  "remark": [
+                    "参数uid与user_name二者必选其一，且只能选其一；",
+                    "接口升级后：uid与user_name只能为当前授权用户；"
+                  ],
+                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns-field": [
+                    {
+                      "name": "id",
+                      "required": "是",
+                      "type": "long",
+                      "desc": "操作成功时返回用户ID"
+                    },
+                    {
+                      "name": "status",
+                      "required": "否",
+                      "type": "int",
+                      "desc": "操作状态:1.成功，0.失败"
+                    },
+                    {
+                      "name": "message",
+                      "required": "是",
+                      "type": "string",
+                      "desc": "返回操作成功或失败时消息"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "v3/user/get_info2",
+                "desc": "获取指定行业用户详情（用户名等）列表",
+                "type": "读取接口",
+                "detail": {
+                  "desc": "获取指定行业用户详情（用户名等）列表",
+                  "url": "https://api.gintong.com/2/users/show.json",
+                  "data-type": "JSON",
+                  "http-method": "GET",
+                  "login": "TRUE",
+                  "ip-limit": "TRUE",
+                  "params": [
+                    {
+                      "name": "xxx",
+                      "required": "是",
+                      "type": "int",
+                      "desc": "1.邮箱注册,2.手机注册"
+                    }
+                  ],
+                  "remark": [
+                    "参数uid与user_name二者必选其一，且只能选其一；",
+                    "接口升级后：uid与user_name只能为当前授权用户；"
+                  ],
+                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns-field": [
+                    {
+                      "name": "id",
+                      "required": "是",
+                      "type": "long",
+                      "desc": "操作成功时返回用户ID"
+                    },
+                    {
+                      "name": "status",
+                      "required": "否",
+                      "type": "int",
+                      "desc": "操作状态:1.成功，0.失败"
+                    },
+                    {
+                      "name": "message",
+                      "required": "是",
+                      "type": "string",
+                      "desc": "返回操作成功或失败时消息"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "分享接口",
+        "classify": "share",
+        "children": []
+      },
+      {
+        "name": "评论接口",
+        "classify": "comment",
+        "children": []
+      },
+      {
+        "name": "转发接口",
+        "classify": "forward",
+        "children": []
+      },
+      {
+        "name": "消息提醒接口",
+        "classify": "notify",
+        "children": []
+      },
+      {
+        "name": "收藏接口",
+        "classify": "collection",
+        "children": []
+      },
+      {
+        "name": "复制接口",
+        "classify": "copy",
+        "children": []
+      },
+      {
+        "name": "搜索接口",
+        "classify": "search",
+        "children": []
+      },
+      {
+        "name": "基础数据接口",
+        "classify": "base-data",
+        "children": []
+      },
+      {
+        "name": "文件上传接口",
+        "classify": "file-upload",
+        "children": []
+      },
+      {
+        "name": "拼音转换底层服务",
+        "classify": "conversion",
+        "children": []
+      }
+    ]
+  },
+  {
+    "name": "通用类API",
+    "classify": "common",
+    "children": []
+  },
+  {
+    "name": "功能增强类API",
+    "classify": "enhance",
+    "children": []
+  }
+]

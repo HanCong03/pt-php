@@ -42,13 +42,20 @@ Route::group([
         'uses' => 'PassportController@register'
     ]);
 
-    Route::get('agreement', ['as' => 'agreement', function () {
-        return view('agreement');
-    }]);
+    Route::get('agreement', [
+        'as' => 'agreement',
+        'uses' => 'PageController@agreement'
+    ]);
 
-    Route::get('verify-code-faq', ['as' => 'verify-code-faq', function () {
-        return view('verify-code-faq');
-    }]);
+    Route::get('contacts', [
+        'as' => 'contacts',
+        'uses' => 'PageController@contacts'
+    ]);
+
+    Route::get('verify-code-faq', [
+        'as' => 'verify-code-faq',
+        'uses' => 'PageController@verifyCodeFaq'
+    ]);
 
     Route::group([
         'middleware' => ['unlogin']
@@ -89,6 +96,11 @@ Route::group([
             'as' => 'developer-certification',
             'uses' => 'DeveloperController@certification'
         ]);
+
+        Route::get('avatar', [
+            'as' => 'avatar',
+            'uses' => 'DeveloperController@avatar'
+        ]);
     });
 
     // 文档类
@@ -119,6 +131,19 @@ Route::group([
         Route::get('recent-update', [
             'as' => 'recent-update',
             'uses' => 'DocumentController@recentUpdate'
+        ]);
+
+        Route::get('api', [
+            'as' => 'api-index',
+            'uses' => 'APIController@index'
+        ]);
+
+        Route::get('api/{classify}', [
+            'uses' => 'APIController@classify'
+        ]);
+
+        Route::get('api/{classify}/{api_name}', [
+            'uses' => 'APIController@detail'
         ]);
     });
 });

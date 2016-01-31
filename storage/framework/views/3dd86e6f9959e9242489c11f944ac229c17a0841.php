@@ -29,20 +29,20 @@
         <div class="header-links">
             <nav class="nav">
                 <ul>
-                    <li class="active">
+                    <li <?php echo e($navName === '首页' ? 'class=active' : ''); ?>>
                         <a href="<?php echo e(route('index')); ?>">首页</a>
                     </li>
-                    <li>
+                    <li <?php echo e($navName === '文档中心' ? 'class=active' : ''); ?>>
                         <a href="<?php echo e(route('document-index')); ?>">文档中心</a>
                     </li>
-                    <li>
-                        <a href="#">API库</a>
+                    <li <?php echo e($navName === 'API库' ? 'class=active' : ''); ?>>
+                        <a href="<?php echo e(route('api-index')); ?>">API库</a>
                     </li>
-                    <li>
+                    <li <?php echo e($navName === '开发者社区' ? 'class=active' : ''); ?>>
                         <a href="#">开发者社区</a>
                     </li>
-                    <li>
-                        <a href="#">联系我们</a>
+                    <li <?php echo e($navName === '联系我们' ? 'class=active' : ''); ?>>
+                        <a href="<?php echo e(route('contacts')); ?>">联系我们</a>
                     </li>
                 </ul>
             </nav>
@@ -76,7 +76,24 @@
 </div>
 
 <div class="footer">
-
+    <div class="footer-box">
+        <div class="left-footer">
+            <div class="android"></div>
+            <br/>
+            <div class="apple"></div>
+        </div>
+        <div class="right-footer">
+            <div class="copy">版权所有&copy;金桐网·京ICP证130290京公网安备11010502024991号</div>
+            <div class="wrap-box">
+                <div class="contact-phone">客服热线：4000-7000-11</div>
+                <div class="contact-email">hr@gintong.com</div>
+            </div>
+            <div class="wrap-box icon-box">
+                <a class="sina" href="#"><span>sina</span></a>
+                <a class="weixin" href="#"><span>weixin</span></a>
+            </div>
+        </div>
+    </div>
 </div>
 
 </body>

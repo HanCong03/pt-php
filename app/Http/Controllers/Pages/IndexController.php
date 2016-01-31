@@ -12,6 +12,7 @@ use App\Http\Controllers\Controller;
 
 class IndexController extends Controller {
     public function index() {
+        view()->share('navName', '首页');
         return view('index');
     }
 }

@@ -47,6 +47,7 @@
 	"use strict";
 
 	__webpack_require__(1);
+	__webpack_require__(2);
 
 /***/ },
 /* 1 */
@@ -54,23 +55,38 @@
 
 	/**
 	 * Author: hancong05@meituan.com
-	 * Date: 16/1/17
+	 * Date: 16/1/24
+	 */
+
+	'use strict';
+
+	SyntaxHighlighter.defaults.toolbar = false;
+	SyntaxHighlighter.defaults['pad-line-numbers'] = true;
+	SyntaxHighlighter.all();
+
+/***/ },
+/* 2 */
+/***/ function(module, exports) {
+
+	/**
+	 * Author: hancong05@meituan.com
+	 * Date: 16/2/1
 	 */
 
 	'use strict';
 
 	jQuery(function ($) {
-	    var $serviceContents = $('.service-content > ul');
-	    var $serveceLabels = $('.service-list>li');
+	    $('.sub-menu>label').on('click', function () {
+	        var $mainItem = $(this.parentNode);
+	        var $ul = $('>ul', $mainItem);
 
-	    $serveceLabels.on('mouseover', function (e) {
-	        var index = $serveceLabels.index(this);
+	        if ($mainItem.hasClass('opened')) {
+	            $ul.slideUp(300);
+	        } else {
+	            $ul.slideDown(300);
+	        }
 
-	        $serveceLabels.removeClass('active');
-	        $(this).addClass('active');
-
-	        $serviceContents.removeClass('show');
-	        $($serviceContents[index]).addClass('show');
+	        $mainItem.toggleClass('opened');
 	    });
 	});
 

@@ -70,7 +70,7 @@ html, body {
         float: right;
         list-style: none;
         margin: 0;
-        margin-top: 8px;
+        margin-top: 4px;
         padding: 0; }
         .header .inner-header > .header-links > .header-login-box > li {
           padding: 0 15px;
@@ -88,7 +88,7 @@ html, body {
         height: 16px;
         float: right;
         display: inline-block;
-        margin-top: 8px;
+        margin-top: 4px;
         position: relative;
         top: 0;
         left: 0; }
@@ -136,7 +136,109 @@ html, body {
 .footer {
   height: 365px;
   background: #494949;
-  text-align: center; }
+  text-align: center;
+  overflow: hidden; }
+  .footer .footer-box {
+    margin: 90px auto;
+    width: 1000px;
+    height: 185px;
+    font-size: 0;
+    line-height: 0; }
+    .footer .footer-box > div {
+      display: inline-block;
+      height: 100%;
+      vertical-align: top;
+      box-sizing: border-box;
+      padding: 15px 0; }
+    .footer .footer-box .left-footer {
+      text-align: right;
+      width: 400px;
+      height: 100%;
+      padding-right: 60px;
+      background-image: url(images/line.png);
+      background-size: 15px 185px;
+      background-position: right top;
+      background-repeat: no-repeat; }
+      @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
+        .footer .footer-box .left-footer {
+          background-image: url(images/line@2.png); } }
+      .footer .footer-box .left-footer .android, .footer .footer-box .left-footer .apple {
+        display: inline-block;
+        width: 188px;
+        height: 60px; }
+      .footer .footer-box .left-footer .android {
+        background-image: url(images/android.png);
+        background-size: 188px 60px; }
+        @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
+          .footer .footer-box .left-footer .android {
+            background-image: url(images/android@2.png); } }
+      .footer .footer-box .left-footer .apple {
+        margin-top: 35px;
+        background-image: url(images/apple.png);
+        background-size: 188px 60px; }
+        @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
+          .footer .footer-box .left-footer .apple {
+            background-image: url(images/apple@2.png); } }
+    .footer .footer-box .right-footer {
+      width: 600px;
+      padding-left: 60px;
+      padding-top: 30px;
+      color: #898788;
+      text-align: left;
+      font-size: 0;
+      line-height: 0; }
+      .footer .footer-box .right-footer .copy {
+        font-size: 14px;
+        line-height: 2;
+        margin-bottom: 30px; }
+      .footer .footer-box .right-footer .wrap-box {
+        display: inline-block;
+        vertical-align: top;
+        height: 55px;
+        line-height: 27.5px;
+        font-size: 14px; }
+        .footer .footer-box .right-footer .wrap-box > div:before {
+          content: '';
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 10px;
+          width: 22px;
+          height: 22px; }
+        .footer .footer-box .right-footer .wrap-box > div.contact-phone:before {
+          background-image: url(images/phone.png);
+          background-size: 22px 22px; }
+          @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
+            .footer .footer-box .right-footer .wrap-box > div.contact-phone:before {
+              background-image: url(images/phone@2.png); } }
+        .footer .footer-box .right-footer .wrap-box > div.contact-email:before {
+          background-image: url(images/mail.png);
+          background-size: 22px 22px; }
+          @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
+            .footer .footer-box .right-footer .wrap-box > div.contact-email:before {
+              background-image: url(images/mail@2.png); } }
+        .footer .footer-box .right-footer .wrap-box.icon-box {
+          padding-left: 30px; }
+          .footer .footer-box .right-footer .wrap-box.icon-box > a {
+            text-decoration: none;
+            display: inline-block;
+            vertical-align: top;
+            width: 55px;
+            height: 55px;
+            margin-right: 25px; }
+            .footer .footer-box .right-footer .wrap-box.icon-box > a.sina {
+              background-image: url(images/sina.png);
+              background-size: 55px 55px; }
+              @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
+                .footer .footer-box .right-footer .wrap-box.icon-box > a.sina {
+                  background-image: url(images/sina@2.png); } }
+            .footer .footer-box .right-footer .wrap-box.icon-box > a.weixin {
+              background-image: url(images/weixin.png);
+              background-size: 55px 55px; }
+              @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
+                .footer .footer-box .right-footer .wrap-box.icon-box > a.weixin {
+                  background-image: url(images/weixin@2.png); } }
+            .footer .footer-box .right-footer .wrap-box.icon-box > a > span {
+              display: none; }
 
 input[type=text], .std-input {
   box-sizing: border-box;

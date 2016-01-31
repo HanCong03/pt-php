@@ -182,15 +182,22 @@
       cursor: pointer;
       font-size: 14px;
       height: 48px;
+      color: #a0a0a0;
       margin-right: 130px; }
-      .data-box > .data-details > .service-list > li.active:before {
-        background-position: 0 0; }
+      .data-box > .data-details > .service-list > li.active {
+        color: #fff; }
+        .data-box > .data-details > .service-list > li.active:before {
+          border-color: #fff;
+          background-position: 0 0; }
       .data-box > .data-details > .service-list > li:before {
         content: '';
         display: inline-block;
         width: 48px;
         height: 48px;
         vertical-align: middle;
+        box-sizing: border-box;
+        border: 1px solid #a0a0a0;
+        border-radius: 100%;
         background-size: 48px 96px;
         background-repeat: no-repeat;
         background-position: 0 -48px; }
@@ -214,7 +221,6 @@
       .data-box > .data-details > .service-list > li > span {
         height: 24px;
         line-height: 24px;
-        color: #fff;
         background: rgba(28, 37, 53, 0.8);
         display: inline-block;
         position: relative;
@@ -236,9 +242,9 @@
     .data-box > .data-details > .service-content > ul {
       margin: 0;
       padding: 0;
-      color: #fff;
       text-align: left;
-      display: none; }
+      display: none;
+      color: #fff; }
       .data-box > .data-details > .service-content > ul.show {
         display: block; }
       .data-box > .data-details > .service-content > ul.service-content-item1 > li::after {

@@ -46,6 +46,7 @@ class DocumentController extends Controller {
         ];
 
         view()->share('menu', $this->menu);
+        view()->share('navName', '文档中心');
     }
 
     public function index() {
