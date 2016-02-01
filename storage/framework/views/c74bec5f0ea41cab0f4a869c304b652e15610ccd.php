@@ -43,7 +43,7 @@
 
                     <dt>URL</dt>
                     <dd>
-                        <a class="hint-link" href="<?php echo e($currentDetail['url']); ?>"><?php echo e($currentDetail['url']); ?></a>
+                        <a class="hint-link"><?php echo e($currentDetail['url']); ?></a>
                     </dd>
 
                     <dt>支持格式</dt>
@@ -70,6 +70,7 @@
                             </tr>
                             </thead>
                             <tbody>
+                            <?php if(count($currentDetail['params']) > 0): ?>
                             <?php foreach($currentDetail['params'] as $params): ?>
                             <tr>
                                 <td><?php echo e($params['name']); ?></td>
@@ -78,10 +79,16 @@
                                 <td><?php echo e($params['desc']); ?></td>
                             </tr>
                             <?php endforeach; ?>
+                            <?php else: ?>
+                            <tr>
+                                <td colspan="4">无</td>
+                            </tr>
+                            <?php endif; ?>
                             </tbody>
                         </table>
                     </dd>
 
+                    <?php if(count($currentDetail['remark']) > 0): ?>
                     <dt>注意事项</dt>
                     <dd>
                         <ul>
@@ -90,6 +97,7 @@
                             <?php endforeach; ?>
                         </ul>
                     </dd>
+                    <?php endif; ?>
 
                     <dt>正确返回结果</dt>
                     <dd>
@@ -102,6 +110,7 @@
 
                     <dt>返回字段说明</dt>
                     <dd>
+                        <?php if(is_array($currentDetail['returns-field'])): ?>
                         <table class="info-table">
                             <thead>
                             <tr>
@@ -112,6 +121,7 @@
                             </tr>
                             </thead>
                             <tbody>
+                            <?php if(count($currentDetail['returns-field']) > 0): ?>
                             <?php foreach($currentDetail['returns-field'] as $field): ?>
                             <tr>
                                 <td><?php echo e($field['name']); ?></td>
@@ -120,8 +130,17 @@
                                 <td><?php echo e($field['desc']); ?></td>
                             </tr>
                             <?php endforeach; ?>
+                            <?php else: ?>
+                            <tr>
+                                <td colspan="4">无</td>
+                            </tr>
+                            <?php endif; ?>
                             </tbody>
                         </table>
+                        <?php else: ?>
+                            <?php echo e($currentDetail['returns-field']); ?>
+
+                        <?php endif; ?>
                     </dd>
                 </div>
             </div>

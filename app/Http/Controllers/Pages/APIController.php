@@ -56,7 +56,7 @@ class APIController extends Controller {
 
         $apiName = str_replace('.', '/', $apiName);
 
-        if (!preg_grep('/^[^\/]+\/[^\/]+\/[^\/]+$/', [$apiName])) {
+        if (!preg_grep('/^[^\/]+\/[^\/]+(\/[^\/]+)?$/', [$apiName])) {
             return abort(404);
         }
 

@@ -9,8 +9,6 @@ class UserInfo {
     public function handle($request, Closure $next, $guard = null) {
         view()->share('user', session()->get('user', null));
 
-        Log::info(session()->get('user', null));
-
         return $next($request);
     }
 }

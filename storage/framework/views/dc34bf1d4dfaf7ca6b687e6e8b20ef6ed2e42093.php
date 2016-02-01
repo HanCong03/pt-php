@@ -54,21 +54,23 @@
                                 </thead>
                                 <tbody>
                                     <?php foreach($apiList1['children'] as $apiList2): ?>
+                                    <?php if(count($apiList2['children']) > 0): ?>
                                     <tr>
                                         <td rowspan=<?php echo e(count($apiList2['children'])); ?>><?php echo e($apiList2['name']); ?></td>
                                         <td><?php echo e($apiList2['children'][0]['type']); ?></td>
                                         <td class="left"><?php echo e($apiList2['children'][0]['detail']['desc']); ?></td>
-                                        <td class="left"><a href="/document/api/<?php echo e(str_replace('/', '.', $apiList2['children'][0]['name'])); ?>" class="hint-link"><?php echo e($apiList2['children'][0]['name']); ?></a></td>
+                                        <td class="left"><a href="/document/api/<?php echo e($apiList1['classify']); ?>/<?php echo e(str_replace('/', '.', $apiList2['children'][0]['name'])); ?>" class="hint-link"><?php echo e($apiList2['children'][0]['name']); ?></a></td>
                                     </tr>
                                         <?php foreach($apiList2['children'] as $apiIndex=>$apiItem): ?>
                                             <?php if($apiIndex !== 0): ?>
                                             <tr>
                                                 <td><?php echo e($apiItem['type']); ?></td>
                                                 <td class="left"><?php echo e($apiItem['detail']['desc']); ?></td>
-                                                <td class="left"><a href="/document/api/<?php echo e(str_replace('/', '.', $apiItem['name'])); ?>" class="hint-link"><?php echo e($apiList2['children'][0]['name']); ?></a></td>
+                                                <td class="left"><a href="/document/api/<?php echo e($apiList1['classify']); ?>/<?php echo e(str_replace('/', '.', $apiItem['name'])); ?>" class="hint-link"><?php echo e($apiItem['name']); ?></a></td>
                                             </tr>
                                             <?php endif; ?>
                                         <?php endforeach; ?>
+                                    <?php endif; ?>
                                     <?php endforeach; ?>
                                 </tbody>
                             </table>

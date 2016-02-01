@@ -45,7 +45,7 @@
 
                     <dt>URL</dt>
                     <dd>
-                        <a class="hint-link" href="{{$currentDetail['url']}}">{{$currentDetail['url']}}</a>
+                        <a class="hint-link">{{$currentDetail['url']}}</a>
                     </dd>
 
                     <dt>支持格式</dt>
@@ -72,6 +72,7 @@
                             </tr>
                             </thead>
                             <tbody>
+                            @if (count($currentDetail['params']) > 0)
                             @foreach ($currentDetail['params'] as $params)
                             <tr>
                                 <td>{{$params['name']}}</td>
@@ -80,10 +81,16 @@
                                 <td>{{$params['desc']}}</td>
                             </tr>
                             @endforeach
+                            @else
+                            <tr>
+                                <td colspan="4">无</td>
+                            </tr>
+                            @endif
                             </tbody>
                         </table>
                     </dd>
 
+                    @if (count($currentDetail['remark']) > 0)
                     <dt>注意事项</dt>
                     <dd>
                         <ul>
@@ -92,6 +99,7 @@
                             @endforeach
                         </ul>
                     </dd>
+                    @endif
 
                     <dt>正确返回结果</dt>
                     <dd>
@@ -104,6 +112,7 @@
 
                     <dt>返回字段说明</dt>
                     <dd>
+                        @if (is_array($currentDetail['returns-field']))
                         <table class="info-table">
                             <thead>
                             <tr>
@@ -114,6 +123,7 @@
                             </tr>
                             </thead>
                             <tbody>
+                            @if (count($currentDetail['returns-field']) > 0)
                             @foreach ($currentDetail['returns-field'] as $field)
                             <tr>
                                 <td>{{$field['name']}}</td>
@@ -122,8 +132,16 @@
                                 <td>{{$field['desc']}}</td>
                             </tr>
                             @endforeach
+                            @else
+                            <tr>
+                                <td colspan="4">无</td>
+                            </tr>
+                            @endif
                             </tbody>
                         </table>
+                        @else
+                            {{$currentDetail['returns-field']}}
+                        @endif
                     </dd>
                 </div>
             </div>

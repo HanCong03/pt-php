@@ -56,21 +56,23 @@
                                 </thead>
                                 <tbody>
                                     @foreach ($apiList1['children'] as $apiList2)
+                                    @if (count($apiList2['children']) > 0)
                                     <tr>
                                         <td rowspan={{count($apiList2['children'])}}>{{$apiList2['name']}}</td>
                                         <td>{{$apiList2['children'][0]['type']}}</td>
                                         <td class="left">{{$apiList2['children'][0]['detail']['desc']}}</td>
-                                        <td class="left"><a href="/document/api/{{str_replace('/', '.', $apiList2['children'][0]['name'])}}" class="hint-link">{{$apiList2['children'][0]['name']}}</a></td>
+                                        <td class="left"><a href="/document/api/{{$apiList1['classify']}}/{{str_replace('/', '.', $apiList2['children'][0]['name'])}}" class="hint-link">{{$apiList2['children'][0]['name']}}</a></td>
                                     </tr>
                                         @foreach ($apiList2['children'] as $apiIndex=>$apiItem)
                                             @if ($apiIndex !== 0)
                                             <tr>
                                                 <td>{{$apiItem['type']}}</td>
                                                 <td class="left">{{$apiItem['detail']['desc']}}</td>
-                                                <td class="left"><a href="/document/api/{{str_replace('/', '.', $apiItem['name'])}}" class="hint-link">{{$apiList2['children'][0]['name']}}</a></td>
+                                                <td class="left"><a href="/document/api/{{$apiList1['classify']}}/{{str_replace('/', '.', $apiItem['name'])}}" class="hint-link">{{$apiItem['name']}}</a></td>
                                             </tr>
                                             @endif
                                         @endforeach
+                                    @endif
                                     @endforeach
                                 </tbody>
                             </table>

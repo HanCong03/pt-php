@@ -3,104 +3,316 @@
     "name": "基础支持类API",
     "children": [
       {
-        "name": "用户接口",
-        "classify": "user",
-        "children": []
-      },
-      {
-        "name": "安全性接口",
-        "classify": "security",
+        "name": "数据字典",
+        "classify": "data-dict",
         "children": [
           {
-            "name": "用户基本信息",
+            "name": "分类",
             "children": [
               {
-                "name": "v3/user/get_info1",
+                "name": "metadata/code/getFunctionClassList",
                 "type": "读取接口",
                 "detail": {
-                  "desc": "获取指定行业用户详情（用户名等）列表",
-                  "url": "https://api.gintong.com/2/users/show.json",
+                  "desc": "查询大分类",
+                  "url": "http://[域名]/metadata/code/getFunctionClassList",
                   "data-type": "JSON",
                   "http-method": "GET",
                   "login": "TRUE",
-                  "ip-limit": "TRUE",
-                  "params": [
-                    {
-                      "name": "xxx",
-                      "required": "是",
-                      "type": "int",
-                      "desc": "1.邮箱注册,2.手机注册"
-                    }
-                  ],
-                  "remark": [
-                    "参数uid与user_name二者必选其一，且只能选其一；",
-                    "接口升级后：uid与user_name只能为当前授权用户；"
-                  ],
+                  "ip-limit": "FALSE",
+                  "params": [],
+                  "remark": [],
                   "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
                   "returns-field": [
                     {
                       "name": "id",
                       "required": "是",
                       "type": "long",
-                      "desc": "操作成功时返回用户ID"
+                      "desc": "Code 的 Id"
                     },
                     {
-                      "name": "status",
-                      "required": "否",
-                      "type": "int",
-                      "desc": "操作状态:1.成功，0.失败"
-                    },
-                    {
-                      "name": "message",
+                      "name": "name",
                       "required": "是",
                       "type": "string",
-                      "desc": "返回操作成功或失败时消息"
+                      "desc": "Code 的 名字"
                     }
                   ]
                 }
               },
               {
-                "name": "v3/user/get_info2",
-                "desc": "获取指定行业用户详情（用户名等）列表",
+                "name": "metadata/code/getSubFuctionClassList",
                 "type": "读取接口",
                 "detail": {
-                  "desc": "获取指定行业用户详情（用户名等）列表",
-                  "url": "https://api.gintong.com/2/users/show.json",
+                  "desc": "查询子分类",
+                  "url": "http://[域名]/metadata/code/getSubFuctionClassList",
                   "data-type": "JSON",
                   "http-method": "GET",
                   "login": "TRUE",
-                  "ip-limit": "TRUE",
-                  "params": [
-                    {
-                      "name": "xxx",
-                      "required": "是",
-                      "type": "int",
-                      "desc": "1.邮箱注册,2.手机注册"
-                    }
-                  ],
-                  "remark": [
-                    "参数uid与user_name二者必选其一，且只能选其一；",
-                    "接口升级后：uid与user_name只能为当前授权用户；"
-                  ],
+                  "ip-limit": "FALSE",
+                  "params": [],
+                  "remark": [],
                   "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
                   "returns-field": [
                     {
                       "name": "id",
                       "required": "是",
                       "type": "long",
-                      "desc": "操作成功时返回用户ID"
+                      "desc": "Code 的 Id"
                     },
                     {
-                      "name": "status",
-                      "required": "否",
-                      "type": "int",
-                      "desc": "操作状态:1.成功，0.失败"
-                    },
-                    {
-                      "name": "message",
+                      "name": "name",
                       "required": "是",
                       "type": "string",
-                      "desc": "返回操作成功或失败时消息"
+                      "desc": "Code 的 名字"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "name": "地区",
+            "children": [
+              {
+                "name": "metadata/region/getProvinces",
+                "type": "读取接口",
+                "detail": {
+                  "desc": "查询省",
+                  "url": "http://[域名]/metadata/region/getProvinces",
+                  "data-type": "JSON",
+                  "http-method": "GET",
+                  "login": "TRUE",
+                  "ip-limit": "FALSE",
+                  "params": [],
+                  "remark": [],
+                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns-field": [
+                    {
+                      "name": "id",
+                      "required": "是",
+                      "type": "long",
+                      "desc": "省ID"
+                    },
+                    {
+                      "name": "cname",
+                      "required": "是",
+                      "type": "string",
+                      "desc": "省名称"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "metadata/region/getCitys",
+                "type": "读取接口",
+                "detail": {
+                  "desc": "查询指定省下边有多少市",
+                  "url": "http://[域名]/metadata/region/getCitys",
+                  "data-type": "JSON",
+                  "http-method": "GET",
+                  "login": "TRUE",
+                  "ip-limit": "FALSE",
+                  "params": [
+                    {
+                      "name": "provinceId",
+                      "required": "是",
+                      "type": "long",
+                      "desc": "省ID"
+                    }
+                  ],
+                  "remark": [],
+                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns-field": [
+                    {
+                      "name": "id",
+                      "required": "是",
+                      "type": "long",
+                      "desc": "城市ID"
+                    },
+                    {
+                      "name": "cname",
+                      "required": "是",
+                      "type": "string",
+                      "desc": "城市名称"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "metadata/region/getDistrictCounty",
+                "type": "读取接口",
+                "detail": {
+                  "desc": "查询城市包括的区县",
+                  "url": "http://[域名]/metadata/region/getDistrictCounty",
+                  "data-type": "JSON",
+                  "http-method": "GET",
+                  "login": "TRUE",
+                  "ip-limit": "FALSE",
+                  "params": [
+                    {
+                      "name": "cityId",
+                      "required": "是",
+                      "type": "long",
+                      "desc": "城市的ID"
+                    }
+                  ],
+                  "remark": [],
+                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns-field": [
+                    {
+                      "name": "id",
+                      "required": "是",
+                      "type": "long",
+                      "desc": "区县id"
+                    },
+                    {
+                      "name": "cname",
+                      "required": "是",
+                      "type": "string",
+                      "desc": "区县名称"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "metadata/region/getHongKongMacao",
+                "type": "读取接口",
+                "detail": {
+                  "desc": "查询港澳地区信息",
+                  "url": "http://[域名]/metadata/region/getHongKongMacao",
+                  "data-type": "JSON",
+                  "http-method": "GET",
+                  "login": "TRUE",
+                  "ip-limit": "FALSE",
+                  "params": [
+                    {
+                      "name": "pId",
+                      "required": "否",
+                      "type": "long",
+                      "desc": "如果输入值返回指定区域下边的子区域，不输入返回港澳的区域"
+                    }
+                  ],
+                  "remark": [],
+                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns-field": [
+                    {
+                      "name": "id",
+                      "required": "是",
+                      "type": "long",
+                      "desc": "区域ID"
+                    },
+                    {
+                      "name": "name",
+                      "required": "是",
+                      "type": "string",
+                      "desc": "区域名称 名字"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "metadata/region/getTaiWan",
+                "type": "读取接口",
+                "detail": {
+                  "desc": "查询台湾地区信息",
+                  "url": "http://[域名]/metadata/region/getTaiWan",
+                  "data-type": "JSON",
+                  "http-method": "GET",
+                  "login": "TRUE",
+                  "ip-limit": "FALSE",
+                  "params": [
+                    {
+                      "name": "pId",
+                      "required": "否",
+                      "type": "long",
+                      "desc": "如果输入值返回指定区域下边的子区域，不输入返回自己"
+                    }
+                  ],
+                  "remark": [],
+                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns-field": [
+                    {
+                      "name": "id",
+                      "required": "是",
+                      "type": "long",
+                      "desc": "区域ID"
+                    },
+                    {
+                      "name": "name",
+                      "required": "是",
+                      "type": "string",
+                      "desc": "区域名称 名字"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "metadata/region/getMalaysia",
+                "type": "读取接口",
+                "detail": {
+                  "desc": "查询马来西亚地区信息",
+                  "url": "http://[域名]/metadata/region/getMalaysia",
+                  "data-type": "JSON",
+                  "http-method": "GET",
+                  "login": "TRUE",
+                  "ip-limit": "FALSE",
+                  "params": [
+                    {
+                      "name": "pId",
+                      "required": "否",
+                      "type": "long",
+                      "desc": "如果输入值返回指定区域下边的子区域，不输入返回自己"
+                    }
+                  ],
+                  "remark": [],
+                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns-field": [
+                    {
+                      "name": "id",
+                      "required": "是",
+                      "type": "long",
+                      "desc": "区域ID"
+                    },
+                    {
+                      "name": "name",
+                      "required": "是",
+                      "type": "string",
+                      "desc": "区域名字"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "metadata/region/getForignCountry",
+                "type": "读取接口",
+                "detail": {
+                  "desc": "查询海外地区信息",
+                  "url": "http://[域名]/metadata/region/getForignCountry",
+                  "data-type": "JSON",
+                  "http-method": "GET",
+                  "login": "TRUE",
+                  "ip-limit": "FALSE",
+                  "params": [
+                    {
+                      "name": "pId",
+                      "required": "否",
+                      "type": "long",
+                      "desc": "如果输入值返回指定区域下边的子区域，不输入返回自己"
+                    }
+                  ],
+                  "remark": [],
+                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns-field": [
+                    {
+                      "name": "id",
+                      "required": "是",
+                      "type": "long",
+                      "desc": "区域ID"
+                    },
+                    {
+                      "name": "name",
+                      "required": "是",
+                      "type": "string",
+                      "desc": "区域名字"
                     }
                   ]
                 }
@@ -110,65 +322,2657 @@
         ]
       },
       {
-        "name": "分享接口",
-        "classify": "share",
-        "children": []
+        "name": "敏感词",
+        "classify": "sensitive-words",
+        "children": [
+          {
+            "name": "敏感词",
+            "children": [
+              {
+                "name": "sensitive/word/saveSensitiveWord",
+                "type": "写入接口",
+                "detail": {
+                  "desc": "添加敏感词",
+                  "url": "http://[域名]/sensitive/word/saveSensitive",
+                  "data-type": "JSON",
+                  "http-method": "GET POST",
+                  "login": "TRUE",
+                  "ip-limit": "FALSE",
+                  "params": [
+                    {
+                      "name": "access_token",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "access_token 授权access_token"
+                    },
+                    {
+                      "name": "word",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "敏感词"
+                    },
+                    {
+                      "name": "level",
+                      "required": "否",
+                      "type": "int",
+                      "desc": "敏感词等级，默认2；0一般、1普通、2高危、3更高、4再高、5再再高"
+                    },
+                    {
+                      "name": "type",
+                      "required": "否",
+                      "type": "int",
+                      "desc": "敏感词类型 默认0； 0 一般 、1时政 、2涉黄"
+                    }
+                  ],
+                  "remark": [],
+                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns-field": [
+                    {
+                      "name": "word",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "敏感词"
+                    },
+                    {
+                      "name": "level",
+                      "required": "否",
+                      "type": "int",
+                      "desc": "敏感词等级，默认2；0一般、1普通、2高危、3更高、4再高、5再再高"
+                    },
+                    {
+                      "name": "type",
+                      "required": "否",
+                      "type": "int",
+                      "desc": "敏感词类型 默认0； 0 一般 、1时政 、2涉黄"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "sensitive/word/checkWord",
+                "type": "读取接口",
+                "detail": {
+                  "desc": "校验文本是否包含敏感词",
+                  "url": "http://[域名]/sensitive/word/checkWord",
+                  "data-type": "JSON",
+                  "http-method": "GET POST",
+                  "login": "TRUE",
+                  "ip-limit": "FALSE",
+                  "params": [
+                    {
+                      "name": "access_token",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "access_token 授权access_token"
+                    },
+                    {
+                      "name": "text",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "需要校验的文本内容"
+                    }
+                  ],
+                  "remark": [],
+                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns-field": "返回文本中包含的敏感词列表"
+                }
+              },
+              {
+                "name": "sensitive/word/getSensitiveWordById",
+                "type": "读取接口",
+                "detail": {
+                  "desc": "通过id获取敏感词",
+                  "url": "http://[域名]/sensitive/word/getSensitiveWordById",
+                  "data-type": "JSON",
+                  "http-method": "GET POST",
+                  "login": "TRUE",
+                  "ip-limit": "FALSE",
+                  "params": [
+                    {
+                      "name": "access_token",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "access_token 授权access_token"
+                    },
+                    {
+                      "name": "id",
+                      "required": "是",
+                      "type": "Long",
+                      "desc": "敏感词对象id"
+                    }
+                  ],
+                  "remark": [],
+                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns-field": [
+                    {
+                      "name": "id",
+                      "required": "是",
+                      "type": "Long",
+                      "desc": "敏感词id"
+                    },
+                    {
+                      "name": "word",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "敏感词"
+                    },
+                    {
+                      "name": "level",
+                      "required": "是",
+                      "type": "int",
+                      "desc": "敏感词等级"
+                    },
+                    {
+                      "name": "type",
+                      "required": "是",
+                      "type": "int",
+                      "desc": "敏感词类型"
+                    },
+                    {
+                      "name": "appId",
+                      "required": "是",
+                      "type": "Long",
+                      "desc": "appId应用id"
+                    },
+                    {
+                      "name": "createrId",
+                      "required": "是",
+                      "type": "Long",
+                      "desc": "创建人id"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
       },
       {
-        "name": "评论接口",
-        "classify": "comment",
-        "children": []
+        "name": "文件",
+        "classify": "file",
+        "children": [
+          {
+            "name": "文件上传",
+            "children": [
+              {
+                "name": "file/upload",
+                "type": "写入接口",
+                "detail": {
+                  "desc": "文件上传",
+                  "url": "http://[域名]/file/upload",
+                  "data-type": "JSON",
+                  "http-method": "POST",
+                  "login": "TRUE",
+                  "ip-limit": "FALSE",
+                  "params": [
+                    {
+                      "name": "access_token",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "access_token 授权access_token"
+                    },
+                    {
+                      "name": "file",
+                      "required": "是",
+                      "type": "File",
+                      "desc": "上传文件"
+                    },
+                    {
+                      "name": "taskId",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "taskId用于标记文件"
+                    },
+                    {
+                      "name": "fileType",
+                      "required": "否",
+                      "type": "int",
+                      "desc": "文件类型 1-图片，2-视频，3-音频, 4-文档, 5-附件，默认值为1"
+                    },
+                    {
+                      "name": "moduleType",
+                      "required": "否",
+                      "type": "int",
+                      "desc": "模块类型 1:用户头像、2：知识模块、3：人脉模块、4：需求模块、5：组织客户 、6：会议模块 、7：其他（可扩展）默认值为1"
+                    }
+                  ],
+                  "remark": [],
+                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns-field": [
+                    {
+                      "name": "id",
+                      "required": "是",
+                      "type": "Long",
+                      "desc": "索引文件id"
+                    },
+                    {
+                      "name": "filePath",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "文件存放的物理路径"
+                    },
+                    {
+                      "name": "serverHost",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "文件服务器所在组"
+                    },
+                    {
+                      "name": "fileTitle",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "源文件的名称"
+                    },
+                    {
+                      "name": "taskId",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "标识文件的taskId"
+                    },
+                    {
+                      "name": "moduleType",
+                      "required": "是",
+                      "type": "int",
+                      "desc": "类型\t1:用户头像、2：知识模块、3：人脉模块、4：需求模块、5：组织客户 、6：会议模块 、7：其他（可扩展）"
+                    },
+                    {
+                      "name": "fileType",
+                      "required": "是",
+                      "type": "int",
+                      "desc": "类型\t1-图片，2-视频，3-音频, 4-文档, 5-附件"
+                    },
+                    {
+                      "name": "thumbnailsPath",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "缩略图地址"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "file/deleteById",
+                "type": "写入接口",
+                "detail": {
+                  "desc": "通过文件索引Id删除文件",
+                  "url": "http://[域名]/file/deleteById",
+                  "data-type": "JSON",
+                  "http-method": "POST",
+                  "login": "TRUE",
+                  "ip-limit": "FALSE",
+                  "params": [
+                    {
+                      "name": "access_token",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "access_token 授权access_token"
+                    },
+                    {
+                      "name": "indexId",
+                      "required": "是",
+                      "type": "Long",
+                      "desc": "索引文件ID"
+                    }
+                  ],
+                  "remark": [],
+                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns-field": "true or false"
+                }
+              },
+              {
+                "name": "file/scissorImage",
+                "type": "写入接口",
+                "detail": {
+                  "desc": "根据坐标截取图片，并生成缩略图",
+                  "url": "http://[域名]/file/scissorImage",
+                  "data-type": "JSON",
+                  "http-method": "POST",
+                  "login": "TRUE",
+                  "ip-limit": "FALSE",
+                  "params": [
+                    {
+                      "name": "access_token",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "access_token 授权access_token"
+                    },
+                    {
+                      "name": "indexId",
+                      "required": "是",
+                      "type": "Long",
+                      "desc": "索引文件id"
+                    },
+                    {
+                      "name": "xStart",
+                      "required": "是",
+                      "type": "int",
+                      "desc": "需要截取图片的x起始坐标"
+                    },
+                    {
+                      "name": "yStart",
+                      "required": "是",
+                      "type": "int",
+                      "desc": "需要截取图片的y起始坐标"
+                    },
+                    {
+                      "name": "xEnd",
+                      "required": "是",
+                      "type": "int",
+                      "desc": "需要截取图片的x截止坐标"
+                    },
+                    {
+                      "name": "yEnd",
+                      "required": "是",
+                      "type": "int",
+                      "desc": "需要截取图片的y截止坐标"
+                    }
+                  ],
+                  "remark": [],
+                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns-field": [
+                    {
+                      "name": "id",
+                      "required": "是",
+                      "type": "Long",
+                      "desc": "索引文件id"
+                    },
+                    {
+                      "name": "filePath",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "文件存放的物理路径"
+                    },
+                    {
+                      "name": "serverHost",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "文件服务器所在组"
+                    },
+                    {
+                      "name": "fileTitle",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "源文件的名称"
+                    },
+                    {
+                      "name": "taskId",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "标识文件的taskId"
+                    },
+                    {
+                      "name": "moduleType",
+                      "required": "是",
+                      "type": "int",
+                      "desc": "类型\t1:用户头像、2：知识模块、3：人脉模块、4：需求模块、5：组织客户 、6：会议模块 、7：其他（可扩展）"
+                    },
+                    {
+                      "name": "fileType",
+                      "required": "是",
+                      "type": "int",
+                      "desc": "类型\t1-图片，2-视频，3-音频, 4-文档, 5-附件"
+                    },
+                    {
+                      "name": "thumbnailsPath",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "缩略图地址"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "file/getFileIndexesByTaskId",
+                "type": "读取接口",
+                "detail": {
+                  "desc": "通过taskId获取上传文件",
+                  "url": "http://[域名]/file/getFileIndexesByTaskId",
+                  "data-type": "JSON",
+                  "http-method": "POST",
+                  "login": "TRUE",
+                  "ip-limit": "FALSE",
+                  "params": [
+                    {
+                      "name": "appKey",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "应用的Key"
+                    },
+                    {
+                      "name": "userId",
+                      "required": "是",
+                      "type": "Long",
+                      "desc": "用户id"
+                    },
+                    {
+                      "name": "taskId",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "taskId"
+                    }
+                  ],
+                  "remark": [],
+                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns-field": [
+                    {
+                      "name": "id",
+                      "required": "是",
+                      "type": "Long",
+                      "desc": "索引文件id"
+                    },
+                    {
+                      "name": "filePath",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "文件存放的物理路径"
+                    },
+                    {
+                      "name": "serverHost",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "文件服务器所在组"
+                    },
+                    {
+                      "name": "fileTitle",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "源文件的名称"
+                    },
+                    {
+                      "name": "taskId",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "标识文件的taskId"
+                    },
+                    {
+                      "name": "moduleType",
+                      "required": "是",
+                      "type": "int",
+                      "desc": "类型\t1:用户头像、2：知识模块、3：人脉模块、4：需求模块、5：组织客户 、6：会议模块 、7：其他（可扩展）"
+                    },
+                    {
+                      "name": "fileType",
+                      "required": "是",
+                      "type": "int",
+                      "desc": "类型\t1-图片，2-视频，3-音频, 4-文档, 5-附件"
+                    },
+                    {
+                      "name": "thumbnailsPath",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "缩略图地址"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
       },
       {
-        "name": "转发接口",
-        "classify": "forward",
-        "children": []
+        "name": "消息",
+        "classify": "message",
+        "children": [
+          {
+            "name": "消息",
+            "children": [
+              {
+                "name": "message/message/createMessageEntity",
+                "type": "写入接口",
+                "detail": {
+                  "desc": "生成消息",
+                  "url": "http://[域名]/message/message/createMessageEntity",
+                  "data-type": "JSON",
+                  "http-method": "POST",
+                  "login": "TRUE",
+                  "ip-limit": "FALSE",
+                  "params": [
+                    {
+                      "name": "access_token",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "access_token 授权access_token"
+                    },
+                    {
+                      "name": "content",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "消息体内容"
+                    },
+                    {
+                      "name": "sourceId",
+                      "required": "是",
+                      "type": "Long",
+                      "desc": "消息源Id"
+                    },
+                    {
+                      "name": "sourceType",
+                      "required": "是",
+                      "type": "int",
+                      "desc": "消息源类型"
+                    },
+                    {
+                      "name": "sourceTitle",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "消息源标题"
+                    },
+                    {
+                      "name": "type",
+                      "required": "是",
+                      "type": "int",
+                      "desc": "消息类型 消息类型 1:添加好友；2：@好友；3：点赞；4：评论；5：留言。可扩展"
+                    },
+                    {
+                      "name": "receiverIds",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "消息接受人信息，以逗号分隔的用户id"
+                    }
+                  ],
+                  "remark": [],
+                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns-field": [
+                    {
+                      "name": "id",
+                      "required": "是",
+                      "type": "Long",
+                      "desc": "索引文件id"
+                    },
+                    {
+                      "name": "filePath",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "文件存放的物理路径"
+                    },
+                    {
+                      "name": "serverHost",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "文件服务器所在组"
+                    },
+                    {
+                      "name": "fileTitle",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "源文件的名称"
+                    },
+                    {
+                      "name": "taskId",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "标识文件的taskId"
+                    },
+                    {
+                      "name": "moduleType",
+                      "required": "是",
+                      "type": "int",
+                      "desc": "类型\t1:用户头像、2：知识模块、3：人脉模块、4：需求模块、5：组织客户 、6：会议模块 、7：其他（可扩展）"
+                    },
+                    {
+                      "name": "fileType",
+                      "required": "是",
+                      "type": "int",
+                      "desc": "类型\t1-图片，2-视频，3-音频, 4-文档, 5-附件"
+                    },
+                    {
+                      "name": "thumbnailsPath",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "缩略图地址"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "message/message/getEntityById",
+                "type": "读取接口",
+                "detail": {
+                  "desc": "通过消息Id获取消息",
+                  "url": "http://[域名]/message/message/getEntityById",
+                  "data-type": "JSON",
+                  "http-method": "GET POST",
+                  "login": "TRUE",
+                  "ip-limit": "FALSE",
+                  "params": [
+                    {
+                      "name": "access_token",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "access_token 授权access_token"
+                    },
+                    {
+                      "name": "entityId",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "消息实体ID"
+                    }
+                  ],
+                  "remark": [],
+                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns-field": [
+                    {
+                      "name": "id",
+                      "required": "是",
+                      "type": "Long",
+                      "desc": "消息实体id"
+                    },
+                    {
+                      "name": "createrId",
+                      "required": "是",
+                      "type": "Long",
+                      "desc": "消息发送人id"
+                    },
+                    {
+                      "name": "content",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "消息实体内容"
+                    },
+                    {
+                      "name": "sourceId",
+                      "required": "否",
+                      "type": "Long",
+                      "desc": "消息链接源id"
+                    },
+                    {
+                      "name": "sourceType",
+                      "required": "否",
+                      "type": "String",
+                      "desc": "消息链接源类型"
+                    },
+                    {
+                      "name": "sourceTitle",
+                      "required": "否",
+                      "type": "String",
+                      "desc": "消息链接源标题"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "message/message/getEntityByUserId",
+                "type": "读取接口",
+                "detail": {
+                  "desc": "获取用户特定消息列表",
+                  "url": "http://[域名]/message/message/getEntityByUserId",
+                  "data-type": "JSON",
+                  "http-method": "POST",
+                  "login": "TRUE",
+                  "ip-limit": "FALSE",
+                  "params": [
+                    {
+                      "name": "access_token",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "access_token 授权access_token"
+                    },
+                    {
+                      "name": "type",
+                      "required": "是",
+                      "type": "int",
+                      "desc": "消息类型 消息类型 1:添加好友；2：@好友；3：点赞；4：评论；5：留言。可扩展"
+                    }
+                  ],
+                  "remark": [],
+                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns-field": [
+                    {
+                      "name": "id",
+                      "required": "是",
+                      "type": "Long",
+                      "desc": "消息实体id"
+                    },
+                    {
+                      "name": "createrId",
+                      "required": "是",
+                      "type": "Long",
+                      "desc": "消息发送人id"
+                    },
+                    {
+                      "name": "content",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "消息实体内容"
+                    },
+                    {
+                      "name": "sourceId",
+                      "required": "否",
+                      "type": "Long",
+                      "desc": "消息链接源id"
+                    },
+                    {
+                      "name": "sourceType",
+                      "required": "否",
+                      "type": "String",
+                      "desc": "消息链接源类型"
+                    },
+                    {
+                      "name": "sourceTitle",
+                      "required": "否",
+                      "type": "String",
+                      "desc": "消息链接源标题"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
       },
       {
-        "name": "消息提醒接口",
-        "classify": "notify",
-        "children": []
-      },
-      {
-        "name": "收藏接口",
-        "classify": "collection",
-        "children": []
-      },
-      {
-        "name": "复制接口",
-        "classify": "copy",
-        "children": []
-      },
-      {
-        "name": "搜索接口",
-        "classify": "search",
-        "children": []
-      },
-      {
-        "name": "基础数据接口",
-        "classify": "base-data",
-        "children": []
-      },
-      {
-        "name": "文件上传接口",
-        "classify": "file-upload",
-        "children": []
-      },
-      {
-        "name": "拼音转换底层服务",
-        "classify": "conversion",
-        "children": []
+        "name": "用户",
+        "classify": "user",
+        "children": [
+          {
+            "name": "登录注册全登出",
+            "children": [
+              {
+                "name": "user/user/register",
+                "type": "写入接口",
+                "detail": {
+                  "desc": "手机和邮箱注册",
+                  "url": "http://[域名]/user/user/register",
+                  "data-type": "JSON",
+                  "http-method": "POST",
+                  "login": "TRUE",
+                  "ip-limit": "FALSE",
+                  "params": [
+                    {
+                      "name": "type",
+                      "required": "是",
+                      "type": "int",
+                      "desc": "1.邮箱注册,2.手机注册"
+                    },
+                    {
+                      "name": "code",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "手机验证码"
+                    },
+                    {
+                      "name": "name",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "目录的名字"
+                    },
+                    {
+                      "name": "passport",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "邮箱和手机号"
+                    },
+                    {
+                      "name": "password",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "用户密码"
+                    },
+                    {
+                      "name": "userType",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "0.个人用户,1.组织用户"
+                    },
+                    {
+                      "name": "firstIndustryIds",
+                      "required": "否",
+                      "type": "Long[]",
+                      "desc": "一级行业ID数组"
+                    },
+                    {
+                      "name": "name",
+                      "required": "否",
+                      "type": "String",
+                      "desc": "昵称,企业全称"
+                    },
+                    {
+                      "name": "shortName",
+                      "required": "否",
+                      "type": "String",
+                      "desc": "企业简称"
+                    },
+                    {
+                      "name": "picId",
+                      "required": "否",
+                      "type": "Long",
+                      "desc": "个人或组织LOGOID"
+                    },
+                    {
+                      "name": "businessLicencePicId",
+                      "required": "否",
+                      "type": "Long",
+                      "desc": "企业执照图片ID"
+                    },
+                    {
+                      "name": "stockCode",
+                      "required": "否",
+                      "type": "String",
+                      "desc": "股票代码"
+                    },
+                    {
+                      "name": "orgType",
+                      "required": "否",
+                      "type": "String",
+                      "desc": "组织类型"
+                    },
+                    {
+                      "name": "companyContactsMobile",
+                      "required": "否",
+                      "type": "String",
+                      "desc": "组织联系人电话"
+                    },
+                    {
+                      "name": "companyContacts",
+                      "required": "否",
+                      "type": "String",
+                      "desc": "组织联系人"
+                    },
+                    {
+                      "name": "idcardFrontPicId",
+                      "required": "否",
+                      "type": "String",
+                      "desc": "组织联系人身份证正面照片id"
+                    },
+                    {
+                      "name": "idcardBackPicId",
+                      "required": "否",
+                      "type": "String",
+                      "desc": "联系人身份证背面照片id"
+                    }
+                  ],
+                  "remark": [],
+                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns-field": [
+                    {
+                      "name": "id",
+                      "required": "否",
+                      "type": "Long",
+                      "desc": "操作成功时返回用户ID"
+                    },
+                    {
+                      "name": "status",
+                      "required": "是",
+                      "type": "int",
+                      "desc": "操作状态:1.成功，0.失败"
+                    },
+                    {
+                      "name": "message",
+                      "required": "否",
+                      "type": "String",
+                      "desc": "返回操作成功或失败时消息"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "user/user/login",
+                "type": "写入接口",
+                "detail": {
+                  "desc": "用户登录",
+                  "url": "http://[域名]/user/user/login",
+                  "data-type": "JSON",
+                  "http-method": "POST",
+                  "login": "TRUE",
+                  "ip-limit": "FALSE",
+                  "params": [
+                    {
+                      "name": "passport",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "邮箱或者手机号"
+                    },
+                    {
+                      "name": "password",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "用户密码"
+                    }
+                  ],
+                  "remark": [],
+                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns-field": [
+                    {
+                      "name": "status",
+                      "required": "是",
+                      "type": "int",
+                      "desc": "操作状态:1.成功，0.失败"
+                    },
+                    {
+                      "name": "message",
+                      "required": "否",
+                      "type": "String",
+                      "desc": "返回操作成功或失败时消息"
+                    },
+                    {
+                      "name": "access_token",
+                      "required": "否",
+                      "type": "String",
+                      "desc": "认证访问token"
+                    },
+                    {
+                      "name": "refresh_token",
+                      "required": "否",
+                      "type": "String",
+                      "desc": "刷新token"
+                    },
+                    {
+                      "name": "token_type",
+                      "required": "否",
+                      "type": "String",
+                      "desc": "token类型"
+                    },
+                    {
+                      "name": "scope",
+                      "required": "否",
+                      "type": "String",
+                      "desc": "授权范围"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "user/user/validatPassport",
+                "type": "读取接口",
+                "detail": {
+                  "desc": "验证passport是否已经存在",
+                  "url": "http://[域名]/user/user/validatPassport",
+                  "data-type": "JSON",
+                  "http-method": "GET",
+                  "login": "TRUE",
+                  "ip-limit": "FALSE",
+                  "params": [
+                    {
+                      "name": "passport",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "用户通行证"
+                    }
+                  ],
+                  "remark": [],
+                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns-field": [
+                    {
+                      "name": "status",
+                      "required": "是",
+                      "type": "int",
+                      "desc": "操作状态:1.成功，0.失败"
+                    },
+                    {
+                      "name": "message",
+                      "required": "否",
+                      "type": "String",
+                      "desc": "返回操作成功或失败时消息"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "user/user/getUserIdAndAppId",
+                "type": "读取接口",
+                "detail": {
+                  "desc": "获取当前登录用户的userId及appId",
+                  "url": "http://[域名]/user/user/getUserIdAndAppId",
+                  "data-type": "JSON",
+                  "http-method": "GET",
+                  "login": "TRUE",
+                  "ip-limit": "FALSE",
+                  "params": [
+                    {
+                      "name": "access_token",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "认证token"
+                    }
+                  ],
+                  "remark": [],
+                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns-field": [
+                    {
+                      "name": "status",
+                      "required": "是",
+                      "type": "int",
+                      "desc": "操作状态:1.成功，0.失败"
+                    },
+                    {
+                      "name": "message",
+                      "required": "否",
+                      "type": "String",
+                      "desc": "返回操作成功或失败时消息"
+                    },
+                    {
+                      "name": "userId",
+                      "required": "否",
+                      "type": "String",
+                      "desc": "返回操作成功或失败时消息"
+                    },
+                    {
+                      "name": "appId",
+                      "required": "否",
+                      "type": "Long",
+                      "desc": "返回操作成功或失败时消息"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "user/user/logout",
+                "type": "读取接口",
+                "detail": {
+                  "desc": "用户登出",
+                  "url": "http://[域名]/user/user/logout",
+                  "data-type": "JSON",
+                  "http-method": "GET",
+                  "login": "TRUE",
+                  "ip-limit": "FALSE",
+                  "params": [
+                    {
+                      "name": "access_token",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "用户认证的access_token"
+                    }
+                  ],
+                  "remark": [],
+                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns-field": [
+                    {
+                      "name": "status",
+                      "required": "是",
+                      "type": "int",
+                      "desc": "操作状态:1.成功，0.失败"
+                    },
+                    {
+                      "name": "message",
+                      "required": "否",
+                      "type": "String",
+                      "desc": "返回操作成功或失败时消息"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "name": "验证码",
+            "children": [
+              {
+                "name": "user/user/getIdentifyingCode",
+                "type": "读取接口",
+                "detail": {
+                  "desc": "获取手机注册和邮箱注册验证码",
+                  "url": "http://[域名]/user/user/getIdentifyingCode",
+                  "data-type": "JSON",
+                  "http-method": "GET",
+                  "login": "TRUE",
+                  "ip-limit": "FALSE",
+                  "params": [
+                    {
+                      "name": "passport",
+                      "required": "是",
+                      "type": "Long",
+                      "desc": "用户通行证,即邮箱或手机号"
+                    }
+                  ],
+                  "remark": [],
+                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns-field": [
+                    {
+                      "name": "status",
+                      "required": "是",
+                      "type": "int",
+                      "desc": "操作状态:1.成功，0.失败"
+                    },
+                    {
+                      "name": "code",
+                      "required": "否",
+                      "type": "String",
+                      "desc": "手机或邮箱验证码"
+                    },
+                    {
+                      "name": "message",
+                      "required": "否",
+                      "type": "String",
+                      "desc": "返回操作成功或失败时消息"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "user/user/getBackPasswordCode",
+                "type": "读取接口",
+                "detail": {
+                  "desc": "手机和邮箱找回密码获取验证码",
+                  "url": "http://[域名]/user/user/getBackPasswordCode",
+                  "data-type": "JSON",
+                  "http-method": "GET",
+                  "login": "TRUE",
+                  "ip-limit": "FALSE",
+                  "params": [
+                    {
+                      "name": "passport",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "手机号"
+                    }
+                  ],
+                  "remark": [],
+                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns-field": [
+                    {
+                      "name": "status",
+                      "required": "是",
+                      "type": "int",
+                      "desc": "操作状态:1.成功，0.失败"
+                    },
+                    {
+                      "name": "code",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "返回的验证码"
+                    },
+                    {
+                      "name": "message",
+                      "required": "否",
+                      "type": "String",
+                      "desc": "返回操作成功或失败时消息"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "user/user/validateEmail",
+                "type": "读取接口",
+                "detail": {
+                  "desc": "邮箱找回密码验证地址",
+                  "url": "http://[域名]/user/user/validateEmail",
+                  "data-type": "JSON",
+                  "http-method": "GET",
+                  "login": "TRUE",
+                  "ip-limit": "FALSE",
+                  "params": [
+                    {
+                      "name": "email",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "注册邮箱帐号"
+                    },
+                    {
+                      "name": "code",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "邮箱验证码"
+                    }
+                  ],
+                  "remark": [],
+                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns-field": [
+                    {
+                      "name": "status",
+                      "required": "是",
+                      "type": "int",
+                      "desc": "操作状态:1.成功，0.失败"
+                    },
+                    {
+                      "name": "message",
+                      "required": "否",
+                      "type": "String",
+                      "desc": "返回操作成功或失败时消息"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "name": "密码",
+            "children": [
+              {
+                "name": "user/user/updatepassword",
+                "type": "写入接口",
+                "detail": {
+                  "desc": "修改密码",
+                  "url": "http://[域名]/user/user/updatepassword",
+                  "data-type": "JSON",
+                  "http-method": "POST",
+                  "login": "TRUE",
+                  "ip-limit": "FALSE",
+                  "params": [
+                    {
+                      "name": "oldpassword",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "旧用户密码"
+                    },
+                    {
+                      "name": "newpassword",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "新用户密码"
+                    },
+                    {
+                      "name": "access_token",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "在用户通过oauth认证后可获取access_token"
+                    }
+                  ],
+                  "remark": [],
+                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns-field": [
+                    {
+                      "name": "status",
+                      "required": "是",
+                      "type": "int",
+                      "desc": "操作状态:1.成功，0.失败"
+                    },
+                    {
+                      "name": "message",
+                      "required": "否",
+                      "type": "String",
+                      "desc": "返回操作成功或失败时消息"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "user/user/resetPassword",
+                "type": "写入接口",
+                "detail": {
+                  "desc": "重置密码",
+                  "url": "http://[域名]/user/user/resetPassword",
+                  "data-type": "JSON",
+                  "http-method": "POST",
+                  "login": "TRUE",
+                  "ip-limit": "FALSE",
+                  "params": [
+                    {
+                      "name": "password",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "旧用户密码"
+                    },
+                    {
+                      "name": "confirmPassword",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "新用户密码"
+                    },
+                    {
+                      "name": "code",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "手机或邮箱验证码"
+                    },
+                    {
+                      "name": "passport",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "手机号或者邮箱"
+                    }
+                  ],
+                  "remark": [],
+                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns-field": [
+                    {
+                      "name": "status",
+                      "required": "是",
+                      "type": "int",
+                      "desc": "操作状态:1.成功，0.失败"
+                    },
+                    {
+                      "name": "code",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "返回的验证码"
+                    },
+                    {
+                      "name": "message",
+                      "required": "否",
+                      "type": "String",
+                      "desc": "返回操作成功或失败时消息"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "name": "用户资料",
+            "children": [
+              {
+                "name": "user/user/getUserDetail",
+                "type": "读取接口",
+                "detail": {
+                  "desc": "获取用户资料",
+                  "url": "http://[域名]/user/user/getUserDetail",
+                  "data-type": "JSON",
+                  "http-method": "GET",
+                  "login": "TRUE",
+                  "ip-limit": "FALSE",
+                  "params": [
+                    {
+                      "name": "access_token",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "在用户通过oauth认证后可获取access_token"
+                    }
+                  ],
+                  "remark": [],
+                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns-field": [
+                    {
+                      "name": "status",
+                      "required": "是",
+                      "type": "int",
+                      "desc": "操作状态:1.成功，0.失败"
+                    },
+                    {
+                      "name": "userExt",
+                      "required": "是",
+                      "type": "UserExt",
+                      "desc": "用户扩展对象"
+                    },
+                    {
+                      "name": "userLoginRegister",
+                      "required": "是",
+                      "type": "UserLoginRegister",
+                      "desc": "用户登录注册对象"
+                    },
+                    {
+                      "name": "userBasic",
+                      "required": "否",
+                      "type": "UserBasic",
+                      "desc": "用户基本信息对象"
+                    },
+                    {
+                      "name": "userOrganBasic",
+                      "required": "否",
+                      "type": "UserOrganBasic",
+                      "desc": "组织用户基本信息对象"
+                    },
+                    {
+                      "name": "userOrganExt",
+                      "required": "否",
+                      "type": "UserOrganExt",
+                      "desc": "组织用户扩展信息对象"
+                    },
+                    {
+                      "name": "userDefinedList",
+                      "required": "否",
+                      "type": "List<userDefine>",
+                      "desc": "用户自定义信息列表"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "user/user/updateUser",
+                "type": "写入接口",
+                "detail": {
+                  "desc": "修改资料",
+                  "url": "http://[域名]/user/user/updateUser",
+                  "data-type": "JSON",
+                  "http-method": "POST",
+                  "login": "TRUE",
+                  "ip-limit": "FALSE",
+                  "params": [
+                    {
+                      "name": "type",
+                      "required": "是",
+                      "type": "int",
+                      "desc": "1.邮箱注册,2.手机注册"
+                    },
+                    {
+                      "name": "code",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "手机验证码"
+                    },
+                    {
+                      "name": "name",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "目录的名字"
+                    },
+                    {
+                      "name": "access_token",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "在用户通过oauth认证后可获取access_token"
+                    },
+                    {
+                      "name": "name",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "昵称,企业全称"
+                    },
+                    {
+                      "name": "sex",
+                      "required": "否",
+                      "type": "String",
+                      "desc": "性别"
+                    },
+                    {
+                      "name": "picId",
+                      "required": "是",
+                      "type": "Long",
+                      "desc": "个人或组织LOGOID"
+                    },
+                    {
+                      "name": "shortName",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "企业简称"
+                    },
+                    {
+                      "name": "firstIndustryIds",
+                      "required": "是",
+                      "type": "Long[]",
+                      "desc": "一级行业ID数组"
+                    },
+                    {
+                      "name": "userDefineds",
+                      "required": "否",
+                      "type": "String[]",
+                      "desc": "用户自定义内容数组"
+                    },
+                    {
+                      "name": "email",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "邮箱"
+                    },
+                    {
+                      "name": "phone",
+                      "required": "否",
+                      "type": "String",
+                      "desc": "企业电话"
+                    },
+                    {
+                      "name": "brief",
+                      "required": "否",
+                      "type": "String",
+                      "desc": "企业简介"
+                    },
+                    {
+                      "name": "companyName",
+                      "required": "否",
+                      "type": "String",
+                      "desc": "公司名称"
+                    },
+                    {
+                      "name": "companyJob",
+                      "required": "否",
+                      "type": "String",
+                      "desc": "职业"
+                    },
+                    {
+                      "name": "mobile",
+                      "required": "否",
+                      "type": "String",
+                      "desc": "个人手机号"
+                    },
+                    {
+                      "name": "provinceId",
+                      "required": "否",
+                      "type": "String",
+                      "desc": "省ID"
+                    },
+                    {
+                      "name": "cityId",
+                      "required": "否",
+                      "type": "String",
+                      "desc": "市ID"
+                    },
+                    {
+                      "name": "countyId",
+                      "required": "否",
+                      "type": "String",
+                      "desc": "县ID"
+                    }
+                  ],
+                  "remark": [],
+                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns-field": [
+                    {
+                      "name": "status",
+                      "required": "是",
+                      "type": "int",
+                      "desc": "操作状态:1.成功，0.失败"
+                    },
+                    {
+                      "name": "passport",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "操作成功时返回用户passport"
+                    },
+                    {
+                      "name": "message",
+                      "required": "否",
+                      "type": "String",
+                      "desc": "返回操作成功或失败时消息"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "name": "好友",
+            "children": [
+              {
+                "name": "user/user/getOrgFriendlylList",
+                "type": "读取接口",
+                "detail": {
+                  "desc": "根据userId获取用户我的里面的组织好友列表",
+                  "url": "http://[域名]/user/user/getOrgFriendlylList",
+                  "data-type": "JSON",
+                  "http-method": "GET",
+                  "login": "TRUE",
+                  "ip-limit": "FALSE",
+                  "params": [
+                    {
+                      "name": "access_token",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "在用户通过oauth认证后可获取access_token"
+                    },
+                    {
+                      "name": "start",
+                      "required": "是",
+                      "type": "Long",
+                      "desc": "开始位置 0为起始位置"
+                    },
+                    {
+                      "name": "count",
+                      "required": "是",
+                      "type": "Long",
+                      "desc": "每页多少个"
+                    }
+                  ],
+                  "remark": [],
+                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns-field": [
+                    {
+                      "name": "status",
+                      "required": "是",
+                      "type": "int",
+                      "desc": "操作状态:1.成功，0.失败"
+                    },
+                    {
+                      "name": "list",
+                      "required": "否",
+                      "type": "List<UserOrgPerCusRel",
+                      "desc": "好友列表"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "user/user/getUserFriendlyList",
+                "type": "读取接口",
+                "detail": {
+                  "desc": "根据userId获取用户我的里面的个人好友列表",
+                  "url": "http://[域名]/user/user/getUserFriendlyList",
+                  "data-type": "JSON",
+                  "http-method": "GET",
+                  "login": "TRUE",
+                  "ip-limit": "FALSE",
+                  "params": [
+                    {
+                      "name": "access_token",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "在用户通过oauth认证后可获取access_token"
+                    },
+                    {
+                      "name": "start",
+                      "required": "是",
+                      "type": "Long",
+                      "desc": "开始位置 0为起始位置"
+                    },
+                    {
+                      "name": "count",
+                      "required": "是",
+                      "type": "Long",
+                      "desc": "每页多少个"
+                    }
+                  ],
+                  "remark": [],
+                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns-field": [
+                    {
+                      "name": "status",
+                      "required": "是",
+                      "type": "int",
+                      "desc": "操作状态:1.成功，0.失败"
+                    },
+                    {
+                      "name": "list",
+                      "required": "否",
+                      "type": "List<UserOrgPerCusRel>",
+                      "desc": "好友列表"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "user/user/getUserAndOrgFriendlyList",
+                "type": "读取接口",
+                "detail": {
+                  "desc": "根据userId获取用户通讯录个人和组织好友列表",
+                  "url": "http://[域名]/user/user/getUserAndOrgFriendlyList",
+                  "data-type": "JSON",
+                  "http-method": "GET",
+                  "login": "TRUE",
+                  "ip-limit": "FALSE",
+                  "params": [
+                    {
+                      "name": "access_token",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "在用户通过oauth认证后可获取access_token"
+                    },
+                    {
+                      "name": "start",
+                      "required": "是",
+                      "type": "Long",
+                      "desc": "开始位置 0为起始位置"
+                    },
+                    {
+                      "name": "count",
+                      "required": "是",
+                      "type": "Long",
+                      "desc": "每页多少个"
+                    }
+                  ],
+                  "remark": [],
+                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns-field": [
+                    {
+                      "name": "status",
+                      "required": "是",
+                      "type": "int",
+                      "desc": "操作状态:1.成功，0.失败"
+                    },
+                    {
+                      "name": "list",
+                      "required": "否",
+                      "type": "List<UserOrgPerCusRel>",
+                      "desc": "好友列表"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "user/user/applyToAddFriendly",
+                "type": "写入接口",
+                "detail": {
+                  "desc": "申请添加好友",
+                  "url": "http://[域名]/user/user/applyToAddFriendly",
+                  "data-type": "JSON",
+                  "http-method": "POST",
+                  "login": "TRUE",
+                  "ip-limit": "FALSE",
+                  "params": [
+                    {
+                      "name": "access_token",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "在用户通过oauth认证后可获取access_token"
+                    },
+                    {
+                      "name": "friendId",
+                      "required": "是",
+                      "type": "Long",
+                      "desc": "要添加的好友的用户ID"
+                    },
+                    {
+                      "name": "content",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "添加用户时发送的消息"
+                    },
+                    {
+                      "name": "status",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "申请状态"
+                    }
+                  ],
+                  "remark": [],
+                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns-field": [
+                    {
+                      "name": "status",
+                      "required": "是",
+                      "type": "int",
+                      "desc": "操作状态:1.成功，0.失败"
+                    },
+                    {
+                      "name": "message",
+                      "required": "否",
+                      "type": "String",
+                      "desc": "返回操作成功或失败时消息"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "user/user/auditByAddFriendly",
+                "type": "写入接口",
+                "detail": {
+                  "desc": "同意添加好友",
+                  "url": "http://[域名]/user/user/auditByAddFriendly",
+                  "data-type": "JSON",
+                  "http-method": "POST",
+                  "login": "TRUE",
+                  "ip-limit": "FALSE",
+                  "params": [
+                    {
+                      "name": "access_token",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "在用户通过oauth认证后可获取access_token"
+                    },
+                    {
+                      "name": "friendId",
+                      "required": "是",
+                      "type": "Long",
+                      "desc": "要添加的好友的用户ID"
+                    },
+                    {
+                      "name": "status",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "申请状态"
+                    },
+                    {
+                      "name": "relationId",
+                      "required": "是",
+                      "type": "Long",
+                      "desc": "推送消息关系id"
+                    }
+                  ],
+                  "remark": [],
+                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns-field": [
+                    {
+                      "name": "status",
+                      "required": "是",
+                      "type": "int",
+                      "desc": "操作状态:1.成功，0.失败"
+                    },
+                    {
+                      "name": "message",
+                      "required": "否",
+                      "type": "String",
+                      "desc": "返回操作成功或失败时消息"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "user/user/deleteFriendly",
+                "type": "写入接口",
+                "detail": {
+                  "desc": "删除好友",
+                  "url": "http://[域名]/user/user/deleteFriendly",
+                  "data-type": "JSON",
+                  "http-method": "POST",
+                  "login": "TRUE",
+                  "ip-limit": "FALSE",
+                  "params": [
+                    {
+                      "name": "access_token",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "在用户通过oauth认证后可获取access_token"
+                    },
+                    {
+                      "name": "friendId",
+                      "required": "是",
+                      "type": "Long",
+                      "desc": "要添加的好友的用户ID"
+                    }
+                  ],
+                  "remark": [],
+                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns-field": [
+                    {
+                      "name": "status",
+                      "required": "是",
+                      "type": "int",
+                      "desc": "操作状态:1.成功，0.失败"
+                    },
+                    {
+                      "name": "message",
+                      "required": "否",
+                      "type": "String",
+                      "desc": "返回操作成功或失败时消息"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "name": "行业用户",
+            "children": [
+              {
+                "name": "user/user/getUserListByProvinceId",
+                "type": "读取接口",
+                "detail": {
+                  "desc": "根据地区省ID获取用户列表",
+                  "url": "http://[域名]/user/user/getUserListByProvinceId",
+                  "data-type": "JSON",
+                  "http-method": "GET",
+                  "login": "TRUE",
+                  "ip-limit": "FALSE",
+                  "params": [
+                    {
+                      "name": "access_token",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "在用户通过oauth认证后可获取access_token"
+                    },
+                    {
+                      "name": "provinceId",
+                      "required": "是",
+                      "type": "Long",
+                      "desc": "省ID"
+                    },
+                    {
+                      "name": "start",
+                      "required": "是",
+                      "type": "Long",
+                      "desc": "开始位置 0为起始位置"
+                    },
+                    {
+                      "name": "count",
+                      "required": "是",
+                      "type": "Long",
+                      "desc": "每页多少个"
+                    }
+                  ],
+                  "remark": [],
+                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns-field": [
+                    {
+                      "name": "status",
+                      "required": "是",
+                      "type": "int",
+                      "desc": "操作状态:1.成功，0.失败"
+                    },
+                    {
+                      "name": "message",
+                      "required": "否",
+                      "type": "String",
+                      "desc": "返回操作成功或失败时消息"
+                    },
+                    {
+                      "name": "list",
+                      "required": "否",
+                      "type": "List<UserBasic",
+                      "desc": "用户列表"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "name": "地区用户",
+            "children": [
+              {
+                "name": "user/user/getUserListByThirdIndustryId",
+                "type": "读取接口",
+                "detail": {
+                  "desc": "根据第三级行业ID获取用户列表",
+                  "url": "http://[域名]/user/user/getUserListByThirdIndustryId",
+                  "data-type": "JSON",
+                  "http-method": "GET",
+                  "login": "TRUE",
+                  "ip-limit": "FALSE",
+                  "params": [
+                    {
+                      "name": "access_token",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "在用户通过oauth认证后可获取access_token"
+                    },
+                    {
+                      "name": "thirdIndustryId",
+                      "required": "是",
+                      "type": "Long",
+                      "desc": "三级行业ID"
+                    },
+                    {
+                      "name": "start",
+                      "required": "是",
+                      "type": "Long",
+                      "desc": "开始位置 0为起始位置"
+                    },
+                    {
+                      "name": "count",
+                      "required": "是",
+                      "type": "Long",
+                      "desc": "每页多少个"
+                    }
+                  ],
+                  "remark": [],
+                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns-field": [
+                    {
+                      "name": "status",
+                      "required": "是",
+                      "type": "int",
+                      "desc": "操作状态:1.成功，0.失败"
+                    },
+                    {
+                      "name": "message",
+                      "required": "否",
+                      "type": "String",
+                      "desc": "返回操作成功或失败时消息"
+                    },
+                    {
+                      "name": "list",
+                      "required": "否",
+                      "type": "List<UserBasic",
+                      "desc": "用户列表"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
       }
     ]
   },
   {
-    "name": "通用类API",
-    "classify": "common",
-    "children": []
-  },
-  {
     "name": "功能增强类API",
-    "classify": "enhance",
-    "children": []
+    "children": [
+      {
+        "name": "目录",
+        "classify": "directory",
+        "children": [
+          {
+            "name": "目录",
+            "children": [
+              {
+                "name": "directory/directory/getRootList",
+                "type": "读取接口",
+                "detail": {
+                  "desc": "查询一个应用分类下边的根目录",
+                  "url": "http://[域名]/directory/directory/getRootList",
+                  "data-type": "JSON",
+                  "http-method": "GET",
+                  "login": "TRUE",
+                  "ip-limit": "FALSE",
+                  "params": [
+                    {
+                      "name": "rootType",
+                      "required": "是",
+                      "type": "Number",
+                      "desc": "应用的分类Id 参考：查询目录的类型"
+                    }
+                  ],
+                  "remark": [],
+                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns-field": [
+                    {
+                      "name": "appKey",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "应用的Key"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "directory/directory/getSubList",
+                "type": "读取接口",
+                "detail": {
+                  "desc": "查询子目录",
+                  "url": "http://[域名]/directory/directory/getSubList",
+                  "data-type": "JSON",
+                  "http-method": "GET",
+                  "login": "TRUE",
+                  "ip-limit": "FALSE",
+                  "params": [
+                    {
+                      "name": "pid",
+                      "required": "是",
+                      "type": "Number",
+                      "desc": "父目录ID"
+                    }
+                  ],
+                  "remark": [],
+                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns-field": [
+                    {
+                      "name": "id",
+                      "required": "是",
+                      "type": "Long",
+                      "desc": "目录的ID"
+                    },
+                    {
+                      "name": "name",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "目录的名称"
+                    },
+                    {
+                      "name": "typeId",
+                      "required": "是",
+                      "type": "Long",
+                      "desc": "目录的类型"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "directory/directory/createRootDirectory",
+                "type": "写入接口",
+                "detail": {
+                  "desc": "创建根目录",
+                  "url": "http://[域名]/directory/directory/createRootDirectory",
+                  "data-type": "JSON",
+                  "http-method": "POST",
+                  "login": "TRUE",
+                  "ip-limit": "FALSE",
+                  "params": [
+                    {
+                      "name": "name",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "目录的名字，长度必须小于30，不能是空串"
+                    },
+                    {
+                      "name": "rootType",
+                      "required": "是",
+                      "type": "int",
+                      "desc": "应用根据自己的定义输入：比如桐人中的文档、标签。参考：查询目录的类型"
+                    }
+                  ],
+                  "remark": [],
+                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns-field": [
+                    {
+                      "name": "id",
+                      "required": "是",
+                      "type": "Number",
+                      "desc": "新创建的根目录ID"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "directory/directory/createSubDirectory",
+                "type": "写入接口",
+                "detail": {
+                  "desc": "创建子目录",
+                  "url": "http://[域名]/directory/directory/createSubDirectory",
+                  "data-type": "JSON",
+                  "http-method": "POST",
+                  "login": "TRUE",
+                  "ip-limit": "FALSE",
+                  "params": [
+                    {
+                      "name": "name",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "目录的名字，长度必须小于30，不能是空串"
+                    },
+                    {
+                      "name": "rootType",
+                      "required": "是",
+                      "type": "int",
+                      "desc": "应用根据自己的定义输入：比如桐人中的文档、标签。参考：查询目录的类型"
+                    }
+                  ],
+                  "remark": [],
+                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns-field": [
+                    {
+                      "name": "id",
+                      "required": "是",
+                      "type": "Number",
+                      "desc": "新创建的根目录ID"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "directory/directory/deleteDirectory",
+                "type": "写入接口",
+                "detail": {
+                  "desc": "删除目录",
+                  "url": "http://[域名]/directory/directory/deleteDirectory",
+                  "data-type": "JSON",
+                  "http-method": "POST",
+                  "login": "TRUE",
+                  "ip-limit": "FALSE",
+                  "params": [
+                    {
+                      "name": "directoryId",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "删除的目录ID"
+                    }
+                  ],
+                  "remark": [],
+                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns-field": [
+                    {
+                      "name": "success",
+                      "required": "是",
+                      "type": "Boolean",
+                      "desc": "成功与否"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "directory/directory/updateDirectory",
+                "type": "写入接口",
+                "detail": {
+                  "desc": "更新目录",
+                  "url": "http://[域名]/directory/directory/updateDirectory",
+                  "data-type": "JSON",
+                  "http-method": "POST",
+                  "login": "TRUE",
+                  "ip-limit": "FALSE",
+                  "params": [
+                    {
+                      "name": "directoryId",
+                      "required": "是",
+                      "type": "Number",
+                      "desc": "要修改的目录Id"
+                    },
+                    {
+                      "name": "name",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "将要修改成的目录名称"
+                    }
+                  ],
+                  "remark": [],
+                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns-field": [
+                    {
+                      "name": "success",
+                      "required": "是",
+                      "type": "Boolean",
+                      "desc": "修改是否成功"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "directory/directory/moveDirectory",
+                "type": "写入接口",
+                "detail": {
+                  "desc": "移动目录",
+                  "url": "http://[域名]/directory/directory/moveDirectory",
+                  "data-type": "JSON",
+                  "http-method": "POST",
+                  "login": "TRUE",
+                  "ip-limit": "FALSE",
+                  "params": [
+                    {
+                      "name": "directoryId",
+                      "required": "是",
+                      "type": "Number",
+                      "desc": "将要移动的目录Id"
+                    },
+                    {
+                      "name": "toDirectoryId",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "移动到哪个目录下"
+                    }
+                  ],
+                  "remark": [],
+                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns-field": [
+                    {
+                      "name": "appKey",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "应用的Key"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "name": "目录类型",
+            "children": [
+              {
+                "name": "directory/type/getTypeList",
+                "type": "读取接口",
+                "detail": {
+                  "desc": "查询目录的类型",
+                  "url": "http://[域名]/directory/type/getTypeList",
+                  "data-type": "JSON",
+                  "http-method": "GET",
+                  "login": "TRUE",
+                  "ip-limit": "FALSE",
+                  "params": [
+                  ],
+                  "remark": [],
+                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns-field": [
+                    {
+                      "name": "id",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "目录的分类Id"
+                    },
+                    {
+                      "name": "name",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "分类的说明"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "name": "目录下的资源",
+            "children": [
+              {
+                "name": "directory/source/getSourceList",
+                "type": "读取接口",
+                "detail": {
+                  "desc": "查询目录下的资源",
+                  "url": "http://[域名]/directory/source/getSourceList",
+                  "data-type": "JSON",
+                  "http-method": "GET",
+                  "login": "TRUE",
+                  "ip-limit": "FALSE",
+                  "params": [
+                    {
+                      "name": "directoryId",
+                      "required": "是",
+                      "type": "Long",
+                      "desc": "目录ID"
+                    }
+                  ],
+                  "remark": [],
+                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns-field": [
+                    {
+                      "name": "appKey",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "应用的Key"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "directory/source/createSource",
+                "type": "写入接口",
+                "detail": {
+                  "desc": "创建目录下的资源",
+                  "url": "http://[域名]/directory/source/createSource",
+                  "data-type": "JSON",
+                  "http-method": "POST",
+                  "login": "TRUE",
+                  "ip-limit": "FALSE",
+                  "params": [
+                    {
+                      "name": "directoryId",
+                      "required": "是",
+                      "type": "Long",
+                      "desc": "目录ID"
+                    },
+                    {
+                      "name": "sourceId",
+                      "required": "是",
+                      "type": "Long",
+                      "desc": "资源id,比如一篇文章的Id，一个组织的Id等"
+                    },
+                    {
+                      "name": "sourceType",
+                      "required": "否",
+                      "type": "Long",
+                      "desc": "资源的分类，默认是0，比如是视频，知识、等任何第三方认为的业务分类"
+                    },
+                    {
+                      "name": "sourceTitle",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "资源的标题，应用根据需要录入合适的标题, 小于140个字符"
+                    },
+                    {
+                      "name": "sourceData",
+                      "required": "否",
+                      "type": "String",
+                      "desc": "应用根据需要录入和业务附加数据，小于140个字符"
+                    }
+                  ],
+                  "remark": [],
+                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns-field": [
+                    {
+                      "name": "id",
+                      "required": "是",
+                      "type": "Long",
+                      "desc": "新创建的目录资源ID"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "directory/source/deleteSource",
+                "type": "写入接口",
+                "detail": {
+                  "desc": "删除目录下的资源",
+                  "url": "http://[域名]/directory/source/deleteSource",
+                  "data-type": "JSON",
+                  "http-method": "POST",
+                  "login": "TRUE",
+                  "ip-limit": "FALSE",
+                  "params": [
+                    {
+                      "name": "id",
+                      "required": "是",
+                      "type": "Long",
+                      "desc": "目录树中的资源Id"
+                    }
+                  ],
+                  "remark": [],
+                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns-field": [
+                    {
+                      "name": "success",
+                      "required": "是",
+                      "type": "Boolean",
+                      "desc": "删除是否成功"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "directory/source/moveSource",
+                "type": "写入接口",
+                "detail": {
+                  "desc": "移动目录下的资源",
+                  "url": "http://[域名]/directory/source/moveSource",
+                  "data-type": "JSON",
+                  "http-method": "POST",
+                  "login": "TRUE",
+                  "ip-limit": "FALSE",
+                  "params": [
+                    {
+                      "name": "ids",
+                      "required": "是",
+                      "type": "Long[]",
+                      "desc": "目录资源ID列表"
+                    },
+                    {
+                      "name": "directoryId",
+                      "required": "是",
+                      "type": "Long",
+                      "desc": "将要存放资源的目录ID"
+                    }
+                  ],
+                  "remark": [],
+                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns-field": [
+                    {
+                      "name": "success",
+                      "required": "是",
+                      "type": "Boolean",
+                      "desc": "是否成功"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "标签",
+        "classify": "tags",
+        "children": [
+          {
+            "name": "标签",
+            "children": [
+              {
+                "name": "tags/tags/getTagList",
+                "type": "读取接口",
+                "detail": {
+                  "desc": "查询一个用户的标签",
+                  "url": "http://[域名]/tags/tags/getTagList",
+                  "data-type": "JSON",
+                  "http-method": "GET",
+                  "login": "TRUE",
+                  "ip-limit": "FALSE",
+                  "params": [
+                    {
+                      "name": "tagType",
+                      "required": "是",
+                      "type": "Long",
+                      "desc": "标签的分类Id，比如知识、组织、人脉、事件、会议等"
+                    }
+                  ],
+                  "remark": [],
+                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns-field": [
+                    {
+                      "name": "id",
+                      "required": "是",
+                      "type": "Long",
+                      "desc": "标签的ID"
+                    },
+                    {
+                      "name": "tagName",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "标签名称"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "tags/tags/createTag",
+                "type": "写入接口",
+                "detail": {
+                  "desc": "创建一个用户的标签",
+                  "url": "http://[域名]/tags/tags/createTag",
+                  "data-type": "JSON",
+                  "http-method": "POST",
+                  "login": "TRUE",
+                  "ip-limit": "FALSE",
+                  "params": [
+                    {
+                      "name": "tagType",
+                      "required": "是",
+                      "type": "Long",
+                      "desc": "标签的分类Id，比如知识、组织、人脉、事件、会议等"
+                    },
+                    {
+                      "name": "tagName",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "标签名称"
+                    }
+                  ],
+                  "remark": [],
+                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns-field": [
+                    {
+                      "name": "id",
+                      "required": "是",
+                      "type": "Number",
+                      "desc": "新创建的标签ID"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "tags/tags/deleteTag",
+                "type": "写入接口",
+                "detail": {
+                  "desc": "删除一个用户的指定标签",
+                  "url": "http://[域名]/tags/tags/deleteTag",
+                  "data-type": "JSON",
+                  "http-method": "GET,DELETE",
+                  "login": "TRUE",
+                  "ip-limit": "FALSE",
+                  "params": [
+                    {
+                      "name": "tagId",
+                      "required": "是",
+                      "type": "Long",
+                      "desc": "将要删除的TagId"
+                    }
+                  ],
+                  "remark": [],
+                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns-field": [
+                    {
+                      "name": "success",
+                      "required": "是",
+                      "type": "Boolean",
+                      "desc": "删除是否成功"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "name": "标签下的资源",
+            "children": [
+              {
+                "name": "tags/source/getSourceList",
+                "type": "读取接口",
+                "detail": {
+                  "desc": "查询一个资源下的标签",
+                  "url": "http://[域名]/tags/source/getSourceList",
+                  "data-type": "JSON",
+                  "http-method": "GET",
+                  "login": "TRUE",
+                  "ip-limit": "FALSE",
+                  "params": [
+                    {
+                      "name": "sourceId",
+                      "required": "是",
+                      "type": "Long",
+                      "desc": "将要查询的资源ID（比如知识ID，组织ID等）"
+                    },
+                    {
+                      "name": "sourceType",
+                      "required": "是",
+                      "type": "Long",
+                      "desc": "将要查询的资源类型（比如知识类型，组织类型等）"
+                    }
+                  ],
+                  "remark": [],
+                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns-field": [
+                    {
+                      "name": "id",
+                      "required": "是",
+                      "type": "Long",
+                      "desc": "添加成功的标签资源ID"
+                    },
+                    {
+                      "name": "tagName",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "标签名字"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "tags/source/deleteTagSource",
+                "type": "写入接口",
+                "detail": {
+                  "desc": "从一个资源上去掉一个标签",
+                  "url": "http://[域名]/tags/source/deleteTagSource",
+                  "data-type": "JSON",
+                  "http-method": "GET，DELETE",
+                  "login": "TRUE",
+                  "ip-limit": "FALSE",
+                  "params": [
+                    {
+                      "name": "id",
+                      "required": "是",
+                      "type": "Long",
+                      "desc": "将要删除的资源标签记录ID"
+                    }
+                  ],
+                  "remark": [],
+                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns-field": [
+                    {
+                      "name": "id",
+                      "required": "是",
+                      "type": "Long",
+                      "desc": "添加成功的标签资源ID"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "tags/source/createTagSource",
+                "type": "写入接口",
+                "detail": {
+                  "desc": "把一个标签添加到指定的资源上",
+                  "url": "http://[域名]/tags/source/createTagSource",
+                  "data-type": "JSON",
+                  "http-method": "GET",
+                  "login": "TRUE",
+                  "ip-limit": "FALSE",
+                  "params": [
+                    {
+                      "name": "sourceId",
+                      "required": "是",
+                      "type": "Long",
+                      "desc": "将要查询的资源ID（比如知识ID，组织ID等）"
+                    },
+                    {
+                      "name": "sourceType",
+                      "required": "是",
+                      "type": "Long",
+                      "desc": "将要查询的资源类型（比如知识类型，组织类型等）"
+                    }
+                  ],
+                  "remark": [],
+                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns-field": [
+                    {
+                      "name": "id",
+                      "required": "是",
+                      "type": "Long",
+                      "desc": "添加成功的标签资源ID"
+                    },
+                    {
+                      "name": "tagName",
+                      "required": "是",
+                      "type": "String",
+                      "desc": "标签名字"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]

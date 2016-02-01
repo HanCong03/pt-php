@@ -16,11 +16,6 @@ class PassportController extends Controller {
     public function login() {
         $requestData = request()->only('username', 'password');
 
-        Log::info([
-            'passport' => $requestData['username'],
-            'password' => $requestData['password']
-        ]);
-
         $result = API::login([
             'passport' => $requestData['username'],
             'password' => $requestData['password']
@@ -58,8 +53,6 @@ class PassportController extends Controller {
 
         $result = API::register($params);
 
-        Log::info($result);
-
         return response()->json($result);
     }
 
@@ -74,8 +67,6 @@ class PassportController extends Controller {
         ];
 
         $result = API::resetPassword($params);
-
-        Log::info($result);
 
         if (!isset($result['error'])) {
             // session里写入数据,防止重置成功页面被重复刷新
