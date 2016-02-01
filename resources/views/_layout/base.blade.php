@@ -28,6 +28,7 @@
         <a href="{{route('index')}}" class="logo" title="星云开放平台"><h1>星云开放平台</h1></a>
         <div class="header-links">
             <nav class="nav">
+                @if (isset($navName))
                 <ul>
                     <li {{$navName === '首页' ? 'class=active' : ''}}>
                         <a href="{{route('index')}}">首页</a>
@@ -38,13 +39,32 @@
                     <li {{$navName === 'API库' ? 'class=active' : ''}}>
                         <a href="{{route('api-index')}}">API库</a>
                     </li>
-                    <li {{$navName === '开发者社区' ? 'class=active' : ''}}>
-                        <a href="#">开发者社区</a>
-                    </li>
+<!--                    <li {{$navName === '开发者社区' ? 'class=active' : ''}}>-->
+<!--                        <a href="#">开发者社区</a>-->
+<!--                    </li>-->
                     <li {{$navName === '联系我们' ? 'class=active' : ''}}>
                         <a href="{{route('contacts')}}">联系我们</a>
                     </li>
                 </ul>
+                @else
+                <ul>
+                    <li>
+                        <a href="{{route('index')}}">首页</a>
+                    </li>
+                    <li>
+                        <a href="{{route('document-index')}}">文档中心</a>
+                    </li>
+                    <li>
+                        <a href="{{route('api-index')}}">API库</a>
+                    </li>
+<!--                    <li>-->
+<!--                    <a href="#">开发者社区</a>-->
+<!--                    </li>-->
+                    <li>
+                        <a href="{{route('contacts')}}">联系我们</a>
+                    </li>
+                </ul>
+                @endif
             </nav>
 
             @if (is_null($user))

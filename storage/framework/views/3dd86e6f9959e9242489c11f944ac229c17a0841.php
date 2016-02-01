@@ -28,6 +28,7 @@
         <a href="<?php echo e(route('index')); ?>" class="logo" title="星云开放平台"><h1>星云开放平台</h1></a>
         <div class="header-links">
             <nav class="nav">
+                <?php if(isset($navName)): ?>
                 <ul>
                     <li <?php echo e($navName === '首页' ? 'class=active' : ''); ?>>
                         <a href="<?php echo e(route('index')); ?>">首页</a>
@@ -38,13 +39,32 @@
                     <li <?php echo e($navName === 'API库' ? 'class=active' : ''); ?>>
                         <a href="<?php echo e(route('api-index')); ?>">API库</a>
                     </li>
-                    <li <?php echo e($navName === '开发者社区' ? 'class=active' : ''); ?>>
-                        <a href="#">开发者社区</a>
-                    </li>
+<!--                    <li <?php echo e($navName === '开发者社区' ? 'class=active' : ''); ?>>-->
+<!--                        <a href="#">开发者社区</a>-->
+<!--                    </li>-->
                     <li <?php echo e($navName === '联系我们' ? 'class=active' : ''); ?>>
                         <a href="<?php echo e(route('contacts')); ?>">联系我们</a>
                     </li>
                 </ul>
+                <?php else: ?>
+                <ul>
+                    <li>
+                        <a href="<?php echo e(route('index')); ?>">首页</a>
+                    </li>
+                    <li>
+                        <a href="<?php echo e(route('document-index')); ?>">文档中心</a>
+                    </li>
+                    <li>
+                        <a href="<?php echo e(route('api-index')); ?>">API库</a>
+                    </li>
+<!--                    <li>-->
+<!--                    <a href="#">开发者社区</a>-->
+<!--                    </li>-->
+                    <li>
+                        <a href="<?php echo e(route('contacts')); ?>">联系我们</a>
+                    </li>
+                </ul>
+                <?php endif; ?>
             </nav>
 
             <?php if(is_null($user)): ?>
