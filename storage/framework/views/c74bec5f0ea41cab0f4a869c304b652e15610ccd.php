@@ -73,10 +73,10 @@
                             <?php if(count($currentDetail['params']) > 0): ?>
                             <?php foreach($currentDetail['params'] as $params): ?>
                             <tr>
-                                <td><?php echo e($params['name']); ?></td>
+                                <td style="text-align: left;"><?php echo e($params['name']); ?></td>
                                 <td><?php echo e($params['required']); ?></td>
                                 <td><?php echo e($params['type']); ?></td>
-                                <td><?php echo e($params['desc']); ?></td>
+                                <td style="text-align: left;"><?php echo e($params['desc']); ?></td>
                             </tr>
                             <?php endforeach; ?>
                             <?php else: ?>
@@ -124,10 +124,10 @@
                             <?php if(count($currentDetail['returns-field']) > 0): ?>
                             <?php foreach($currentDetail['returns-field'] as $field): ?>
                             <tr>
-                                <td><?php echo e($field['name']); ?></td>
+                                <td style="text-align: left;"><?php echo e($field['name']); ?></td>
                                 <td><?php echo e($field['required']); ?></td>
                                 <td><?php echo e($field['type']); ?></td>
-                                <td><?php echo e($field['desc']); ?></td>
+                                <td style="text-align: left;"><?php echo e($field['desc']); ?></td>
                             </tr>
                             <?php endforeach; ?>
                             <?php else: ?>

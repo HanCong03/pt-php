@@ -75,10 +75,10 @@
                             @if (count($currentDetail['params']) > 0)
                             @foreach ($currentDetail['params'] as $params)
                             <tr>
-                                <td>{{$params['name']}}</td>
+                                <td style="text-align: left;">{{$params['name']}}</td>
                                 <td>{{$params['required']}}</td>
                                 <td>{{$params['type']}}</td>
-                                <td>{{$params['desc']}}</td>
+                                <td style="text-align: left;">{{$params['desc']}}</td>
                             </tr>
                             @endforeach
                             @else
@@ -126,10 +126,10 @@
                             @if (count($currentDetail['returns-field']) > 0)
                             @foreach ($currentDetail['returns-field'] as $field)
                             <tr>
-                                <td>{{$field['name']}}</td>
+                                <td style="text-align: left;">{{$field['name']}}</td>
                                 <td>{{$field['required']}}</td>
                                 <td>{{$field['type']}}</td>
-                                <td>{{$field['desc']}}</td>
+                                <td style="text-align: left;">{{$field['desc']}}</td>
                             </tr>
                             @endforeach
                             @else
