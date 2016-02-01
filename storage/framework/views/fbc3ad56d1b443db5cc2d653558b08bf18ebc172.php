@@ -8,7 +8,7 @@
                 <ul>
                 <?php foreach($menu as $item): ?>
                     <?php if(isset($item['sub'])): ?>
-                        <li class="sub-menu">
+                        <li class="sub-menu <?php echo e(isset($activeSubmenu) ? 'active opened' : ''); ?>">
                             <label><?php echo e($item['label']); ?></label>
                             <ul>
                                 <?php foreach($item['sub'] as $subItem): ?>

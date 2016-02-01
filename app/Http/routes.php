@@ -85,7 +85,7 @@ Route::group([
     // 开发者中心
     Route::group([
         'prefix' => 'developer',
-//        'middleware' => ['login']
+        'middleware' => ['login']
     ], function () {
         Route::get('/', [
             'as' => 'developer-index',
@@ -121,6 +121,16 @@ Route::group([
         Route::get('specification', [
             'as' => 'specification',
             'uses' => 'DocumentController@specification'
+        ]);
+
+        Route::get('flow', [
+            'as' => 'flow',
+            'uses' => 'DocumentController@flow'
+        ]);
+
+        Route::get('guide', [
+            'as' => 'guide',
+            'uses' => 'DocumentController@guide'
         ]);
 
         Route::get('faq', [

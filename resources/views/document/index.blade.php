@@ -4,6 +4,7 @@
 
 @section('page-assets')
 <link rel="stylesheet" href="{{asset('assets/pages/doc/index/page.css')}}">
+<script src="{{asset('assets/pages/doc/index/page.js')}}"></script>
 @stop
 
 @section('document-content')

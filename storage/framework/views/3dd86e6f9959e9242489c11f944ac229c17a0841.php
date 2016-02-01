@@ -82,7 +82,7 @@
             <div class="user-box">
                 <label><?php echo e($user['userLoginRegister']['passport']); ?></label>
                 <ul>
-                    <li><a href="#">开发者中心</a></li>
+                    <li><a href="<?php echo e(route('developer-index')); ?>">开发者中心</a></li>
                     <li><a href="#">退出系统</a></li>
                 </ul>
             </div>

@@ -10,7 +10,7 @@
                 <ul>
                 @foreach ($menu as $item)
                     @if (isset($item['sub']))
-                        <li class="sub-menu">
+                        <li class="sub-menu {{isset($activeSubmenu) ? 'active opened' : ''}}">
                             <label>{{$item['label']}}</label>
                             <ul>
                                 @foreach ($item['sub'] as $subItem)

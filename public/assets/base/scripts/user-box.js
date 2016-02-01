@@ -20,6 +20,8 @@ jQuery(function ($) {
 
             $(document).off('mousedown.USER_BOX');
         });
+    }).on('mousedown', function (e) {
+        e.preventDefault();
     });
 
     $('a', $userBox).on('click', function () {

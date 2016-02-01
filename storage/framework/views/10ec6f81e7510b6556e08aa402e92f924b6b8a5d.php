@@ -2,6 +2,7 @@
 
 <?php $__env->startSection('page-assets'); ?>
 <link rel="stylesheet" href="<?php echo e(asset('assets/pages/doc/index/page.css')); ?>">
+<script src="<?php echo e(asset('assets/pages/doc/index/page.js')); ?>"></script>
 <?php $__env->stopSection(); ?>
 
 <?php $__env->startSection('document-content'); ?>

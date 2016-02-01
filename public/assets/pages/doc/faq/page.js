@@ -47,6 +47,7 @@
 	"use strict";
 
 	__webpack_require__(1);
+	__webpack_require__(2);
 
 /***/ },
 /* 1 */
@@ -161,6 +162,32 @@
 	    function closeDialogError() {
 	        $('#questionDialog .tip-box').hide();
 	    }
+	});
+
+/***/ },
+/* 2 */
+/***/ function(module, exports) {
+
+	/**
+	 * Author: hancong05@meituan.com
+	 * Date: 16/2/1
+	 */
+
+	'use strict';
+
+	jQuery(function ($) {
+	    $('.sub-menu>label').on('click', function () {
+	        var $mainItem = $(this.parentNode);
+	        var $ul = $('>ul', $mainItem);
+
+	        if ($mainItem.hasClass('opened')) {
+	            $ul.slideUp(300);
+	        } else {
+	            $ul.slideDown(300);
+	        }
+
+	        $mainItem.toggleClass('opened');
+	    });
 	});
 
 /***/ }

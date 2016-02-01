@@ -24,10 +24,10 @@ class DocumentController extends Controller {
                 'sub' => [
                     [
                         'label' => '应用接入新手引导',
-                        'link' => 'xxx'
+                        'link' => route('guide')
                     ], [
                         'label' => '应用接入流程',
-                        'link' => 'xxx'
+                        'link' => route('flow')
                     ]
                 ]
             ], [
@@ -52,6 +52,20 @@ class DocumentController extends Controller {
     public function index() {
         return view('document/index', [
             'activeLabel' => '平台概述'
+        ]);
+    }
+
+    public function flow() {
+        return view('document/flow', [
+            'activeLabel' => '应用接入流程',
+            'activeSubmenu' => true
+        ]);
+    }
+
+    public function guide() {
+        return view('document/guide', [
+            'activeLabel' => '应用接入新手引导',
+            'activeSubmenu' => true
         ]);
     }
 
