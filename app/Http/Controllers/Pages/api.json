@@ -21,7 +21,7 @@
                   "ip-limit": "FALSE",
                   "params": [],
                   "remark": [],
-                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns": "[\n    {\n        \"id\": 1407,\n        \"name\": \"行业\"\n    }\n]",
                   "returns-field": [
                     {
                       "name": "id",
@@ -50,7 +50,7 @@
                   "ip-limit": "FALSE",
                   "params": [],
                   "remark": [],
-                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns": "[\n    {\n        \"id\": 1408,\n        \"name\": \"贸易流通\"\n    },\n    {\n        \"id\": 1484,\n        \"name\": \"制造业\"\n    },\n    {\n        \"id\": 1480,\n        \"name\": \"医疗\"\n    },\n    {\n        \"id\": 1474,\n        \"name\": \"建筑/房地产\"\n    },\n    {\n        \"id\": 1465,\n        \"name\": \"IT行业\"\n    },\n    {\n        \"id\": 1460,\n        \"name\": \"其他\"\n    },\n    {\n        \"id\": 1455,\n        \"name\": \"教育\"\n    },\n    {\n        \"id\": 1447,\n        \"name\": \"文体/传媒\"\n    },\n    {\n        \"id\": 1442,\n        \"name\": \"金融\"\n    },\n    {\n        \"id\": 1435,\n        \"name\": \"专业服务\"\n    },\n    {\n        \"id\": 1423,\n        \"name\": \"消费品\"\n    },\n    {\n        \"id\": 1414,\n        \"name\": \"生活服务\"\n    },\n    {\n        \"id\": 1496,\n        \"name\": \"政府/事业单位\"\n    }\n]",
                   "returns-field": [
                     {
                       "name": "id",
@@ -84,7 +84,7 @@
                   "ip-limit": "FALSE",
                   "params": [],
                   "remark": [],
-                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns": "[\n    {\n        \"id\": 11259,\n        \"cname\": \"天津\"\n    },\n    {\n        \"id\": 12911,\n        \"cname\": \"福建\"\n    },\n    {\n        \"id\": 13006,\n        \"cname\": \"甘肃\"\n    },\n    {\n        \"id\": 13109,\n        \"cname\": \"广东\"\n    },\n    {\n        \"id\": 13260,\n        \"cname\": \"广西\"\n    },\n    {\n        \"id\": 13390,\n        \"cname\": \"贵州\"\n    },\n    {\n        \"id\": 13490,\n        \"cname\": \"海南\"\n    },\n    {\n        \"id\": 13517,\n        \"cname\": \"河北\"\n    },\n    {\n        \"id\": 13703,\n        \"cname\": \"黑龙江\"\n    },\n    {\n        \"id\": 13849,\n        \"cname\": \"河南\"\n    },\n    {\n        \"id\": 14034,\n        \"cname\": \"湖北\"\n    },\n    {\n        \"id\": 14160,\n        \"cname\": \"湖南\"\n    },\n    {\n        \"id\": 14297,\n        \"cname\": \"江苏\"\n    },\n    {\n        \"id\": 14433,\n        \"cname\": \"江西\"\n    },\n    {\n        \"id\": 12865,\n        \"cname\": \"重庆\"\n    },\n    {\n        \"id\": 12847,\n        \"cname\": \"北京\"\n    },\n    {\n        \"id\": 12719,\n        \"cname\": \"安徽\"\n    },\n    {\n        \"id\": 11283,\n        \"cname\": \"新疆\"\n    },\n    {\n        \"id\": 11404,\n        \"cname\": \"西藏\"\n    },\n    {\n        \"id\": 11489,\n        \"cname\": \"云南\"\n    },\n    {\n        \"id\": 11635,\n        \"cname\": \"浙江\"\n    },\n    {\n        \"id\": 11742,\n        \"cname\": \"辽宁\"\n    },\n    {\n        \"id\": 11869,\n        \"cname\": \"内蒙古\"\n    },\n    {\n        \"id\": 11984,\n        \"cname\": \"宁夏\"\n    },\n    {\n        \"id\": 12012,\n        \"cname\": \"青海\"\n    },\n    {\n        \"id\": 12064,\n        \"cname\": \"山东\"\n    },\n    {\n        \"id\": 12234,\n        \"cname\": \"上海\"\n    },\n    {\n        \"id\": 12255,\n        \"cname\": \"山西\"\n    },\n    {\n        \"id\": 12386,\n        \"cname\": \"陕西\"\n    },\n    {\n        \"id\": 12508,\n        \"cname\": \"四川\"\n    },\n    {\n        \"id\": 14545,\n        \"cname\": \"吉林\"\n    }\n]",
                   "returns-field": [
                     {
                       "name": "id",
@@ -120,7 +120,7 @@
                     }
                   ],
                   "remark": [],
-                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns": "[\n    {\n        \"id\": 13850,\n        \"cname\": \"郑州\"\n    },\n    {\n        \"id\": 14012,\n        \"cname\": \"周口\"\n    },\n    {\n        \"id\": 14001,\n        \"cname\": \"信阳\"\n    },\n    {\n        \"id\": 13991,\n        \"cname\": \"商丘\"\n    },\n    {\n        \"id\": 13977,\n        \"cname\": \"南阳\"\n    },\n    {\n        \"id\": 13969,\n        \"cname\": \"三门峡\"\n    },\n    {\n        \"id\": 13963,\n        \"cname\": \"漯河\"\n    },\n    {\n        \"id\": 13956,\n        \"cname\": \"许昌\"\n    },\n    {\n        \"id\": 13949,\n        \"cname\": \"濮阳\"\n    },\n    {\n        \"id\": 13948,\n        \"cname\": \"济源\"\n    },\n    {\n        \"id\": 13937,\n        \"cname\": \"焦作\"\n    },\n    {\n        \"id\": 13924,\n        \"cname\": \"新乡\"\n    },\n    {\n        \"id\": 13918,\n        \"cname\": \"鹤壁\"\n    },\n    {\n        \"id\": 13908,\n        \"cname\": \"安阳\"\n    },\n    {\n        \"id\": 13897,\n        \"cname\": \"平顶山\"\n    },\n    {\n        \"id\": 13881,\n        \"cname\": \"洛阳\"\n    },\n    {\n        \"id\": 13869,\n        \"cname\": \"开封\"\n    },\n    {\n        \"id\": 14023,\n        \"cname\": \"驻马店\"\n    }\n]",
                   "returns-field": [
                     {
                       "name": "id",
@@ -156,7 +156,7 @@
                     }
                   ],
                   "remark": [],
-                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns": "[\n    {\n        \"id\": 13909,\n        \"cname\": \"文峰\"\n    },\n    {\n        \"id\": 13910,\n        \"cname\": \"北关\"\n    },\n    {\n        \"id\": 13911,\n        \"cname\": \"殷都\"\n    },\n    {\n        \"id\": 13912,\n        \"cname\": \"龙安\"\n    },\n    {\n        \"id\": 13913,\n        \"cname\": \"安阳\"\n    },\n    {\n        \"id\": 13914,\n        \"cname\": \"汤阴\"\n    },\n    {\n        \"id\": 13915,\n        \"cname\": \"滑县\"\n    },\n    {\n        \"id\": 13916,\n        \"cname\": \"内黄\"\n    },\n    {\n        \"id\": 13917,\n        \"cname\": \"林州\"\n    }\n]",
                   "returns-field": [
                     {
                       "name": "id",
@@ -192,7 +192,7 @@
                     }
                   ],
                   "remark": [],
-                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns": "[\n    {\n        \"id\": 14621,\n        \"cname\": \"香港\"\n    },\n    {\n        \"id\": 14643,\n        \"cname\": \"澳门\"\n    }\n]",
                   "returns-field": [
                     {
                       "name": "id",
@@ -228,7 +228,7 @@
                     }
                   ],
                   "remark": [],
-                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns": "[\n    {\n        \"id\": 14646,\n        \"cname\": \"台湾\"\n    }\n]",
                   "returns-field": [
                     {
                       "name": "id",
@@ -264,7 +264,7 @@
                     }
                   ],
                   "remark": [],
-                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns": "[\n    {\n        \"id\": 15040,\n        \"cname\": \"槟榔屿\"\n    },\n    {\n        \"id\": 15166,\n        \"cname\": \"沙捞越\"\n    },\n    {\n        \"id\": 15140,\n        \"cname\": \"沙巴\"\n    },\n    {\n        \"id\": 15132,\n        \"cname\": \"森美兰\"\n    },\n    {\n        \"id\": 15121,\n        \"cname\": \"柔佛\"\n    },\n    {\n        \"id\": 15103,\n        \"cname\": \"霹雳\"\n    },\n    {\n        \"id\": 15091,\n        \"cname\": \"彭亨\"\n    },\n    {\n        \"id\": 15088,\n        \"cname\": \"纳闽\"\n    },\n    {\n        \"id\": 15084,\n        \"cname\": \"马六甲\"\n    },\n    {\n        \"id\": 15082,\n        \"cname\": \"吉隆坡\"\n    },\n    {\n        \"id\": 15070,\n        \"cname\": \"吉兰丹\"\n    },\n    {\n        \"id\": 15057,\n        \"cname\": \"吉打\"\n    },\n    {\n        \"id\": 15049,\n        \"cname\": \"丁加奴\"\n    },\n    {\n        \"id\": 15047,\n        \"cname\": \"玻璃市\"\n    },\n    {\n        \"id\": 15198,\n        \"cname\": \"雪兰莪\"\n    }\n]",
                   "returns-field": [
                     {
                       "name": "id",
@@ -300,7 +300,7 @@
                     }
                   ],
                   "remark": [],
-                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns": "[\n    {\n        \"id\": 15389,\n        \"cname\": \"荷兰\"\n    },\n    {\n        \"id\": 15373,\n        \"cname\": \"摩纳哥\"\n    },\n    {\n        \"id\": 15372,\n        \"cname\": \"刚果(金)\"\n    },\n    {\n        \"id\": 15371,\n        \"cname\": \"中途岛(美)\"\n    },\n    {\n        \"id\": 15370,\n        \"cname\": \"丹麦\"\n    },\n    {\n        \"id\": 15369,\n        \"cname\": \"黑山\"\n    },\n    {\n        \"id\": 15368,\n        \"cname\": \"迪戈加西亚岛\"\n    },\n    {\n        \"id\": 15367,\n        \"cname\": \"蒙古\"\n    },\n    {\n        \"id\": 15366,\n        \"cname\": \"吉布提\"\n    },\n    {\n        \"id\": 15365,\n        \"cname\": \"马约特岛\"\n    },\n    {\n        \"id\": 15364,\n        \"cname\": \"多米尼克国\"\n    },\n    {\n        \"id\": 15363,\n        \"cname\": \"毛里求斯\"\n    },\n    {\n        \"id\": 15362,\n        \"cname\": \"密克罗尼西亚(美)\"\n    },\n    {\n        \"id\": 15361,\n        \"cname\": \"墨西哥\"\n    },\n    {\n        \"id\": 15374,\n        \"cname\": \"赤道几内亚\"\n    },\n    {\n        \"id\": 15375,\n        \"cname\": \"厄立特里亚\"\n    },\n    {\n        \"id\": 15388,\n        \"cname\": \"科科斯岛\"\n    },\n    {\n        \"id\": 15387,\n        \"cname\": \"尼泊尔\"\n    },\n    {\n        \"id\": 15386,\n        \"cname\": \"瑙鲁\"\n    },\n    {\n        \"id\": 15385,\n        \"cname\": \"纳米比亚\"\n    },\n    {\n        \"id\": 15384,\n        \"cname\": \"刚果\"\n    },\n    {\n        \"id\": 15383,\n        \"cname\": \"缅甸\"\n    },\n    {\n        \"id\": 15382,\n        \"cname\": \"科克群岛(新)\"\n    },\n    {\n        \"id\": 15381,\n        \"cname\": \"马提尼克(法)\"\n    },\n    {\n        \"id\": 15380,\n        \"cname\": \"厄瓜多尔\"\n    },\n    {\n        \"id\": 15379,\n        \"cname\": \"毛里塔尼亚\"\n    },\n    {\n        \"id\": 15378,\n        \"cname\": \"多米尼加共和国\"\n    },\n    {\n        \"id\": 15377,\n        \"cname\": \"萨尔瓦多\"\n    },\n    {\n        \"id\": 15376,\n        \"cname\": \"埃及\"\n    },\n    {\n        \"id\": 15360,\n        \"cname\": \"格鲁吉亚\"\n    },\n    {\n        \"id\": 15359,\n        \"cname\": \"冈比亚\"\n    },\n    {\n        \"id\": 15343,\n        \"cname\": \"马尔代夫\"\n    },\n    {\n        \"id\": 15342,\n        \"cname\": \"爱沙尼亚\"\n    },\n    {\n        \"id\": 15341,\n        \"cname\": \"埃塞俄比亚\"\n    },\n    {\n        \"id\": 15340,\n        \"cname\": \"危地马拉\"\n    },\n    {\n        \"id\": 15339,\n        \"cname\": \"关岛(美)\"\n    },\n    {\n        \"id\": 15338,\n        \"cname\": \"几内亚比绍\"\n    },\n    {\n        \"id\": 15337,\n        \"cname\": \"几内亚\"\n    },\n    {\n        \"id\": 15336,\n        \"cname\": \"格陵兰岛\"\n    },\n    {\n        \"id\": 15335,\n        \"cname\": \"希腊\"\n    },\n    {\n        \"id\": 15334,\n        \"cname\": \"瓜德罗普岛(法)\"\n    },\n    {\n        \"id\": 15333,\n        \"cname\": \"格林纳达\"\n    },\n    {\n        \"id\": 15332,\n        \"cname\": \"列支敦士登\"\n    },\n    {\n        \"id\": 15331,\n        \"cname\": \"利比亚\"\n    },\n    {\n        \"id\": 15344,\n        \"cname\": \"法罗群岛(丹)\"\n    },\n    {\n        \"id\": 15345,\n        \"cname\": \"马里\"\n    },\n    {\n        \"id\": 15358,\n        \"cname\": \"加蓬\"\n    },\n    {\n        \"id\": 15357,\n        \"cname\": \"法属波里尼西亚\"\n    },\n    {\n        \"id\": 15356,\n        \"cname\": \"法国\"\n    },\n    {\n        \"id\": 15355,\n        \"cname\": \"立陶宛\"\n    },\n    {\n        \"id\": 15354,\n        \"cname\": \"芬兰\"\n    },\n    {\n        \"id\": 15353,\n        \"cname\": \"斐济\"\n    },\n    {\n        \"id\": 15352,\n        \"cname\": \"马绍尔群岛\"\n    },\n    {\n        \"id\": 15351,\n        \"cname\": \"马拉维\"\n    },\n    {\n        \"id\": 15350,\n        \"cname\": \"马达加斯加\"\n    },\n    {\n        \"id\": 15349,\n        \"cname\": \"马其顿\"\n    },\n    {\n        \"id\": 15348,\n        \"cname\": \"卢森堡\"\n    },\n    {\n        \"id\": 15347,\n        \"cname\": \"马耳他\"\n    },\n    {\n        \"id\": 15346,\n        \"cname\": \"福克兰群岛\"\n    },\n    {\n        \"id\": 15330,\n        \"cname\": \"科威特\"\n    },\n    {\n        \"id\": 15390,\n        \"cname\": \"圣诞岛\"\n    },\n    {\n        \"id\": 15450,\n        \"cname\": \"西撒哈拉\"\n    },\n    {\n        \"id\": 15434,\n        \"cname\": \"斯洛伐克\"\n    },\n    {\n        \"id\": 15433,\n        \"cname\": \"斯洛文尼亚\"\n    },\n    {\n        \"id\": 15432,\n        \"cname\": \"新加坡\"\n    },\n    {\n        \"id\": 15431,\n        \"cname\": \"圣马丁(荷)\"\n    },\n    {\n        \"id\": 15430,\n        \"cname\": \"南非\"\n    },\n    {\n        \"id\": 15429,\n        \"cname\": \"南乔治亚与南桑威奇群岛\"\n    },\n    {\n        \"id\": 15428,\n        \"cname\": \"所罗门群岛\"\n    },\n    {\n        \"id\": 15427,\n        \"cname\": \"索马里\"\n    },\n    {\n        \"id\": 15426,\n        \"cname\": \"桑给巴尔\"\n    },\n    {\n        \"id\": 15425,\n        \"cname\": \"赞比亚\"\n    },\n    {\n        \"id\": 15424,\n        \"cname\": \"圭亚那\"\n    },\n    {\n        \"id\": 15423,\n        \"cname\": \"法属圭亚那\"\n    },\n    {\n        \"id\": 15422,\n        \"cname\": \"海地\"\n    },\n    {\n        \"id\": 15435,\n        \"cname\": \"韩国\"\n    },\n    {\n        \"id\": 15436,\n        \"cname\": \"西班牙\"\n    },\n    {\n        \"id\": 15449,\n        \"cname\": \"也门\"\n    },\n    {\n        \"id\": 15448,\n        \"cname\": \"维尔京群岛(美)\"\n    },\n    {\n        \"id\": 15447,\n        \"cname\": \"瓦里斯和富士那群岛(法)\"\n    },\n    {\n        \"id\": 15446,\n        \"cname\": \"越南\"\n    },\n    {\n        \"id\": 15445,\n        \"cname\": \"维尔京群岛(英)\"\n    },\n    {\n        \"id\": 15444,\n        \"cname\": \"瓦努阿图\"\n    },\n    {\n        \"id\": 15443,\n        \"cname\": \"委内瑞拉\"\n    },\n    {\n        \"id\": 15442,\n        \"cname\": \"南斯拉夫\"\n    },\n    {\n        \"id\": 15441,\n        \"cname\": \"乌兹别克斯坦\"\n    },\n    {\n        \"id\": 15440,\n        \"cname\": \"津巴布韦\"\n    },\n    {\n        \"id\": 15439,\n        \"cname\": \"文莱\"\n    },\n    {\n        \"id\": 15438,\n        \"cname\": \"尼维斯岛\"\n    },\n    {\n        \"id\": 15437,\n        \"cname\": \"南苏丹\"\n    },\n    {\n        \"id\": 15421,\n        \"cname\": \"洪都拉斯\"\n    },\n    {\n        \"id\": 15420,\n        \"cname\": \"匈牙利\"\n    },\n    {\n        \"id\": 15404,\n        \"cname\": \"哈萨克斯坦\"\n    },\n    {\n        \"id\": 15403,\n        \"cname\": \"肯尼亚\"\n    },\n    {\n        \"id\": 15402,\n        \"cname\": \"摩洛哥\"\n    },\n    {\n        \"id\": 15401,\n        \"cname\": \"哥斯达黎加\"\n    },\n    {\n        \"id\": 15400,\n        \"cname\": \"莫桑比克\"\n    },\n    {\n        \"id\": 15399,\n        \"cname\": \"蒙特塞拉特岛(英)\"\n    },\n    {\n        \"id\": 15398,\n        \"cname\": \"捷克\"\n    },\n    {\n        \"id\": 15397,\n        \"cname\": \"塞浦路斯\"\n    },\n    {\n        \"id\": 15396,\n        \"cname\": \"古巴\"\n    },\n    {\n        \"id\": 15395,\n        \"cname\": \"克罗地亚\"\n    },\n    {\n        \"id\": 15394,\n        \"cname\": \"哥伦比亚\"\n    },\n    {\n        \"id\": 15393,\n        \"cname\": \"新喀里多尼亚群岛(法)\"\n    },\n    {\n        \"id\": 15392,\n        \"cname\": \"科摩罗\"\n    },\n    {\n        \"id\": 15405,\n        \"cname\": \"柬埔塞\"\n    },\n    {\n        \"id\": 15406,\n        \"cname\": \"约旦\"\n    },\n    {\n        \"id\": 15419,\n        \"cname\": \"冰岛\"\n    },\n    {\n        \"id\": 15418,\n        \"cname\": \"印度\"\n    },\n    {\n        \"id\": 15417,\n        \"cname\": \"印度尼西亚\"\n    },\n    {\n        \"id\": 15416,\n        \"cname\": \"伊郎\"\n    },\n    {\n        \"id\": 15415,\n        \"cname\": \"伊拉克\"\n    },\n    {\n        \"id\": 15414,\n        \"cname\": \"爱尔兰\"\n    },\n    {\n        \"id\": 15413,\n        \"cname\": \"以色列\"\n    },\n    {\n        \"id\": 15412,\n        \"cname\": \"意大利\"\n    },\n    {\n        \"id\": 15411,\n        \"cname\": \"科特迪瓦\"\n    },\n    {\n        \"id\": 15410,\n        \"cname\": \"马恩岛(英)\"\n    },\n    {\n        \"id\": 15409,\n        \"cname\": \"牙买加\"\n    },\n    {\n        \"id\": 15408,\n        \"cname\": \"日本\"\n    },\n    {\n        \"id\": 15407,\n        \"cname\": \"泽西岛(英)\"\n    },\n    {\n        \"id\": 15391,\n        \"cname\": \"荷属安的列斯群岛\"\n    },\n    {\n        \"id\": 15329,\n        \"cname\": \"基里巴斯\"\n    },\n    {\n        \"id\": 15267,\n        \"cname\": \"安道尔\"\n    },\n    {\n        \"id\": 15251,\n        \"cname\": \"波兰\"\n    },\n    {\n        \"id\": 15250,\n        \"cname\": \"玻利维亚\"\n    },\n    {\n        \"id\": 15249,\n        \"cname\": \"泰国\"\n    },\n    {\n        \"id\": 15248,\n        \"cname\": \"葡萄牙\"\n    },\n    {\n        \"id\": 15247,\n        \"cname\": \"不丹\"\n    },\n    {\n        \"id\": 15246,\n        \"cname\": \"塔吉克斯坦\"\n    },\n    {\n        \"id\": 15245,\n        \"cname\": \"秘鲁\"\n    },\n    {\n        \"id\": 15244,\n        \"cname\": \"百慕大群岛(英)\"\n    },\n    {\n        \"id\": 15243,\n        \"cname\": \"叙利亚\"\n    },\n    {\n        \"id\": 15242,\n        \"cname\": \"菲律宾\"\n    },\n    {\n        \"id\": 15241,\n        \"cname\": \"贝宁\"\n    },\n    {\n        \"id\": 15240,\n        \"cname\": \"瑞士\"\n    },\n    {\n        \"id\": 15239,\n        \"cname\": \"伯利兹\"\n    },\n    {\n        \"id\": 15252,\n        \"cname\": \"奥兰群岛\"\n    },\n    {\n        \"id\": 15253,\n        \"cname\": \"帕劳(美)\"\n    },\n    {\n        \"id\": 15266,\n        \"cname\": \"安哥拉\"\n    },\n    {\n        \"id\": 15265,\n        \"cname\": \"巴基斯坦\"\n    },\n    {\n        \"id\": 15264,\n        \"cname\": \"博茨瓦纳\"\n    },\n    {\n        \"id\": 15263,\n        \"cname\": \"阿拉斯加\"\n    },\n    {\n        \"id\": 15262,\n        \"cname\": \"巴西\"\n    },\n    {\n        \"id\": 15261,\n        \"cname\": \"阿尔巴尼亚\"\n    },\n    {\n        \"id\": 15260,\n        \"cname\": \"阿尔及利亚\"\n    },\n    {\n        \"id\": 15259,\n        \"cname\": \"波斯尼亚和黑塞哥维那\"\n    },\n    {\n        \"id\": 15258,\n        \"cname\": \"东萨摩亚(美)\"\n    },\n    {\n        \"id\": 15257,\n        \"cname\": \"巴拉圭\"\n    },\n    {\n        \"id\": 15256,\n        \"cname\": \"巴布亚新几内亚\"\n    },\n    {\n        \"id\": 15255,\n        \"cname\": \"巴拿马\"\n    },\n    {\n        \"id\": 15254,\n        \"cname\": \"阿富汗\"\n    },\n    {\n        \"id\": 15238,\n        \"cname\": \"比利时\"\n    },\n    {\n        \"id\": 15237,\n        \"cname\": \"波多黎各(美)\"\n    },\n    {\n        \"id\": 15221,\n        \"cname\": \"尼日尔\"\n    },\n    {\n        \"id\": 15220,\n        \"cname\": \"纽埃岛(新)\"\n    },\n    {\n        \"id\": 15219,\n        \"cname\": \"加那利群岛\"\n    },\n    {\n        \"id\": 15218,\n        \"cname\": \"诺福克岛(澳)\"\n    },\n    {\n        \"id\": 15217,\n        \"cname\": \"加拿大\"\n    },\n    {\n        \"id\": 15216,\n        \"cname\": \"朝鲜\"\n    },\n    {\n        \"id\": 15215,\n        \"cname\": \"马里亚纳群岛\"\n    },\n    {\n        \"id\": 15214,\n        \"cname\": \"佛得角\"\n    },\n    {\n        \"id\": 15213,\n        \"cname\": \"挪威\"\n    },\n    {\n        \"id\": 15212,\n        \"cname\": \"布基纳法索\"\n    },\n    {\n        \"id\": 15211,\n        \"cname\": \"阿曼\"\n    },\n    {\n        \"id\": 15210,\n        \"cname\": \"保加利亚\"\n    },\n    {\n        \"id\": 15209,\n        \"cname\": \"喀麦隆\"\n    },\n    {\n        \"id\": 15222,\n        \"cname\": \"尼日利亚\"\n    },\n    {\n        \"id\": 15223,\n        \"cname\": \"新西兰\"\n    },\n    {\n        \"id\": 15236,\n        \"cname\": \"白俄罗斯\"\n    },\n    {\n        \"id\": 15235,\n        \"cname\": \"巴巴多斯\"\n    },\n    {\n        \"id\": 15234,\n        \"cname\": \"苏丹\"\n    },\n    {\n        \"id\": 15233,\n        \"cname\": \"斯里兰卡\"\n    },\n    {\n        \"id\": 15232,\n        \"cname\": \"瑞典\"\n    },\n    {\n        \"id\": 15231,\n        \"cname\": \"斯威士兰\"\n    },\n    {\n        \"id\": 15230,\n        \"cname\": \"斯瓦尔巴群岛(挪)\"\n    },\n    {\n        \"id\": 15229,\n        \"cname\": \"苏里南\"\n    },\n    {\n        \"id\": 15228,\n        \"cname\": \"开曼群岛(英)\"\n    },\n    {\n        \"id\": 15227,\n        \"cname\": \"中非\"\n    },\n    {\n        \"id\": 15226,\n        \"cname\": \"乍得\"\n    },\n    {\n        \"id\": 15225,\n        \"cname\": \"智利\"\n    },\n    {\n        \"id\": 15224,\n        \"cname\": \"尼加拉瓜\"\n    },\n    {\n        \"id\": 15208,\n        \"cname\": \"布隆迪\"\n    },\n    {\n        \"id\": 15268,\n        \"cname\": \"梵蒂冈\"\n    },\n    {\n        \"id\": 15328,\n        \"cname\": \"老挝\"\n    },\n    {\n        \"id\": 15312,\n        \"cname\": \"圣皮埃尔岛及密克隆岛\"\n    },\n    {\n        \"id\": 15311,\n        \"cname\": \"塞拉利昂\"\n    },\n    {\n        \"id\": 15310,\n        \"cname\": \"塞尔维亚\"\n    },\n    {\n        \"id\": 15309,\n        \"cname\": \"乌拉圭\"\n    },\n    {\n        \"id\": 15308,\n        \"cname\": \"塞舌尔\"\n    },\n    {\n        \"id\": 15307,\n        \"cname\": \"美国\"\n    },\n    {\n        \"id\": 15306,\n        \"cname\": \"美国本土外小岛屿\"\n    },\n    {\n        \"id\": 15305,\n        \"cname\": \"坦桑尼亚\"\n    },\n    {\n        \"id\": 15304,\n        \"cname\": \"英国\"\n    },\n    {\n        \"id\": 15303,\n        \"cname\": \"阿拉伯联合酋长国\"\n    },\n    {\n        \"id\": 15302,\n        \"cname\": \"乌克兰\"\n    },\n    {\n        \"id\": 15301,\n        \"cname\": \"乌干达\"\n    },\n    {\n        \"id\": 15300,\n        \"cname\": \"图瓦卢\"\n    },\n    {\n        \"id\": 15313,\n        \"cname\": \"安圭拉岛(英)\"\n    },\n    {\n        \"id\": 15314,\n        \"cname\": \"圣文森特岛(英)\"\n    },\n    {\n        \"id\": 15327,\n        \"cname\": \"吉尔吉斯斯坦\"\n    },\n    {\n        \"id\": 15326,\n        \"cname\": \"黎巴嫩\"\n    },\n    {\n        \"id\": 15325,\n        \"cname\": \"德国\"\n    },\n    {\n        \"id\": 15324,\n        \"cname\": \"拉脱维亚\"\n    },\n    {\n        \"id\": 15323,\n        \"cname\": \"加纳\"\n    },\n    {\n        \"id\": 15322,\n        \"cname\": \"利比里亚\"\n    },\n    {\n        \"id\": 15321,\n        \"cname\": \"直布罗陀(英)\"\n    },\n    {\n        \"id\": 15320,\n        \"cname\": \"莱索托\"\n    },\n    {\n        \"id\": 15319,\n        \"cname\": \"塞内加尔\"\n    },\n    {\n        \"id\": 15318,\n        \"cname\": \"沙特阿拉伯\"\n    },\n    {\n        \"id\": 15317,\n        \"cname\": \"圣多美和普林西比\"\n    },\n    {\n        \"id\": 15316,\n        \"cname\": \"圣马力诺\"\n    },\n    {\n        \"id\": 15315,\n        \"cname\": \"西萨摩亚\"\n    },\n    {\n        \"id\": 15299,\n        \"cname\": \"特克斯和凯科斯群岛(英)\"\n    },\n    {\n        \"id\": 15298,\n        \"cname\": \"罗马尼亚\"\n    },\n    {\n        \"id\": 15282,\n        \"cname\": \"阿鲁巴岛\"\n    },\n    {\n        \"id\": 15281,\n        \"cname\": \"突尼斯\"\n    },\n    {\n        \"id\": 15280,\n        \"cname\": \"圣克里斯托弗和尼维斯\"\n    },\n    {\n        \"id\": 15279,\n        \"cname\": \"阿塞拜疆\"\n    },\n    {\n        \"id\": 15278,\n        \"cname\": \"圣卢西亚\"\n    },\n    {\n        \"id\": 15277,\n        \"cname\": \"奥地利\"\n    },\n    {\n        \"id\": 15276,\n        \"cname\": \"土库曼斯坦\"\n    },\n    {\n        \"id\": 15275,\n        \"cname\": \"托克劳群岛(新)\"\n    },\n    {\n        \"id\": 15274,\n        \"cname\": \"巴林\"\n    },\n    {\n        \"id\": 15273,\n        \"cname\": \"多哥\"\n    },\n    {\n        \"id\": 15272,\n        \"cname\": \"特立尼达和多巴哥\"\n    },\n    {\n        \"id\": 15271,\n        \"cname\": \"汤加\"\n    },\n    {\n        \"id\": 15270,\n        \"cname\": \"巴哈马国\"\n    },\n    {\n        \"id\": 15283,\n        \"cname\": \"圣赫勒拿\"\n    },\n    {\n        \"id\": 15284,\n        \"cname\": \"土耳其\"\n    },\n    {\n        \"id\": 15297,\n        \"cname\": \"留尼汪岛\"\n    },\n    {\n        \"id\": 15296,\n        \"cname\": \"卢旺达\"\n    },\n    {\n        \"id\": 15295,\n        \"cname\": \"俄罗斯\"\n    },\n    {\n        \"id\": 15294,\n        \"cname\": \"摩尔多瓦\"\n    },\n    {\n        \"id\": 15293,\n        \"cname\": \"根西岛(英)\"\n    },\n    {\n        \"id\": 15292,\n        \"cname\": \"卡塔尔\"\n    },\n    {\n        \"id\": 15291,\n        \"cname\": \"孟加拉国\"\n    },\n    {\n        \"id\": 15290,\n        \"cname\": \"安提瓜和巴布达\"\n    },\n    {\n        \"id\": 15289,\n        \"cname\": \"南极\"\n    },\n    {\n        \"id\": 15288,\n        \"cname\": \"亚美尼亚\"\n    },\n    {\n        \"id\": 15287,\n        \"cname\": \"阿根廷\"\n    },\n    {\n        \"id\": 15286,\n        \"cname\": \"阿森松(英)\"\n    },\n    {\n        \"id\": 15285,\n        \"cname\": \"澳大利亚\"\n    },\n    {\n        \"id\": 15269,\n        \"cname\": \"东帝汶\"\n    }\n]",
                   "returns-field": [
                     {
                       "name": "id",
@@ -365,7 +365,7 @@
                     }
                   ],
                   "remark": [],
-                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns": "{\n    \"id\": 3928229392154629,\n    \"word\": \"一丝不挂\",\n    \"level\": 2,\n    \"type\": 0,\n    \"createrId\": 1,\n    \"appid\": \"1\"\n}",
                   "returns-field": [
                     {
                       "name": "word",
@@ -413,7 +413,7 @@
                     }
                   ],
                   "remark": [],
-                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns": "[\n    \"付利文\"\n]",
                   "returns-field": "返回文本中包含的敏感词列表"
                 }
               },
@@ -442,7 +442,7 @@
                     }
                   ],
                   "remark": [],
-                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns": "{\n    \"id\": 3928652446433285,\n    \"word\": \"菜鸟\",\n    \"level\": 2,\n    \"type\": 0,\n    \"createrId\": 1,\n    \"appid\": \"1\"\n}",
                   "returns-field": [
                     {
                       "name": "id",
@@ -537,7 +537,7 @@
                     }
                   ],
                   "remark": [],
-                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns": "{\n    \"id\": 3929026087616517,\n    \"filePath\": \"M00/00/00/wKhli1aPXbqAbz8GAAiQfKHDaaQ056.jpg\",\n    \"serverHost\": \"group1\",\n    \"fileTitle\": \"Lighthouse.jpg\",\n    \"fileSize\": 561276,\n    \"status\": 0,\n    \"createrId\": 1,\n    \"md5\": null,\n    \"taskId\": \"1213143\",\n    \"moduleType\": 1,\n    \"fileType\": 1,\n    \"crc32\": null,\n    \"transcoding\": 0,\n    \"thumbnailsPath\": \"M00/00/00/wKhli1aPXbqAbz8GAAiQfKHDaaQ056_140_140.jpg\",\n    \"appid\": \"1\"\n}",
                   "returns-field": [
                     {
                       "name": "id",
@@ -615,7 +615,7 @@
                     }
                   ],
                   "remark": [],
-                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns": "true",
                   "returns-field": "true or false"
                 }
               },
@@ -668,7 +668,7 @@
                     }
                   ],
                   "remark": [],
-                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns": "{\n    \"id\": 3929040478273541,\n    \"filePath\": \"M00/00/00/wKhli1aPayGAGw_9AA1rIuRd3Es103.jpg\",\n    \"serverHost\": \"group1\",\n    \"fileTitle\": \"Chrysanthemum.jpg\",\n    \"fileSize\": 879394,\n    \"status\": 0,\n    \"createrId\": 1,\n    \"md5\": null,\n    \"taskId\": \"1213143\",\n    \"moduleType\": 1,\n    \"fileType\": 1,\n    \"crc32\": null,\n    \"transcoding\": 0,\n    \"thumbnailsPath\": \"M00/00/00/wKhli1aPayGAGw_9AA1rIuRd3Es103_140_140.jpg\",\n    \"appId\": 1\n}",
                   "returns-field": [
                     {
                       "name": "id",
@@ -752,7 +752,7 @@
                     }
                   ],
                   "remark": [],
-                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns": "[\n    {\n        \"id\": 3929040478273541,\n        \"filePath\": \"M00/00/00/wKhli1aPayGAGw_9AA1rIuRd3Es103.jpg\",\n        \"serverHost\": \"group1\",\n        \"fileTitle\": \"Chrysanthemum.jpg\",\n        \"fileSize\": 879394,\n        \"status\": 0,\n        \"createrId\": 1,\n        \"md5\": null,\n        \"taskId\": \"1213143\",\n        \"moduleType\": 1,\n        \"fileType\": 1,\n        \"crc32\": null,\n        \"transcoding\": 0,\n        \"thumbnailsPath\": \"M00/00/00/wKhli1aPayGAGw_9AA1rIuRd3Es103_140_140.jpg\",\n        \"appId\": 1\n    }\n]",
                   "returns-field": [
                     {
                       "name": "id",
@@ -871,7 +871,7 @@
                     }
                   ],
                   "remark": [],
-                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns": "{\n    \"message\": \"保存消息成功！\",\n    \"result\": \"true\"\n}",
                   "returns-field": [
                     {
                       "name": "id",
@@ -949,7 +949,7 @@
                     }
                   ],
                   "remark": [],
-                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns": "{\n    \"id\": 3928965052104714,\n    \"type\": 0,\n    \"createrId\": 0,\n    \"content\": \"what a fucking day!\",\n    \"sourceId\": 111,\n    \"sourceType\": null,\n    \"sourceTitle\": null,\n    \"appid\": \"111111\"\n}",
                   "returns-field": [
                     {
                       "name": "id",
@@ -1015,7 +1015,7 @@
                     }
                   ],
                   "remark": [],
-                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns": "[\n    {\n        \"id\": 3928965341511685,\n        \"type\": 1,\n        \"createrId\": 111111,\n        \"content\": \"TestInsertMessageByParams\",\n        \"sourceId\": 112233,\n        \"sourceType\": \"1\",\n        \"sourceTitle\": \"中华人名共和国\",\n        \"appid\": 111111\n    },\n    {\n        \"id\": 3928965047910405,\n        \"type\": 1,\n        \"createrId\": 111111,\n        \"content\": \"TestInsertMessageByParams\",\n        \"sourceId\": 112233,\n        \"sourceType\": \"1\",\n        \"sourceTitle\": \"中华人名共和国\",\n        \"appid\": 111111\n    }\n]",
                   "returns-field": [
                     {
                       "name": "id",
@@ -1182,7 +1182,7 @@
                     }
                   ],
                   "remark": [],
-                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns": "{\n    \"message\": \"send mail success\",\n    \"status\": 1\n}",
                   "returns-field": [
                     {
                       "name": "id",
@@ -1230,7 +1230,7 @@
                     }
                   ],
                   "remark": [],
-                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns": "{\n    \"scope\": \"getIdentifyingCode\",\n    \"status\": 1,\n    \"expires_in\": 18801,\n    \"token_type\": \"bearer\",\n    \"refresh_token\": \"bc2ff491-8190-46f1-8293-93840a6a8846\",\n    \"access_token\": \"4f56bdbc-19a2-42d2-90be-ab0e307978a1\"\n}",
                   "returns-field": [
                     {
                       "name": "status",
@@ -1290,7 +1290,7 @@
                     }
                   ],
                   "remark": [],
-                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns": "{\n    \"status\": 1\n}",
                   "returns-field": [
                     {
                       "name": "status",
@@ -1326,7 +1326,7 @@
                     }
                   ],
                   "remark": [],
-                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns": "{\n    \"status\": 1,\n    \"userId\": 652435435665635400000,\n    \"appId\": 5434354789\n}",
                   "returns-field": [
                     {
                       "name": "status",
@@ -1374,7 +1374,7 @@
                     }
                   ],
                   "remark": [],
-                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns": "{\n    \"status\": 1\n}",
                   "returns-field": [
                     {
                       "name": "status",
@@ -1415,7 +1415,7 @@
                     }
                   ],
                   "remark": [],
-                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns": "{\n    \"status\": 1,\n    \"code\": 123436\n}",
                   "returns-field": [
                     {
                       "name": "status",
@@ -1457,7 +1457,7 @@
                     }
                   ],
                   "remark": [],
-                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns": "{\n    \"code\": \"388497\",\n    \"status\": 1\n}",
                   "returns-field": [
                     {
                       "name": "status",
@@ -1505,7 +1505,7 @@
                     }
                   ],
                   "remark": [],
-                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns": "{\n    \"message\": \"email validate success.\",\n    \"status\": 1\n}",
                   "returns-field": [
                     {
                       "name": "status",
@@ -1558,7 +1558,7 @@
                     }
                   ],
                   "remark": [],
-                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns": "{\n    \"message\": \"update password successed.\",\n    \"status\": 1\n}",
                   "returns-field": [
                     {
                       "name": "status",
@@ -1612,7 +1612,7 @@
                     }
                   ],
                   "remark": [],
-                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns": "{\n    \"message\": \"reset password successed.\",\n    \"status\": 1\n}",
                   "returns-field": [
                     {
                       "name": "status",
@@ -1659,7 +1659,7 @@
                     }
                   ],
                   "remark": [],
-                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns": "{\n    \"userExt\": {\n        \"userId\": 3930101234532492,\n        \"provinceId\": null,\n        \"cityId\": null,\n        \"countyId\": null,\n        \"provinceName\": null,\n        \"cityName\": null,\n        \"countyName\": null,\n        \"thirdIndustryId\": null,\n        \"companyJob\": null,\n        \"shortName\": \"张三\",\n        \"description\": null,\n        \"nameFirst\": \"\",\n        \"nameIndexAll\": \"\",\n        \"ctime\": 1452492615653,\n        \"utime\": 1452492615653,\n        \"ip\": \"127.0.0.1\",\n        \"name\": null\n    },\n    \"status\": 1,\n    \"userLoginRegister\": {\n        \"id\": 3930101234532492,\n        \"passport\": \"13677687645\",\n        \"mobile\": \"13677687645\",\n        \"email\": null,\n        \"userName\": null,\n        \"password\": null,\n        \"salt\": null,\n        \"source\": \"6897888152\",\n        \"ctime\": 1452492370733,\n        \"utime\": 1452492370733,\n        \"ip\": \"127.0.0.1\",\n        \"usetType\": 0\n    },\n    \"userBasic\": {\n        \"userId\": 3930101234532492,\n        \"name\": \"张三\",\n        \"sex\": 1,\n        \"companyName\": null,\n        \"picId\": 4234234,\n        \"auth\": 1,\n        \"mobile\": \"13677687645\",\n        \"status\": 1,\n        \"nameIndex\": \"\",\n        \"ctime\": 1452492615638,\n        \"utime\": 1452492615638\n    },\n    \"userDefinedList\": [\n        {\n            \"id\": 3920313276694668,\n            \"userId\": 3930101234532492,\n            \"userDefinedModel\": \"4\",\n            \"userDefinedFiled\": \"自定内容名称\",\n            \"userDefinedValue\": \"自定内容\",\n            \"ctime\": 1450158983534,\n            \"utime\": 1450158983534,\n            \"ip\": \"127.0.0.1\"\n        },\n        {\n            \"id\": 3920313276694673,\n            \"userId\": 3930101234532492,\n            \"userDefinedModel\": \"1\",\n            \"userDefinedFiled\": \"自定内容名称2\",\n            \"userDefinedValue\": \"3\",\n            \"ctime\": 1450158982688,\n            \"utime\": 1450158982688,\n            \"ip\": \"127.0.0.1\"\n        },\n        {\n            \"id\": 3920313276694678,\n            \"userId\": 3930101234532492,\n            \"userDefinedModel\": \"7\",\n            \"userDefinedFiled\": \"8\",\n            \"userDefinedValue\": \"9\",\n            \"ctime\": 1450158984087,\n            \"utime\": 1450158984087,\n            \"ip\": \"127.0.0.1\"\n        }\n    ]\n}",
                   "returns-field": [
                     {
                       "name": "status",
@@ -1833,7 +1833,7 @@
                     }
                   ],
                   "remark": [],
-                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns": "{\n    \"message\": \"updateUser success.\",\n    \"status\": 1,\n    \"passport\": \"liurenyuan@qq.com\"\n}",
                   "returns-field": [
                     {
                       "name": "status",
@@ -1892,7 +1892,7 @@
                     }
                   ],
                   "remark": [],
-                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns": "{\n    \"status\": 1,\n    \"list\": [\n        {\n            \"id\": 3914201655672837,\n            \"userId\": 3923916129304581,\n            \"friendId\": 3924742759514117,\n            \"releationType\": 2,\n            \"name\": \"张三\",\n            \"ctime\": 1448701860910,\n            \"utime\": 1448701860910\n        }\n    ]\n}",
                   "returns-field": [
                     {
                       "name": "status",
@@ -1940,7 +1940,7 @@
                     }
                   ],
                   "remark": [],
-                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns": "{\n    \"status\": 1,\n    \"list\": [\n        {\n            \"id\": 3914201655672837,\n            \"userId\": 3923916129304581,\n            \"friendId\": 3924742759514117,\n            \"releationType\": 1,\n            \"name\": \"张三\",\n            \"ctime\": 1448701860910,\n            \"utime\": 1448701860910\n        }\n    ]\n}",
                   "returns-field": [
                     {
                       "name": "status",
@@ -1988,7 +1988,7 @@
                     }
                   ],
                   "remark": [],
-                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns": "{\n    \"status\": 1,\n    \"list\": [\n        {\n            \"id\": 3914201655672837,\n            \"userId\": 3923916129304581,\n            \"friendId\": 3924742759514117,\n            \"releationType\": 1,\n            \"name\": \"张三\",\n            \"ctime\": 1448701860910,\n            \"utime\": 1448701860910\n        },\n        {\n            \"id\": 3914201655672835,\n            \"userId\": 3923916129304581,\n            \"friendId\": 3924742759514117,\n            \"releationType\": 2,\n            \"name\": \"李四\",\n            \"ctime\": 1448701860910,\n            \"utime\": 1448701860910\n        }\n    ]\n}",
                   "returns-field": [
                     {
                       "name": "status",
@@ -2042,7 +2042,7 @@
                     }
                   ],
                   "remark": [],
-                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns": "{\n    \"message\": \"apply to add friendly successed.\",\n    \"status\": 1\n}",
                   "returns-field": [
                     {
                       "name": "status",
@@ -2096,7 +2096,7 @@
                     }
                   ],
                   "remark": [],
-                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns": "{\n    \"message\": \"apply to add friendly successed.\",\n    \"status\": 1\n}",
                   "returns-field": [
                     {
                       "name": "status",
@@ -2138,7 +2138,7 @@
                     }
                   ],
                   "remark": [],
-                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns": "{\n    \"message\": \"delete friendly successed.\",\n    \"status\": 1\n}",
                   "returns-field": [
                     {
                       "name": "status",
@@ -2197,7 +2197,7 @@
                     }
                   ],
                   "remark": [],
-                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns": "{\n    \"status\": 1,\n    \"list\": [\n        {\n            \"userId\": 3920063652692018,\n            \"name\": \"好好\",\n            \"sex\": 1,\n            \"companyName\": null,\n            \"picId\": 111,\n            \"auth\": null,\n            \"mobile\": \"13777768734\",\n            \"status\": 1,\n            \"nameIndex\": \"hh\",\n            \"ctime\": 1450099469509,\n            \"utime\": 1450099469509\n        }\n    ]\n}",
                   "returns-field": [
                     {
                       "name": "status",
@@ -2262,7 +2262,7 @@
                     }
                   ],
                   "remark": [],
-                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns": "{\n    \"status\": 1,\n    \"list\": [\n        {\n            \"userId\": 3923916129304581,\n            \"name\": \"kqm\",\n            \"sex\": 1,\n            \"companyName\": null,\n            \"picId\": 43254325,\n            \"auth\": 1,\n            \"mobile\": \"55321214\",\n            \"status\": 1,\n            \"nameIndex\": \"kqm\",\n            \"ctime\": 1452492615638,\n            \"utime\": 1452505273884\n        }\n    ]\n}",
                   "returns-field": [
                     {
                       "name": "status",
@@ -2320,7 +2320,7 @@
                     }
                   ],
                   "remark": [],
-                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns": "[\n    {\n        \"appId\": 7647448850,\n        \"userId\": 3931486093049861,\n        \"id\": 3933423777611801,\n        \"name\": \"人脉\",\n        \"typeId\": 3933392609738777\n    },\n    {\n        \"appId\": 7647448850,\n        \"userId\": 3931486093049861,\n        \"id\": 3933423765028884,\n        \"name\": \"知识\",\n        \"typeId\": 3933392609738777\n    },\n    {\n        \"appId\": 7647448850,\n        \"userId\": 3931486093049861,\n        \"id\": 3933417670705167,\n        \"name\": \"组织\",\n        \"typeId\": 3933392609738777\n    },\n    {\n        \"appId\": 7647448850,\n        \"userId\": 3931486093049861,\n        \"id\": 3933415112179722,\n        \"name\": \"会议\",\n        \"typeId\": 3933392609738777\n    }\n]",
                   "returns-field": [
                     {
                       "name": "appKey",
@@ -2350,7 +2350,7 @@
                     }
                   ],
                   "remark": [],
-                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns": "[\n    {\n        \"appId\": 7647448850,\n        \"userId\": 3931486093049861,\n        \"id\": 3933729273937925,\n        \"name\": \"收购子目录\",\n        \"typeId\": 3933392609738777\n    },\n    {\n        \"appId\": 7647448850,\n        \"userId\": 3931486093049861,\n        \"id\": 3933423765028884,\n        \"name\": \"收购1\",\n        \"typeId\": 3933392609738777\n    }\n]",
                   "returns-field": [
                     {
                       "name": "id",
@@ -2398,7 +2398,7 @@
                     }
                   ],
                   "remark": [],
-                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns": "{\n    \"id\": 3933410037071877\n}",
                   "returns-field": [
                     {
                       "name": "id",
@@ -2434,7 +2434,7 @@
                     }
                   ],
                   "remark": [],
-                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns": "{\n    \"id\": 3933410037071877\n}",
                   "returns-field": [
                     {
                       "name": "id",
@@ -2464,7 +2464,7 @@
                     }
                   ],
                   "remark": [],
-                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns": "{\n    \"success\": true\n}",
                   "returns-field": [
                     {
                       "name": "success",
@@ -2500,7 +2500,7 @@
                     }
                   ],
                   "remark": [],
-                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns": "{\n    \"success\": true\n}",
                   "returns-field": [
                     {
                       "name": "success",
@@ -2536,7 +2536,7 @@
                     }
                   ],
                   "remark": [],
-                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns": "{\n    \"success\": true\n}",
                   "returns-field": [
                     {
                       "name": "appKey",
@@ -2565,7 +2565,7 @@
                   "params": [
                   ],
                   "remark": [],
-                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns": "[\n    {\n        \"id\": 3933392592961541,\n        \"name\": \"人脉\"\n    },\n    {\n        \"id\": 3933392609738777,\n        \"name\": \"会议\"\n    },\n    {\n        \"id\": 3933392601350164,\n        \"name\": \"知识\"\n    },\n    {\n        \"id\": 3933392601350154,\n        \"name\": \"组织\"\n    },\n    {\n        \"id\": 3933392601350159,\n        \"name\": \"需求\"\n    }\n]",
                   "returns-field": [
                     {
                       "name": "id",
@@ -2606,7 +2606,7 @@
                     }
                   ],
                   "remark": [],
-                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns": "[\n    {\n        \"id\": 3933750992044039,\n        \"sourceId\": 1,\n        \"sourceType\": 1,\n        \"sourceUrl\": \"\",\n        \"sourceTitle\": \"我是目录下的资源\",\n        \"sourceData\": \"我是屌丝\"\n    },\n    {\n        \"id\": 3933752426496014,\n        \"sourceId\": 2,\n        \"sourceType\": 1,\n        \"sourceUrl\": \"\",\n        \"sourceTitle\": \"我是目录下的资源\",\n        \"sourceData\": \"我是屌丝\"\n    },\n    {\n        \"id\": 3933752564908055,\n        \"sourceId\": 3,\n        \"sourceType\": 1,\n        \"sourceUrl\": \"\",\n        \"sourceTitle\": \"我是目录下的资源\",\n        \"sourceData\": \"\"\n    }\n]",
                   "returns-field": [
                     {
                       "name": "appKey",
@@ -2660,7 +2660,7 @@
                     }
                   ],
                   "remark": [],
-                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns": "{\n    \"id\": 3933750992044039\n}",
                   "returns-field": [
                     {
                       "name": "id",
@@ -2690,7 +2690,7 @@
                     }
                   ],
                   "remark": [],
-                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns": "{\n    \"success\": true\n}",
                   "returns-field": [
                     {
                       "name": "success",
@@ -2726,7 +2726,7 @@
                     }
                   ],
                   "remark": [],
-                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns": "{\n    \"success\": true\n}",
                   "returns-field": [
                     {
                       "name": "success",
@@ -2767,7 +2767,7 @@
                     }
                   ],
                   "remark": [],
-                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns": "[\n    {\n        \"id\": 3933815605297173,\n        \"tagName\": \"\"\n    },\n    {\n        \"id\": 3933811599736848,\n        \"tagName\": \"地区\"\n    },\n    {\n        \"id\": 3933811561988102,\n        \"tagName\": \"社群\"\n    },\n    {\n        \"id\": 3933811507462148,\n        \"tagName\": \"科幻\"\n    },\n    {\n        \"id\": 3933811356467203,\n        \"tagName\": \"科技\"\n    }\n]",
                   "returns-field": [
                     {
                       "name": "id",
@@ -2809,7 +2809,7 @@
                     }
                   ],
                   "remark": [],
-                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns": "{\n    \"id\": 3933410037071877\n}",
                   "returns-field": [
                     {
                       "name": "id",
@@ -2839,7 +2839,7 @@
                     }
                   ],
                   "remark": [],
-                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns": "{\n    \"success\": true\n}",
                   "returns-field": [
                     {
                       "name": "success",
@@ -2880,7 +2880,7 @@
                     }
                   ],
                   "remark": [],
-                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns": "[\n    {\n        \"id\": 3934006320300040,\n        \"tagName\": \"地区\"\n    }\n]",
                   "returns-field": [
                     {
                       "name": "id",
@@ -2916,7 +2916,7 @@
                     }
                   ],
                   "remark": [],
-                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns": "{\n    \"success\": true\n}",
                   "returns-field": [
                     {
                       "name": "id",
@@ -2952,7 +2952,7 @@
                     }
                   ],
                   "remark": [],
-                  "returns": "{\n    \"error\": {\n        \"message\": \"the 收购 already exists\",\n        \"type\": \"BizException\",\n        \"code\": 0,\n        \"error_subcode\": 100,\n        \"error_user_title\": null,\n        \"error_user_msg\": null,\n        \"trace_id\": null\n    }\n}",
+                  "returns": "[\n    {\n        \"id\": 3934006320300040,\n        \"tagName\": \"地区\"\n    }\n]",
                   "returns-field": [
                     {
                       "name": "id",
