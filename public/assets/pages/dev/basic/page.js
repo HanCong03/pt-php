@@ -157,7 +157,7 @@
 	            var html = '';
 
 	            if (res.error) {
-	                ScreenLock.alert('修改失败:' + res.error.message);
+	                ScreenLock.alert('修改失败', res.error.message);
 	            } else {
 	                ScreenLock.alert('修改成功');
 
@@ -248,7 +248,7 @@
 	            var $modifyTable;
 
 	            if (res.error) {
-	                ScreenLock.alert('添加失败:' + res.error.message);
+	                ScreenLock.alert('添加失败', res.error.message);
 	            } else {
 	                ScreenLock.alert('添加成功');
 
@@ -399,7 +399,7 @@
 	            var html = '';
 
 	            if (res.error) {
-	                ScreenLock.alert('修改失败:' + res.error.message);
+	                ScreenLock.alert('修改失败', res.error.message);
 	            } else {
 	                ScreenLock.alert('修改成功');
 
@@ -499,7 +499,7 @@
 	            var $modifyTable;
 
 	            if (res.error) {
-	                ScreenLock.alert('添加失败:' + res.error.message);
+	                ScreenLock.alert('添加失败', res.error.message);
 	            } else {
 	                ScreenLock.alert('添加成功');
 

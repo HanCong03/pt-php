@@ -342,7 +342,7 @@
 	        data: params,
 	        success: function success(res) {
 	            if (res.error) {
-	                ScreenLock.alert('提交失败: ' + res.error.message);
+	                ScreenLock.alert('提交失败', res.error.message);
 	            } else {
 	                ScreenLock.alert('修改成功');
 	                cb(form);

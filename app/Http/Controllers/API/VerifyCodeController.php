@@ -21,6 +21,8 @@ class VerifyCodeController extends Controller {
             return response()->json($result);
         }
 
+        Log::info($result['data']['code']);
+
         return response()->json([]);
     }
 

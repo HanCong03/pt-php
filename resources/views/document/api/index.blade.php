@@ -10,7 +10,7 @@
 @section('content')
 <div class="body">
     <div class="doc-box">
-        <h1>文档中心</h1>
+        <h1>API 库</h1>
 
         <div class="doc-container">
             <div class="left-side">

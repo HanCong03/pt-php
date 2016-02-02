@@ -81,13 +81,13 @@
 	                },
 	                success: function success(res) {
 	                    if (res.error) {
-	                        ScreenLock.alert('登录失败: ' + res.error.message);
+	                        ScreenLock.alert('登录失败', res.error.message);
 	                    } else {
 	                        location.href = '/';
 	                    }
 	                },
 	                error: function error() {
-	                    ScreenLock.alert('登录出错: 网络错误');
+	                    ScreenLock.alert('登录出错', '网络错误');
 	                }
 	            });
 	        }
@@ -189,7 +189,7 @@
 	        };
 	    }
 
-	    if (value.length < 6) {
+	    if (!/^[\x21-\x7e]{6,19}$/.test(value)) {
 	        return {
 	            node: 'password',
 	            message: '请输入正确的密码'

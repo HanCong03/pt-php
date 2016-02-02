@@ -8,9 +8,9 @@
 <?php $__env->startSection('document-content'); ?>
     <h2>
         FAQ
-        <div>
-            <button class="std-btn question-btn">我要提问</button>
-        </div>
+<!--        <div>-->
+<!--            <button class="std-btn question-btn">我要提问</button>-->
+<!--        </div>-->
     </h2>
 
     <div class="inner-content-box">

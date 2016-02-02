@@ -1,6 +1,6 @@
 @extends('_layout.base')
 
-@section('title')开放平台协议 - @stop
+@section('title')联系我们 - @stop
 
 @section('page-assets')
 <link rel="stylesheet" href="{{asset('assets/pages/contacts/page.css')}}">
@@ -9,7 +9,7 @@
 @section('content')
 <div class="body">
     <div class="doc-box">
-        <h1>文档中心</h1>
+        <h1>联系我们</h1>
 
         <div class="doc-container">
             <div class="left-side">

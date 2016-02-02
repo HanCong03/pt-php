@@ -135,7 +135,7 @@
 	            username: form.elements.passport.value
 	        }, function (res) {
 	            if (res.error) {
-	                ScreenLock.alert('验证码发送失败: ' + (res.error.message || ''));
+	                ScreenLock.alert('验证码发送失败', res.error.message || '');
 	                reset();
 	                return;
 	            }

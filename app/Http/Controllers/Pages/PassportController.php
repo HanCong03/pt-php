@@ -66,8 +66,6 @@ class PassportController extends Controller {
                 ]);
             }
 
-            Log::info($result['data']['code']);
-
             session([
                 'resetRecord' => [
                     'email' => $passport,

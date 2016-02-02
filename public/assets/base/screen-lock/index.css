@@ -17,7 +17,7 @@ body > .screen-lock {
     margin-left: -53.5px; }
   body > .screen-lock > .alert-tip {
     display: inline-block;
-    padding: 30px 100px;
+    padding: 30px 150px;
     font-size: 26px;
     margin-top: 200px;
     background: #fff;
@@ -32,4 +32,14 @@ body > .screen-lock {
       background: #fff;
       border: 1px solid #d2d2d2;
       border-radius: 2px;
-      outline: none; }
+      outline: none;
+      cursor: pointer; }
+      body > .screen-lock > .alert-tip > button:HOVER {
+        color: #fff;
+        background: #3996fd;
+        border-color: #3996fd; }
+    body > .screen-lock > .alert-tip > .subtitle {
+      display: block;
+      margin: 20px 0 10px 0;
+      font-size: 14px;
+      font-style: normal; }

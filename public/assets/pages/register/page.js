@@ -96,9 +96,11 @@
 	        }
 
 	        if (res.error) {
-	            ScreenLock.alert('注册失败: ' + (res.error.message || ''));
+	            ScreenLock.alert('注册失败', res.error.message || '');
 	        } else {
-	            location.href = '/login';
+	            ScreenLock.alert('注册成功', '点击确认后跳转到登陆页', function () {
+	                location.href = '/login';
+	            });
 	        }
 	    }
 	});
@@ -137,7 +139,7 @@
 	            username: form.elements.username.value
 	        }, function (res) {
 	            if (res.error) {
-	                ScreenLock.alert('验证码发送失败: ' + (res.error.message || ''));
+	                ScreenLock.alert('验证码发送失败', res.error.message);
 	                reset();
 	                return;
 	            }
@@ -336,7 +338,7 @@
 	        return '请输入密码';
 	    }
 
-	    if (!/^[\s\S]{6,19}$/i.test(value)) {
+	    if (!/^[\x21-\x7e]{6,19}$/.test(value)) {
 	        return '请输入6-19位英文、字母、数字或符号';
 	    }
 	}

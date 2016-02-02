@@ -16,9 +16,27 @@
             show();
         },
 
-        alert: function (message) {
+        alert: function (message, subMessage, cb) {
             $(document).trigger('dialog-close');
-            initAlert(message || '');
+
+            if (typeof subMessage === 'function') {
+                cb = subMessage;
+                subMessage = null;
+            }
+
+            initAlert('normal', message || '', subMessage, cb);
+            show();
+        },
+
+        error: function (message, subMessage, cb) {
+            $(document).trigger('dialog-close');
+
+            if (typeof subMessage === 'function') {
+                cb = subMessage;
+                subMessage = null;
+            }
+
+            initAlert('error', message || '', subMessage, cb);
             show();
         },
 
@@ -97,9 +115,18 @@
         $mask.html('<div class="submit-tip"><img src="/assets/loading.gif" width="107px" height="103px"></div>');
     }
 
-    function initAlert(message) {
+    function initAlert(className, message, subMessage, cb) {
         initMask();
-        $mask.html('<div class="alert-tip"><p>' + message + '</p><button class="dialog-ok-btn" type="button">确认</button></div>');
+
+        var subHtml = subMessage ? '<i class="subtitle">' + subMessage + '</i>' : '';
+
+        $mask.html('<div class="alert-tip ' + className + '"><p>' + message + '</p>' +subHtml  + '<button class="dialog-ok-btn" type="button">确认</button></div>');
+
+        if (cb) {
+            $mask.one('click', '.dialog-ok-btn', function () {
+                cb();
+            });
+        }
     }
 
     function initDialog(node) {

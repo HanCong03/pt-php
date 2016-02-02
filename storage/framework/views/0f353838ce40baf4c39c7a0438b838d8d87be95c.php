@@ -1,4 +1,4 @@
-<?php $__env->startSection('title'); ?>开放平台协议 - <?php $__env->stopSection(); ?>
+<?php $__env->startSection('title'); ?>联系我们 - <?php $__env->stopSection(); ?>
 
 <?php $__env->startSection('page-assets'); ?>
 <link rel="stylesheet" href="<?php echo e(asset('assets/pages/contacts/page.css')); ?>">
@@ -7,7 +7,7 @@
 <?php $__env->startSection('content'); ?>
 <div class="body">
     <div class="doc-box">
-        <h1>文档中心</h1>
+        <h1>联系我们</h1>
 
         <div class="doc-container">
             <div class="left-side">
