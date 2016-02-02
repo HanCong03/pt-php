@@ -82,8 +82,8 @@
             <div class="user-box">
                 <label>{{$user['userLoginRegister']['passport']}}</label>
                 <ul>
-                    <li><a href="{{route('developer-index')}}">开发者中心</a></li>
-                    <li><a href="#">退出系统</a></li>
+<!--                    <li><a href="{{route('developer-index')}}">开发者中心</a></li>-->
+                    <li><a href="{{route('logout')}}">退出系统</a></li>
                 </ul>
             </div>
             @endif

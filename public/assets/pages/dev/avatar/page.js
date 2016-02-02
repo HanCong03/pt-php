@@ -128,7 +128,7 @@
 	            ScreenLock.alert('网络错误');
 	        } else {
 	            if (res.error) {
-	                ScreenLock.alert(res.error.message);
+	                ScreenLock.alert('失败: ' + (res.error.message || ''));
 	            } else {
 	                ScreenLock.alert('修改成功');
 	                reset();

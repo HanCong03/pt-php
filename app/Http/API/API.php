@@ -36,8 +36,20 @@ class API {
     }
 
     public static function login($data) {
+        if (isset($data['password'])) {
+            $data['password'] = base64_encode($data['password']);
+        }
+
         return self::request('POST', self::HOST . 'user/user/login', [
             'form_params' => $data
+        ]);
+    }
+
+    public static function logout($token) {
+        return self::request('GET', self::HOST . 'user/user/logout', [
+            'query' => [
+                'access_token' => $token
+            ]
         ]);
     }
 
@@ -66,12 +78,24 @@ class API {
         // 重置用户类型为个人用户
         $data['userType'] = 0;
 
+        if (isset($data['password'])) {
+            $data['password'] = base64_encode($data['password']);
+        }
+
         return self::request('POST', self::HOST . 'user/user/register', [
             'form_params' => $data
         ]);
     }
 
     public static function resetPassword($data) {
+        if (isset($data['password'])) {
+            $data['password'] = base64_encode($data['password']);
+        }
+
+        if (isset($data['confirmPassword'])) {
+            $data['confirmPassword'] = base64_encode($data['confirmPassword']);
+        }
+
         return self::request('POST', self::HOST . 'user/user/resetPassword ', [
             'form_params' => $data
         ]);
@@ -80,7 +104,8 @@ class API {
     private static function request($method, $url, $params=null) {
         try {
             $res = self::$client->request($method, $url, $params);
-            $res = json_decode((string)$res->getBody(), true);
+            $data = (string)$res->getBody();
+            $res = json_decode($data, true);
         } catch (RequestException $e) {
             if ($e->hasResponse()) {
                 $res = json_decode((string)$e->getResponse()->getBody(), true);

@@ -136,7 +136,7 @@
 	                isSubmit = false;
 
 	                if (res.error) {
-	                    showDialogError('提交失败: ' + res.error.message);
+	                    showDialogError('提交失败: ' + (res.error.message || ''));
 	                } else {
 	                    ScreenLock.alert('提交成功');
 	                }

@@ -21,8 +21,6 @@ class VerifyCodeController extends Controller {
             return response()->json($result);
         }
 
-        Log::info($result['data']);
-
         return response()->json([]);
     }
 
@@ -36,13 +34,6 @@ class VerifyCodeController extends Controller {
         }
 
         session([
-            'resetRecord' => [
-                'phone' => $phone,
-                'verifyCode' => $result['data']['code']
-            ]
-        ]);
-
-        Log::info([
             'resetRecord' => [
                 'phone' => $phone,
                 'verifyCode' => $result['data']['code']

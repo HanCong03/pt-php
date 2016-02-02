@@ -87,7 +87,7 @@
 	                    }
 	                },
 	                error: function error() {
-	                    ScreenLock.alert('登录出错');
+	                    ScreenLock.alert('登录出错: 网络错误');
 	                }
 	            });
 	        }

@@ -96,7 +96,7 @@
 	        }
 
 	        if (res.error) {
-	            ScreenLock.alert('注册失败');
+	            ScreenLock.alert('注册失败: ' + (res.error.message || ''));
 	        } else {
 	            location.href = '/login';
 	        }
@@ -137,7 +137,7 @@
 	            username: form.elements.username.value
 	        }, function (res) {
 	            if (res.error) {
-	                ScreenLock.alert('验证码发送失败!');
+	                ScreenLock.alert('验证码发送失败: ' + (res.error.message || ''));
 	                reset();
 	                return;
 	            }

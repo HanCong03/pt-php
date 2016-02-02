@@ -56,7 +56,7 @@
                                             <tr>
                                                 <td>{{$apiItem['type']}}</td>
                                                 <td class="left">{{$apiItem['detail']['desc']}}</td>
-                                                <td class="left"><a href="/document/api/{{$current['classify']}}/{{str_replace('/', '.', $apiItem['name'])}}" class="hint-link">{{$api['children'][0]['name']}}</a></td>
+                                                <td class="left"><a href="/document/api/{{$current['classify']}}/{{str_replace('/', '.', $apiItem['name'])}}" class="hint-link">{{$apiItem['name']}}</a></td>
                                             </tr>
                                             @endif
                                         @endforeach

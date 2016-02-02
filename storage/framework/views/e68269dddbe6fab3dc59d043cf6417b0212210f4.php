@@ -54,7 +54,7 @@
                                             <tr>
                                                 <td><?php echo e($apiItem['type']); ?></td>
                                                 <td class="left"><?php echo e($apiItem['detail']['desc']); ?></td>
-                                                <td class="left"><a href="/document/api/<?php echo e($current['classify']); ?>/<?php echo e(str_replace('/', '.', $apiItem['name'])); ?>" class="hint-link"><?php echo e($api['children'][0]['name']); ?></a></td>
+                                                <td class="left"><a href="/document/api/<?php echo e($current['classify']); ?>/<?php echo e(str_replace('/', '.', $apiItem['name'])); ?>" class="hint-link"><?php echo e($apiItem['name']); ?></a></td>
                                             </tr>
                                             <?php endif; ?>
                                         <?php endforeach; ?>

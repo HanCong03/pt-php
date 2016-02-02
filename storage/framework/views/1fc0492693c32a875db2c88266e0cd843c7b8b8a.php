@@ -18,14 +18,6 @@
                     <i></i>
                 </div>
 
-                <div class="form-row" style="display: none;">
-                    <input class="verify-code-input" autocomplete="off" maxlength="4" placeholder="请输入验证码" value="abcd" name="verify-code">
-                    <div class="verify-code-box">
-                        <img src="/resources/verify-code.png" id="verifyCode" width="140px" height="48px">
-                        <button class="update-btn" id="refreshBtn" type="button">换一换</button>
-                    </div>
-                    <i></i>
-                </div>
                 <div class="submit-row">
                     <button class="submit-btn" type="submit">下一步</button>
                 </div>

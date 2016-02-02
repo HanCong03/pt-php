@@ -118,13 +118,13 @@
 
         <div class="service-content">
             <ul class="service-content-item1 show">
-                <li>超大规模分布式架构、低能耗数据中心、超强云安全1</li>
+                <li>超大规模分布式架构、低能耗数据中心、超强云安全</li>
             </ul>
             <ul class="service-content-item2">
-                <li>超大规模分布式架构、低能耗数据中心、超强云安全2</li>
+                <li>超大规模分布式架构、低能耗数据中心、超强云安全</li>
             </ul>
             <ul class="service-content-item3">
-                <li>超大规模分布式架构、低能耗数据中心、超强云安全3</li>
+                <li>超大规模分布式架构、低能耗数据中心、超强云安全</li>
             </ul>
         </div>
     </div>

@@ -22,6 +22,17 @@ class PassportController extends Controller {
         return view('login');
     }
 
+    public function logout() {
+        if (API::isLogin()) {
+            API::logout(session()->get('accessToken'));
+
+            session()->flush();
+            session()->regenerate();
+        }
+
+        return redirect()->route('index');
+    }
+
     public function register() {
         if (API::isLogin()) {
             return redirect()->router('index');
@@ -46,6 +57,24 @@ class PassportController extends Controller {
                 'passport' => $passport
             ]);
         } else {
+            $result = API::refreshResetPassportVerifyCode($passport);
+
+            // 发送验证邮件失败
+            if (isset($result['error'])) {
+                return view('forget-email-error', [
+                    'message' => $result['error']['message']
+                ]);
+            }
+
+            Log::info($result['data']['code']);
+
+            session([
+                'resetRecord' => [
+                    'email' => $passport,
+                    'verifyCode' => $result['data']['code']
+                ]
+            ]);
+
             return view('forget-email-validate')->with([
                 'passport' => $passport
             ]);
@@ -53,6 +82,39 @@ class PassportController extends Controller {
     }
 
     public function resetPassword() {
+        if (request()->has('email')) {
+            return $this->__resetPasswordByEmail();
+        } else {
+            return $this->__resetPasswordByPhone();
+        }
+    }
+
+    // 邮件验证
+    public function __resetPasswordByEmail() {
+        if (!request()->has('email', 'code')
+            || !session()->has('resetRecord')
+            || !request()->isMethod('get')) {
+
+            return abort(403);
+        }
+
+        $passport = request()->input('email');
+        $verifyCode = request()->input('code');
+        $record = session()->get('resetRecord');
+
+        if ($passport === $record['email'] && $verifyCode === $record['verifyCode']) {
+            session()->forget('resetRecord');
+
+            return view('reset-password', [
+                'verifyCode' => $verifyCode,
+                'passport' => $passport
+            ]);
+        } else {
+            return abort(403);
+        }
+    }
+
+    private function __resetPasswordByPhone() {
         if (!request()->has('passport', 'verify-code')
             || !session()->has('resetRecord')
             || !request()->isMethod('post')) {
