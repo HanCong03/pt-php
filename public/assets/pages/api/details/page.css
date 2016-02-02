@@ -1,5 +1,5 @@
 .content-box {
-  margin-bottom: 300px; }
+  margin-bottom: 100px; }
   .content-box > h2 {
     font-size: 16px;
     margin: 0;
@@ -15,6 +15,11 @@
     margin: 20px 0; }
   .inner-content-box .syntaxhighlighter {
     overflow: hidden !important; }
+  .inner-content-box .bash-examples {
+    width: 700px; }
+    .inner-content-box .bash-examples pre, .inner-content-box .bash-examples code {
+      word-break: break-all;
+      white-space: pre-wrap; }
   .inner-content-box dt {
     color: #333333;
     font-size: 16px;
