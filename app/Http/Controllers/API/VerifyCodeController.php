@@ -21,7 +21,7 @@ class VerifyCodeController extends Controller {
             return response()->json($result);
         }
 
-        Log::info($result['data']['code']);
+        session()->put('code', $result['data']['code']);
 
         return response()->json([]);
     }

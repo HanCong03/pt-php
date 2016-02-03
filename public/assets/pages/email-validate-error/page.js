@@ -66,22 +66,22 @@
 	    var showErrors = __webpack_require__(4);
 	    var submit = __webpack_require__(5);
 
-	    $(document.forms['forget-form']).on('submit', function (e) {
+	    $(document.forms['phone-validate-form']).on('submit', function (e) {
+	        e.preventDefault();
+	        e.stopPropagation();
+
 	        var errors = validate(this);
 
 	        if (errors) {
-	            e.preventDefault();
-	            e.stopPropagation();
-
 	            showErrors(errors);
 	        } else {
-	            //submit(this, (function (err, data) {
-	            //    checkSetpUsernameResult(this, err, data);
-	            //}).bind(this));
+	            submit(this, function (err, data) {
+	                check(this, err, data);
+	            }.bind(this));
 	        }
 	    });
 
-	    function checkSetpUsernameResult(form, err, res) {
+	    function check(form, err, res) {
 	        var errors = [];
 
 	        if (err) {
@@ -123,37 +123,39 @@
 
 	'use strict';
 
-	var ALPHABET = 'abcdefghijklmnopqrstuvwxyz'.split('');
-
 	jQuery(function ($) {
-	    var verifyCode = $('#verifyCode')[0];
 	    var refreshBtn = $('#refreshBtn')[0];
+	    var INTERVAL = 60;
 
 	    $(refreshBtn).on('click', function (e) {
 	        this.disabled = true;
-
-	        verifyCode.src = next(verifyCode.src);
+	        startTimer();
 	    });
 
-	    $(verifyCode).on('load error', function () {
+	    function reset() {
 	        refreshBtn.disabled = false;
-	    });
-	});
-
-	function next(url) {
-	    url = url.split('?')[0];
-	    return url + '?' + random() + Date.now();
-	}
-
-	function random() {
-	    var result = [];
-
-	    for (var i = 0, len = 6; i < len; i++) {
-	        result[i] = ALPHABET[Math.floor(Math.random() * 10)];
+	        refreshBtn.innerHTML = '重新获取验证码';
 	    }
 
-	    return result.join('');
-	}
+	    function startTimer() {
+	        INTERVAL = 60;
+	        next();
+	    }
+
+	    function next() {
+	        refreshBtn.innerHTML = INTERVAL + 's后可重新获取';
+
+	        setTimeout(function () {
+	            INTERVAL--;
+
+	            if (INTERVAL === 0) {
+	                reset();
+	            } else {
+	                next();
+	            }
+	        }, 1000);
+	    }
+	});
 
 /***/ },
 /* 3 */
@@ -167,44 +169,22 @@
 	'use strict';
 
 	module.exports = function (form) {
-	    var username = form.elements['username'].value;
-	    //var verifyCode = form.elements['verify-code'].value;
+	    var verifyCode = form.elements['verify-code'].value;
 
 	    var result = [];
 	    var error = undefined;
 
-	    error = validateUsername(username);
+	    error = validateVerifyCode(verifyCode);
 
 	    if (error) {
 	        result.push({
-	            ele: form.elements['username'],
+	            ele: form.elements['verify-code'],
 	            message: error
 	        });
 	    }
 
-	    //error = validateVerifyCode(verifyCode);
-	    //
-	    //if (error) {
-	    //    result.push({
-	    //        ele: form.elements['verify-code'],
-	    //        message: error
-	    //    });
-	    //}
-
 	    return result.length ? result : null;
 	};
-
-	function validateUsername(value) {
-	    if (value.trim() === '') {
-	        return '请输入手机号/邮箱';
-	    }
-
-	    if (!/^(1[0-9]{10}|[\S]+@[a-z0-9_\-]+\.[a-z]{2,})$/i.test(value)) {
-	        return '请输入正确的手机号/邮箱';
-	    }
-
-	    return null;
-	}
 
 	function validateVerifyCode(value) {
 	    if (value.trim() === '') {

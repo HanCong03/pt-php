@@ -33,6 +33,24 @@ class PassportController extends Controller {
         return redirect()->route('index');
     }
 
+    public function code() {
+        if (!session()->has('resetRecord') && !session()->has('code')) {
+            return '当前没有验证码';
+        }
+
+        $result = [];
+
+        if (session()->has('resetRecord')) {
+            array_push($result, '重置密码code:' . session()->get('resetRecord')['verifyCode']);
+        }
+
+        if (session()->has('code')) {
+            array_push($result, '注册code:' . session()->get('code'));
+        }
+
+        return join('<br/>', $result);
+    }
+
     public function register() {
         if (API::isLogin()) {
             return redirect()->router('index');

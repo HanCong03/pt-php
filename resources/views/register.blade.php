@@ -24,7 +24,7 @@
 
                 <div class="form-row">
                     <input class="verify-code-input" autocomplete="off" maxlength="6" placeholder="验证码" name="verify-code">
-                    <button class="refresh-btn" id="refreshBtn" type="button">获取验证码</button>
+                    <button class="refresh-btn" id="refreshBtn" type="button" tabindex="-1">获取验证码</button>
                     <i></i>
                 </div>
 
@@ -39,7 +39,7 @@
                 </div>
 
                 <div class="submit-row">
-                    <button class="submit-btn" type="submit">注册</button>
+                    <button class="submit-btn" type="submit" tabindex="-1">注册</button>
                 </div>
 
                 <a class="faq-link" target="_blank" href="{{route('verify-code-faq')}}">收不到验证码？</a>

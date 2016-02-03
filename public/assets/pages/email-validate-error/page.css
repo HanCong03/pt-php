@@ -1,0 +1,27 @@
+.email-validate-box {
+  width: 1170px;
+  height: 1000px;
+  margin: 0 auto;
+  color: #333; }
+  .email-validate-box > h1 {
+    font-size: 16px;
+    margin: 40px 0 0 0;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid #e5e5e5; }
+  .email-validate-box > .tip {
+    font-size: 18px;
+    margin: 155px auto;
+    padding: 0;
+    text-align: center; }
+    .email-validate-box > .tip:before {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 17px;
+      width: 60px;
+      height: 60px;
+      background-size: 60px 60px;
+      background-image: url(images/error.png); }
+      @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
+        .email-validate-box > .tip:before {
+          background-image: url(images/error@2.png); } }

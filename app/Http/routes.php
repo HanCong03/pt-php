@@ -37,6 +37,10 @@ Route::group([
         'uses' => 'PassportController@login'
     ]);
 
+    Route::get('code', [
+        'uses' => 'PassportController@code'
+    ]);
+
     Route::get('logout', [
         'as' => 'logout',
         'uses' => 'PassportController@logout'
