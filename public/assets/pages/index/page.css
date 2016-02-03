@@ -101,6 +101,9 @@
   background-size: 1920px 495px;
   background-position: center center;
   background-repeat: no-repeat; }
+.case-box > h3 {
+  margin-bottom: 40px !important; }
+
 .case-box .case-details {
   border: none;
   table-layout: fixed;

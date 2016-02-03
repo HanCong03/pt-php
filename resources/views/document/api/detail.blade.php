@@ -68,10 +68,10 @@
 
                             <div style="margin: 10px 0">
                                 @if (!isset($currentDetail['public-params']))
-                                    <label>发送请求时必须传入公共参数，详见<a href="http://wk.gintong.com/index.php?title=%E5%85%AC%E5%85%B1%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E">公共参数说明</a>。</label>
+                                    <label>发送请求时必须传入公共参数，详见公共参数说明。</label>
                                 @else
                                     @if (!(isset($currentDetail['public-params']['tip']) && $currentDetail['public-params']['tip'] === false))
-                                    <label>发送请求时必须传入公共参数，详见<a href="http://wk.gintong.com/index.php?title=%E5%85%AC%E5%85%B1%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E">公共参数说明</a>。</label>
+                                    <label>发送请求时必须传入公共参数，详见公共参数说明。</label>
                                     @endif
 
                                     @if (count($currentDetail['public-params']['list']) > 0)
