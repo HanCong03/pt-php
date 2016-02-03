@@ -13,11 +13,10 @@
             <div class="left-side">
                 <ul>
                     <li><a href="<?php echo e(route('index')); ?>">首页</a></li>
-                    <li><a href="#">概述</a></li>
-                    <li><a href="#">新手指引</a></li>
-                    <li><a href="#">基础支持类API</a></li>
-                    <li><a href="#">通用类API</a></li>
-                    <li><a href="#">功能增强类API</a></li>
+                    <li><a href="<?php echo e(route('document-index')); ?>">概述</a></li>
+                    <li><a href="<?php echo e(route('guide')); ?>">新手指引</a></li>
+                    <li><a href="<?php echo e(route('api-index')); ?>#0.0">基础支持类API</a></li>
+                    <li><a href="<?php echo e(route('api-index')); ?>#1.0">功能增强类API</a></li>
                     <li><a href="<?php echo e(route('faq')); ?>">FAQ</a></li>
                     <li><a href="<?php echo e(route('recent-update')); ?>">最近更新</a></li>
                     <li class="active"><a href="<?php echo e(route('contacts')); ?>">联系我们</a></li>
