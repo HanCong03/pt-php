@@ -186,7 +186,8 @@
 	    //
 	    //if (error) {
 	    //    result.push({
-	    //        ele: form.elements['verify-code'],
+	    //        ele: form.
+	    // elements['verify-code'],
 	    //        message: error
 	    //    });
 	    //}

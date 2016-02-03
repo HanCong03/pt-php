@@ -139,16 +139,8 @@
     <table class="case-details">
         <tbody>
         <tr>
-            <td class="case-icon-huaban"><span>花瓣</span></td>
-            <td class="case-icon-360"><span>360</span></td>
-            <td class="case-icon-huaban"><span>花瓣</span></td>
-            <td class="case-icon-360"><span>360</span></td>
-        </tr>
-        <tr>
-            <td class="case-icon-huaban"><span>花瓣</span></td>
-            <td class="case-icon-360"><span>360</span></td>
-            <td class="case-icon-huaban"><span>花瓣</span></td>
-            <td class="case-icon-360"><span>360</span></td>
+            <td class="case-icon-tongmeng"><span>桐盟</span></td>
+            <td class="case-icon-xiansuo"><span>线索</span></td>
         </tr>
         </tbody>
     </table>
@@ -161,10 +153,7 @@
     <table class="friendship-details">
         <tbody>
         <tr>
-            <td class="link-jintong"><a href="#"><span>金桐网</span></a></td>
-            <td class="link-jintong"><a href="#"><span>金桐网</span></a></td>
-            <td class="link-jintong"><a href="#"><span>金桐网</span></a></td>
-            <td class="link-jintong"><a href="#"><span>金桐网</span></a></td>
+            <td class="link-jintong"><a href="http://www.gintong.com/" target="_blank"><span>金桐网</span></a></td>
         </tr>
         </tbody>
     </table>

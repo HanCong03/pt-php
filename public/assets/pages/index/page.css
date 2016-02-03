@@ -105,29 +105,30 @@
   border: none;
   table-layout: fixed;
   border-collapse: collapse;
-  width: 1000px;
+  width: 400px;
   margin: 0 auto 50px auto; }
   .case-box .case-details td {
-    width: 250px;
-    height: 100px; }
+    width: 200px;
+    height: 100px;
+    padding: 0; }
     .case-box .case-details td > span {
       display: none; }
-    .case-box .case-details td.case-icon-360 {
-      background-size: 193px 33px;
-      background-image: url(images/case-icon-360.png);
+    .case-box .case-details td.case-icon-tongmeng {
+      background-size: 126px 40px;
+      background-image: url(images/case-icon-tongmeng.png);
       background-position: center center;
       background-repeat: no-repeat; }
       @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
-        .case-box .case-details td.case-icon-360 {
-          background-image: url(images/case-icon-360@2.png); } }
-    .case-box .case-details td.case-icon-huaban {
-      background-size: 121px 37px;
-      background-image: url(images/case-icon-huaban.png);
+        .case-box .case-details td.case-icon-tongmeng {
+          background-image: url(images/case-icon-tongmeng@2.png); } }
+    .case-box .case-details td.case-icon-xiansuo {
+      background-size: 126px 40px;
+      background-image: url(images/case-icon-xiansuo.png);
       background-position: center center;
       background-repeat: no-repeat; }
       @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
-        .case-box .case-details td.case-icon-huaban {
-          background-image: url(images/case-icon-huaban@2.png); } }
+        .case-box .case-details td.case-icon-xiansuo {
+          background-image: url(images/case-icon-xiansuo@2.png); } }
 .components-box > .components-details {
   list-style: none;
   text-align: center;
@@ -307,14 +308,15 @@
     border: none;
     table-layout: fixed;
     border-collapse: collapse;
-    width: 1160px;
+    width: 300px;
     margin: 0 auto 80px auto; }
     .friendship-box .friendship-details td {
-      width: 290px;
-      height: 90px;
+      width: 300px;
+      height: 100px;
+      padding: 0;
       text-align: center; }
       .friendship-box .friendship-details td.link-jintong > a {
-        background-size: 234px 28px;
+        background-size: 250px 90px;
         background-image: url(images/link-icon-jintong.png);
         background-position: center center;
         background-repeat: no-repeat; }
@@ -327,7 +329,6 @@
         height: 100%;
         margin: 0 auto;
         box-sizing: border-box;
-        background-color: #eeeeee;
-        border: 1px solid #a1a4a9; }
+        background-color: #eeeeee; }
         .friendship-box .friendship-details td > a > span {
           display: none; }
