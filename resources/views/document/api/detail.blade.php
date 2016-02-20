@@ -55,11 +55,8 @@
                     <dt>HTTP请求方式</dt>
                     <dd>{{$currentDetail['http-method']}}</dd>
 
-                    <dt>是否需要登录</dt>
-                    <dd>{{$currentDetail['login']}}</dd>
-
                     <dt>IP限制</dt>
-                    <dd>{{$currentDetail['ip-limit']}}</dd>
+                    <dd>{{$currentDetail['ip-limit'] === 'FALSE' ? '无' : '是'}}</dd>
 
                     <dt>请求参数<span style="font-size: 12px;">（各个参数请进行URL 编码，编码时请遵守 <a href="http://tools.ietf.org/html/rfc1738" target="_blank">RFC 1738</a>）</span></dt>
                     <dd>
