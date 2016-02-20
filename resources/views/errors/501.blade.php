@@ -9,7 +9,7 @@
 @section('content')
 <div class="body">
     <div class="error-box">
-        <h1 class="error-tip">服务器错误(503)</h1>
+        <h1 class="error-tip">服务器错误(501)</h1>
     </div>
 </div>
 @stop

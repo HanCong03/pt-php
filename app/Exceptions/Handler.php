@@ -9,6 +9,8 @@ use Symfony\Component\HttpKernel\Exception\HttpException;
 use Illuminate\Foundation\Validation\ValidationException;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Symfony\Component\Debug\Exception\FlattenException;
+use Log;
 
 class Handler extends ExceptionHandler
 {
@@ -47,5 +49,12 @@ class Handler extends ExceptionHandler
     public function render($request, Exception $e)
     {
         return parent::render($request, $e);
+    }
+
+    protected function convertExceptionToResponse(Exception $e) {
+        $e = FlattenException::create($e);
+        $status = $e->getStatusCode();
+
+        return response()->view("errors.500", ['exception' => $e], $status, $e->getHeaders());
     }
 }
